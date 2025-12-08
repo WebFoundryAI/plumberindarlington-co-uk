@@ -1,11 +1,18 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { BRAND } from "@/config/brand";
 import { SERVICES } from "@/config/services";
 import { LOCATIONS } from "@/config/locations";
 import { Phone, Mail, MapPin } from "lucide-react";
 import { PopularLinks } from "@/components/sections/PopularLinks";
+import { trackPhoneClick } from "@/lib/trackPhoneClick";
 
 export function Footer() {
+  const location = useLocation();
+
+  const handlePhoneClick = () => {
+    trackPhoneClick(location.pathname);
+  };
+
   return (
     <footer className="bg-foreground text-background">
       <div className="container-wide px-4 py-12 md:py-16">
@@ -18,6 +25,7 @@ export function Footer() {
               <a
                 href={`tel:${BRAND.phone}`}
                 className="flex items-center gap-2 text-background/80 hover:text-accent transition-colors"
+                onClick={handlePhoneClick}
               >
                 <Phone className="h-4 w-4" />
                 {BRAND.phone}

@@ -1,11 +1,17 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { BRAND } from "@/config/brand";
 import { Phone, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { trackPhoneClick } from "@/lib/trackPhoneClick";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+
+  const handlePhoneClick = () => {
+    trackPhoneClick(location.pathname);
+  };
 
   const navLinks = [
     { href: "/", label: "Home" },
@@ -24,7 +30,11 @@ export function Header() {
         <div className="container-wide flex items-center justify-between py-2 px-4">
           <div className="flex items-center gap-2 text-sm">
             <Phone className="h-4 w-4" />
-            <a href={`tel:${BRAND.phone}`} className="font-medium hover:underline">
+            <a 
+              href={`tel:${BRAND.phone}`} 
+              className="font-medium hover:underline"
+              onClick={handlePhoneClick}
+            >
               {BRAND.phone}
             </a>
             {BRAND.emergencyAvailable && (
