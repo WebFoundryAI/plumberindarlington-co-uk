@@ -6,16 +6,16 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ScrollToTop } from "./components/ScrollToTop";
 
-// Critical pages - loaded immediately
+// Critical page - loaded immediately for first paint
 import Index from "./pages/Index";
-import Services from "./pages/Services";
-import ServiceDetail from "./pages/ServiceDetail";
-import Locations from "./pages/Locations";
-import LocationDetail from "./pages/LocationDetail";
-import LocationServiceDetail from "./pages/LocationServiceDetail";
 
-// Non-critical pages - lazy loaded
+// All other pages - lazy loaded for reduced initial bundle
+const Services = lazy(() => import("./pages/Services"));
+const ServiceDetail = lazy(() => import("./pages/ServiceDetail"));
 const SubServiceDetail = lazy(() => import("./pages/SubServiceDetail"));
+const Locations = lazy(() => import("./pages/Locations"));
+const LocationDetail = lazy(() => import("./pages/LocationDetail"));
+const LocationServiceDetail = lazy(() => import("./pages/LocationServiceDetail"));
 const LocationSubServiceDetail = lazy(() => import("./pages/LocationSubServiceDetail"));
 const About = lazy(() => import("./pages/About"));
 const Contact = lazy(() => import("./pages/Contact"));
