@@ -15,10 +15,7 @@ export function Header() {
 
   const navLinks = [
     { href: "/", label: "Blocked Drains" },
-    { href: "/services/blocked-drains/blocked-sink", label: "Blocked Sinks" },
-    { href: "/services/drain-jetting", label: "Drain Jetting" },
-    { href: "/services/cctv-drain-surveys", label: "CCTV Surveys" },
-    { href: "/services", label: "All Services" },
+    { href: "/services", label: "Services" },
     { href: "/locations", label: "Areas We Cover" },
   ];
 
