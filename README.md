@@ -26,8 +26,8 @@ This template is **not multi-tenant**. It is designed for a single brand deploym
 
 - **AI-generated, cached content** - Unique content for every service and location page
 - **Multi-location system** - Support for multiple service areas with individual pages
-- **Service-in-location pages** - Core SEO pages (e.g., "Blocked Drains in Swindon")
-- **Sub-service pages** - Granular service pages (e.g., "Blocked Toilet in Swindon")
+- **Service-in-location pages** - Core SEO pages (e.g., "Blocked Drains in Manchester")
+- **Sub-service pages** - Granular service pages (e.g., "Blocked Toilet in Manchester")
 - **Static Google-style maps** - Location maps with coverage areas
 - **Lead capture forms** - Integrated with Lovable Cloud database
 - **Blog system** - Dynamic blog with AI post generation
