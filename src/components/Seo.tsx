@@ -46,7 +46,7 @@ export function Seo({
       <meta name="description" content={description} />
 
       {/* Google Search Console verification */}
-      <meta name="google-site-verification" content="NsHdtpHnQwP_k83k4Z2-v5NSIDC6qiTuGiSpNkxp3ZU" />
+      <meta name="google-site-verification" content="K-EecGB0etoqiVHnYYUt2Sc6LrEKjoGmykJD-HOd7fo" />
 
       {/* Canonical URL - exactly one, self-referencing */}
       <link rel="canonical" href={canonicalUrl} />
