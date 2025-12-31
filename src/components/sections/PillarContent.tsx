@@ -15,6 +15,7 @@ export function PillarContent() {
       <div className="container-wide px-4">
         <div className="max-w-4xl mx-auto prose prose-lg dark:prose-invert">
           
+          {/* EXPANSION: Manchester-specific content */}
           {/* Emergency Call-outs Section */}
           <section className="mb-12">
             <h2 className="text-2xl md:text-3xl font-bold mb-4 flex items-center gap-3">

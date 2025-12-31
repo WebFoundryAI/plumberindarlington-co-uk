@@ -100,6 +100,7 @@ const LocationDetail = () => {
 
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2">
+              {/* EXPANSION: Manchester-specific content */}
               <h2 className="text-2xl font-bold mb-4">
                 Expert Drainage Services in {location.name}
               </h2>

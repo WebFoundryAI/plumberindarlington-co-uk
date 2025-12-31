@@ -13,6 +13,7 @@ export function LocationsGrid({ showAll = false }: LocationsGridProps) {
   return (
     <section className="section-padding">
       <div className="container-wide px-4">
+        {/* EXPANSION: Manchester-specific content */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Areas We Cover</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">

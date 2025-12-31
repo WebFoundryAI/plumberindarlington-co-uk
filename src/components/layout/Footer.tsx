@@ -60,7 +60,15 @@ export function Footer() {
                   to="/"
                   className="text-background/85 hover:text-accent transition-colors block min-h-[48px] py-3 md:min-h-0 md:py-0 md:inline font-medium"
                 >
-                  Blocked Drains Manchester
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services"
+                  className="text-background/85 hover:text-accent transition-colors block min-h-[48px] py-3 md:min-h-0 md:py-0 md:inline font-medium"
+                >
+                  All Services
                 </Link>
               </li>
               <li>
@@ -96,7 +104,15 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Areas We Cover</h4>
             <ul className="space-y-2 md:space-y-2 text-sm">
-              {LOCATIONS.slice(0, 6).map((location) => (
+              <li>
+                <Link
+                  to="/locations"
+                  className="text-background/85 hover:text-accent transition-colors block min-h-[48px] py-3 md:min-h-0 md:py-0 md:inline font-medium"
+                >
+                  All Areas
+                </Link>
+              </li>
+              {LOCATIONS.slice(0, 5).map((location) => (
                 <li key={location.slug}>
                   <Link
                     to={`/locations/${location.slug}`}

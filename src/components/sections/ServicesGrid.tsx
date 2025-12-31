@@ -13,6 +13,7 @@ export function ServicesGrid({ showAll = false, location }: ServicesGridProps) {
   return (
     <section className="section-padding bg-muted/50">
       <div className="container-wide px-4">
+        {/* EXPANSION: Service detail enhancement */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Professional Drainage Solutions</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">

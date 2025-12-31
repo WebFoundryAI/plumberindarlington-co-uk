@@ -40,6 +40,7 @@ const Services = () => {
       </section>
 
       {/* AI-generated services overview */}
+      {/* EXPANSION: Service detail enhancement */}
       <section className="section-padding bg-muted/30">
         <div className="container-wide px-4">
           <Breadcrumbs items={breadcrumbItems} />

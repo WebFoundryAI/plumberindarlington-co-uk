@@ -52,11 +52,13 @@ const Index = () => {
         ]}
       />
 
+      {/* EXPANSION: Manchester-specific content */}
       <HeroWithForm />
       
       <TrustBadges />
 
       {/* Pillar content - expanded 1,000-1,500 word section with H2 structure */}
+      {/* EXPANSION: Service detail enhancement */}
       <PillarContent />
 
       {/* Below-fold content - lazy loaded for performance */}

@@ -14,9 +14,10 @@ export function Header() {
   };
 
   const navLinks = [
-    { href: "/", label: "Blocked Drains" },
+    { href: "/", label: "Home" },
     { href: "/services", label: "Services" },
-    { href: "/locations", label: "Areas We Cover" },
+    { href: "/locations", label: "Areas" },
+    { href: "/contact", label: "Contact" },
   ];
 
   return (
