@@ -3,8 +3,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { BRAND } from '../data/brand';
 import { PAGE_FAQS } from '../data/faqs';
 
-const title = `Drainage FAQs – Common Questions Answered`;
-const description = `Answers about blocked drains, costs, and emergency callouts in Manchester. Call ${BRAND.phoneFormatted} for help.`;
+// SEO-optimized title (50-60 chars)
+const title = `Drainage FAQs | Common Questions About Drain Services`;
+
+// SEO-optimized description (120-155 chars) with benefits and CTA
+const description = `Find answers to common questions about blocked drains, costs, response times, and emergency callouts in Manchester. Still need help? Call ${BRAND.phoneFormatted}.`;
 ---
 
 <BaseLayout title={title} description={description} canonical="/faq">

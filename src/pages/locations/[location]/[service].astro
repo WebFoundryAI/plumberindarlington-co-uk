@@ -24,8 +24,11 @@ if (!location || !service) {
   return Astro.redirect('/locations');
 }
 
-const title = `${service.name} in ${location.name} | ${BRAND.brandName}`;
-const description = `Professional ${service.name.toLowerCase()} services in ${location.name}, ${location.countyOrRegion}. Fast response, fixed pricing. Call ${BRAND.phoneFormatted}`;
+// SEO-optimized title (50-60 chars) - unique per location+service combo
+const title = `${service.name} in ${location.name} | Fast Local Service`;
+
+// SEO-optimized description (120-155 chars) with benefits and CTA
+const description = `Expert ${service.name.toLowerCase()} in ${location.name}. No call-out fee, fixed pricing, 24/7 availability. Local engineers ready now. Call ${BRAND.phoneFormatted}.`;
 
 const otherServices = SERVICES.filter((s) => s.slug !== service.slug).slice(0, 3);
 const nearbyLocations = LOCATIONS.filter((l) => l.slug !== location.slug).slice(0, 3);

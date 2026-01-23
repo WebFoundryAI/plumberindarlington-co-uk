@@ -2,8 +2,11 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { BRAND } from '../data/brand';
 
-const title = `Contact Us – Blocked Drains Manchester | ${BRAND.phoneFormatted}`;
-const description = `Need drain help? Call ${BRAND.phoneFormatted} for a free quote. 24/7 emergency response across Greater Manchester.`;
+// SEO-optimized title (50-60 chars)
+const title = `Contact Us | Get a Free Quote | ${BRAND.phoneFormatted}`;
+
+// SEO-optimized description (120-155 chars) with benefits and CTA
+const description = `Contact ${BRAND.brandName} for a free, no-obligation quote. 24/7 emergency response across Greater Manchester. Call ${BRAND.phoneFormatted} or request a callback.`;
 ---
 
 <BaseLayout title={title} description={description} canonical="/contact">

@@ -2,8 +2,11 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { BRAND } from '../data/brand';
 
-const title = `Terms of Service | ${BRAND.brandName}`;
-const description = `Terms and conditions for using ${BRAND.brandName} drainage services in ${BRAND.serviceAreaLabel}.`;
+// SEO-optimized title (50-60 chars)
+const title = `Terms of Service | ${BRAND.brandName} Conditions`;
+
+// SEO-optimized description (120-155 chars)
+const description = `Review the terms and conditions for ${BRAND.brandName} drainage services across ${BRAND.serviceAreaLabel}. Clear, fair terms for all our customers.`;
 const today = new Date().toLocaleDateString('en-GB');
 ---
 
