@@ -26,8 +26,11 @@ if (!service || !subService) {
   return Astro.redirect('/services');
 }
 
-const title = `${subService.name} | ${service.name} | ${BRAND.brandName}`;
-const description = `${subService.description} Professional ${subService.name.toLowerCase()} services across ${BRAND.serviceAreaLabel}. Call ${BRAND.phoneFormatted}.`;
+// SEO-optimized title (50-60 chars) - unique per sub-service page
+const title = `${subService.name} Services in Manchester | Fast Response`;
+
+// SEO-optimized description (120-155 chars) with benefits and CTA
+const description = `Professional ${subService.name.toLowerCase()} across ${BRAND.serviceAreaLabel}. No call-out fee, fixed pricing, 24/7 availability. Call ${BRAND.phoneFormatted} today.`;
 
 const topLocations = LOCATIONS.slice(0, 4);
 const otherSubServices = service.subServices?.filter(s => s.slug !== subService.slug) || [];
