@@ -2,8 +2,11 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { BRAND } from '../data/brand';
 
-const title = `Cookie Policy | ${BRAND.brandName}`;
-const description = `Cookie policy for ${BRAND.brandName}. Learn about the cookies we use on our website.`;
+// SEO-optimized title (50-60 chars)
+const title = `Cookie Policy | How We Use Cookies on Our Website`;
+
+// SEO-optimized description (120-155 chars)
+const description = `Learn about the cookies used on the ${BRAND.brandName} website, how they work, and how to manage your cookie preferences for the best experience.`;
 const today = new Date().toLocaleDateString('en-GB');
 ---
 

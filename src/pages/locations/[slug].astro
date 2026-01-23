@@ -19,8 +19,11 @@ if (!location) {
   return Astro.redirect('/locations');
 }
 
-const title = `Blocked Drains ${location.name} – Fast Local Service`;
-const description = `24/7 drain unblocking in ${location.name}. No call-out fee, local engineers. Call ${BRAND.phoneFormatted} for fast response.`;
+// SEO-optimized title (50-60 chars) - unique per location
+const title = `Drain Services in ${location.name} | 24/7 Emergency Response`;
+
+// SEO-optimized description (120-155 chars) with benefits and CTA
+const description = `Professional drain unblocking and repairs in ${location.name}. No call-out fee, fixed pricing, local engineers available 24/7. Call ${BRAND.phoneFormatted} now.`;
 
 const otherLocations = LOCATIONS.filter((l) => l.slug !== location.slug).slice(0, 4);
 const faqs = getLocationFAQs(location.name);

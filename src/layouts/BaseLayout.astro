@@ -5,13 +5,17 @@ import { SERVICES } from '../data/services';
 import { LOCATIONS } from '../data/locations';
 
 interface Props {
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
   canonical?: string;
   image?: string;
 }
 
-const { title, description, canonical, image } = Astro.props;
+// Default SEO values as fallbacks
+const defaultTitle = `${BRAND.brandName} | 24/7 Drainage Services`;
+const defaultDescription = `Professional drain unblocking, CCTV surveys, and emergency drainage services across ${BRAND.serviceAreaLabel}. No call-out fee, fixed pricing. Call ${BRAND.phoneFormatted}.`;
+
+const { title = defaultTitle, description = defaultDescription, canonical, image } = Astro.props;
 const siteUrl = `https://${BRAND.domain}`;
 const canonicalUrl = canonical ? `${siteUrl}${canonical}` : Astro.url.href;
 const defaultOgImage = `${siteUrl}/images/og-default.jpg`;
@@ -102,7 +106,7 @@ const ogImage = image ? `${siteUrl}${image}` : defaultOgImage;
         }
       }))
     },
-    "sameAs": []
+    "sameAs": BRAND.socialProfiles
   })} />
 
   <!-- Favicon -->

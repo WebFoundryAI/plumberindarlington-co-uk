@@ -18,8 +18,11 @@ if (!service) {
   return Astro.redirect('/services');
 }
 
-const title = `${service.name} Manchester – Fast 24/7 Service`;
-const description = `${service.shortLabel} in Greater Manchester. No call-out fee, fixed pricing. Call ${BRAND.phoneFormatted} today.`;
+// SEO-optimized title (50-60 chars) - unique per service page
+const title = `Professional ${service.name} in Manchester | 24/7 Service`;
+
+// SEO-optimized description (120-155 chars) with benefits and CTA
+const description = `Expert ${service.name.toLowerCase()} services across ${BRAND.serviceAreaLabel}. No call-out fee, fixed pricing, same-day response. Call ${BRAND.phoneFormatted} for a free quote.`;
 
 const relatedServices = getRelatedServices(service.slug);
 const topLocations = LOCATIONS.slice(0, 4);

@@ -5,8 +5,11 @@ import { SERVICES } from '../data/services';
 
 export const prerender = true;
 
+// SEO-optimized title (50-60 chars)
 const title = `Page Not Found | ${BRAND.brandName}`;
-const description = `The page you're looking for doesn't exist. Find drainage services across ${BRAND.serviceAreaLabel} or call ${BRAND.phoneFormatted}.`;
+
+// SEO-optimized description (120-155 chars)
+const description = `Sorry, this page doesn't exist. Find professional drainage services across ${BRAND.serviceAreaLabel} or call ${BRAND.phoneFormatted} for immediate help.`;
 ---
 
 <BaseLayout title={title} description={description}>
