@@ -31,4 +31,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: 7f0cbd88351e71b058fdf696edf13bea
-          command: pages deploy ./dist --project-name=manchester-blocked-drain-co-uk
+          command: pages deploy ./dist --project-name=manchester-blocked-drain-co-uk --branch=main
