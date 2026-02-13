@@ -1,6 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { BRAND } from '../data/brand';
+import { SERVICES } from '../data/services';
+import { LOCATIONS } from '../data/locations';
 import { ABOUT_CONTENT } from '../data/staticContent';
 import { getBreadcrumbSchema, getWebPageSchema, serializeSchema } from '../utils/schema';
 
@@ -12,13 +14,13 @@ const description = `Meet ${BRAND.brandName} - fully insured, experienced draina
 
 const breadcrumbItems = [
   { name: "Home", url: "/" },
-  { name: "About Us", url: "/about" }
+  { name: "About Us", url: "/about/" }
 ];
 
 const breadcrumbSchema = getBreadcrumbSchema(breadcrumbItems);
 
 const webPageSchema = getWebPageSchema({
-  url: '/about',
+  url: '/about/',
   name: title,
   description: description,
   breadcrumb: breadcrumbItems
@@ -27,7 +29,7 @@ const webPageSchema = getWebPageSchema({
 const combinedPageSchema = [breadcrumbSchema, webPageSchema];
 ---
 
-<BaseLayout title={title} description={description} canonical="/about">
+<BaseLayout title={title} description={description} canonical="/about/">
   <!-- Page Schemas (Breadcrumb + WebPage) -->
   <script type="application/ld+json" set:html={serializeSchema(combinedPageSchema)} />
 
@@ -75,6 +77,61 @@ const combinedPageSchema = [breadcrumbSchema, webPageSchema];
           <h3 class="font-bold mb-2">Fully Insured</h3>
           <p class="text-sm text-muted-foreground">Complete peace of mind guaranteed</p>
         </div>
+      </div>
+
+      <!-- Explore Our Services -->
+      <div class="mt-16">
+        <h2 class="text-2xl font-bold mb-6">Our Drainage Services</h2>
+        <p class="text-muted-foreground mb-6">
+          We offer a comprehensive range of <a href="/services/" class="text-primary hover:underline">drainage services</a> to homes and businesses across Greater Manchester.
+        </p>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {SERVICES.map((service) => (
+            <a href={`/services/${service.slug}/`} class="flex items-center gap-3 p-4 bg-muted/50 rounded-lg hover:bg-muted transition-colors">
+              <span class="text-2xl">{service.icon}</span>
+              <div>
+                <span class="font-medium block">{service.name}</span>
+                <span class="text-sm text-muted-foreground">{service.shortLabel}</span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <!-- Areas We Cover -->
+      <div class="mt-12">
+        <h2 class="text-2xl font-bold mb-6">Areas We Cover</h2>
+        <p class="text-muted-foreground mb-6">
+          Our local engineers provide fast-response drainage services across <a href="/locations/" class="text-primary hover:underline">Greater Manchester</a>, including:
+        </p>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+          {LOCATIONS.slice(0, 4).map((loc) => (
+            <a href={`/locations/${loc.slug}/`} class="flex items-center gap-2 p-3 bg-muted/50 rounded-lg hover:bg-muted transition-colors">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-primary shrink-0"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span class="font-medium text-sm">{loc.name}</span>
+            </a>
+          ))}
+          <a href="/locations/" class="flex items-center gap-2 p-3 bg-primary/5 rounded-lg hover:bg-primary/10 transition-colors text-primary">
+            <span class="font-medium text-sm">View all areas</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Helpful Links -->
+      <div class="mt-12 pt-8 border-t border-border">
+        <p class="text-sm text-muted-foreground">
+          <a href="/" class="text-primary hover:underline">Home</a>
+          {" · "}
+          <a href="/services/" class="text-primary hover:underline">All Services</a>
+          {" · "}
+          <a href="/locations/" class="text-primary hover:underline">All Locations</a>
+          {" · "}
+          <a href="/blog/" class="text-primary hover:underline">Blog</a>
+          {" · "}
+          <a href="/faq/" class="text-primary hover:underline">FAQs</a>
+          {" · "}
+          <a href="/contact/" class="text-primary hover:underline">Contact Us</a>
+        </p>
       </div>
     </div>
   </section>

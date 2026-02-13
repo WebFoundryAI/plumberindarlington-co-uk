@@ -4,6 +4,7 @@ import { BRAND } from '../../data/brand';
 import { SERVICES, getServiceBySlug, getRelatedServices } from '../../data/services';
 import { LOCATIONS } from '../../data/locations';
 import { getServiceFAQs } from '../../data/faqs';
+import { getRelatedBlogPosts } from '../../data/blog';
 import { getServicePageSchema, getBreadcrumbSchema } from '../../utils/schema';
 
 export function getStaticPaths() {
@@ -28,6 +29,7 @@ const description = `Expert ${service.name.toLowerCase()} services across ${BRAN
 const relatedServices = getRelatedServices(service.slug);
 const topLocations = LOCATIONS.slice(0, 4);
 const faqs = getServiceFAQs(service.slug);
+const relatedPosts = getRelatedBlogPosts(service.slug);
 
 const benefits = [
   "No call-out charges",
@@ -174,6 +176,31 @@ const breadcrumbSchema = getBreadcrumbSchema([
               </details>
             ))}
           </div>
+
+          <!-- Related Blog Posts -->
+          {relatedPosts.length > 0 && (
+            <>
+              <h3 class="text-xl font-bold mb-4">Helpful Guides</h3>
+              <div class="grid sm:grid-cols-2 gap-4 mb-8">
+                {relatedPosts.map((post) => (
+                  <a
+                    href={`/blog/${post.slug}/`}
+                    class="p-4 bg-muted rounded-lg hover:bg-muted/70 transition-colors group"
+                  >
+                    <span class="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded">
+                      {post.category}
+                    </span>
+                    <span class="font-medium block mt-2 group-hover:text-primary transition-colors">
+                      {post.title}
+                    </span>
+                    <span class="text-sm text-muted-foreground mt-1 block line-clamp-2">
+                      {post.excerpt}
+                    </span>
+                  </a>
+                ))}
+              </div>
+            </>
+          )}
 
           <!-- Related Services -->
           <h3 class="text-xl font-bold mb-4">Related Services</h3>

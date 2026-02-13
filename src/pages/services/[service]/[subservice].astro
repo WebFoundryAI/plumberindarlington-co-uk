@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { BRAND } from '../../../data/brand';
-import { SERVICES, getServiceBySlug, getSubServiceBySlug } from '../../../data/services';
+import { SERVICES, getServiceBySlug, getSubServiceBySlug, getRelatedServices } from '../../../data/services';
 import { LOCATIONS } from '../../../data/locations';
 import { getSubServicePageSchema, getBreadcrumbSchema } from '../../../utils/schema';
 
@@ -35,6 +35,7 @@ const description = `Professional ${subService.name.toLowerCase()} across ${BRAN
 
 const topLocations = LOCATIONS.slice(0, 4);
 const otherSubServices = service.subServices?.filter(s => s.slug !== subService.slug) || [];
+const relatedServices = getRelatedServices(service.slug);
 
 // Generate comprehensive schema for this sub-service page
 const pageSchema = getSubServicePageSchema(service, subService);
@@ -150,6 +151,24 @@ const breadcrumbSchema = getBreadcrumbSchema([
             </>
           )}
 
+          <!-- Other Services You May Need -->
+          {relatedServices.length > 0 && (
+            <>
+              <h3 class="text-xl font-bold mt-8 mb-4">Other Services You May Need</h3>
+              <div class="grid sm:grid-cols-3 gap-4 mb-8">
+                {relatedServices.map((s) => (
+                  <a
+                    href={`/services/${s.slug}/`}
+                    class="p-4 bg-muted rounded-lg hover:bg-muted/70 transition-colors"
+                  >
+                    <span class="text-2xl block mb-2">{s.icon}</span>
+                    <span class="font-medium">{s.name}</span>
+                  </a>
+                ))}
+              </div>
+            </>
+          )}
+
           <!-- Internal links -->
           <div class="mt-8 pt-6 border-t border-border">
             <p class="text-sm text-muted-foreground">
@@ -158,6 +177,10 @@ const breadcrumbSchema = getBreadcrumbSchema([
               <a href="/services/" class="text-primary hover:underline">All Services</a>
               {" · "}
               <a href={`/services/${service.slug}/`} class="text-primary hover:underline">{service.name}</a>
+              {" · "}
+              <a href="/locations/" class="text-primary hover:underline">All Locations</a>
+              {" · "}
+              <a href="/blog/" class="text-primary hover:underline">Blog</a>
               {" · "}
               <a href="/contact/" class="text-primary hover:underline">Contact Us</a>
             </p>

@@ -106,7 +106,7 @@ export function getLocationFAQs(locationName: string): FAQ[] {
 export const PAGE_FAQS: FAQ[] = [
   {
     question: "How quickly can you respond to an emergency callout?",
-    answer: "We aim to respond to emergency drainage callouts within 60-90 minutes across Manchester and Greater Manchester. Our team operates around the clock, so help is available whenever you need it, day or night."
+    answer: 'We aim to respond to <a href="/services/emergency-drain-services/" class="text-primary hover:underline">emergency drainage callouts</a> within 60-90 minutes across <a href="/locations/manchester/" class="text-primary hover:underline">Manchester</a> and Greater Manchester. Our team operates around the clock, so help is available whenever you need it, day or night.'
   },
   {
     question: "Do you charge a call-out fee?",
@@ -114,7 +114,7 @@ export const PAGE_FAQS: FAQ[] = [
   },
   {
     question: "What locations do you cover?",
-    answer: "We provide drainage services throughout Manchester and Greater Manchester, including Salford, Stockport, Altrincham, Bolton, Oldham, Rochdale, Sale, Didsbury, and Chorlton."
+    answer: 'We provide drainage services throughout <a href="/locations/manchester/" class="text-primary hover:underline">Manchester</a> and Greater Manchester, including <a href="/locations/salford/" class="text-primary hover:underline">Salford</a>, <a href="/locations/stockport/" class="text-primary hover:underline">Stockport</a>, <a href="/locations/altrincham/" class="text-primary hover:underline">Altrincham</a>, Bolton, Oldham, Rochdale, Sale, Didsbury, and Chorlton. See <a href="/locations/" class="text-primary hover:underline">all locations we cover</a>.'
   },
   {
     question: "What payment methods do you accept?",
@@ -122,18 +122,18 @@ export const PAGE_FAQS: FAQ[] = [
   },
   {
     question: "Can you help with commercial drainage problems?",
-    answer: "Yes, we offer drainage services for both residential and commercial properties. Whether you manage a shop, office, restaurant, or industrial premises, we can assist with blockages, repairs, and maintenance."
+    answer: 'Yes, we offer drainage services for both residential and commercial properties. Whether you manage a shop, office, restaurant, or industrial premises, we can assist with <a href="/services/blocked-drains/" class="text-primary hover:underline">blockages</a>, <a href="/services/drain-repairs/" class="text-primary hover:underline">repairs</a>, and maintenance including <a href="/services/drain-jetting/commercial-jetting/" class="text-primary hover:underline">commercial drain jetting</a>.'
   },
   {
     question: "What is a CCTV drain survey and when is it needed?",
-    answer: "A CCTV drain survey uses a small camera to inspect the inside of your drainage pipes. It is useful for diagnosing recurring blockages, identifying damage or cracks, and providing a clear picture of the condition of your drains before purchasing a property."
+    answer: 'A <a href="/services/cctv-drain-surveys/" class="text-primary hover:underline">CCTV drain survey</a> uses a small camera to inspect the inside of your drainage pipes. It is useful for diagnosing recurring blockages, identifying damage or cracks, and providing a clear picture of the condition of your drains before purchasing a property. We also offer specialist <a href="/services/cctv-drain-surveys/pre-purchase-survey/" class="text-primary hover:underline">pre-purchase drain surveys</a> for homebuyers.'
   },
   {
     question: "How can I prevent blocked drains?",
-    answer: "Avoid pouring cooking oils and fats down the sink, use drain guards to catch hair and debris, and dispose of items like wet wipes and sanitary products in the bin rather than flushing them. Regular maintenance can also help keep your drains clear."
+    answer: 'Avoid pouring cooking oils and fats down the sink, use drain guards to catch hair and debris, and dispose of items like wet wipes and sanitary products in the bin rather than flushing them. Regular maintenance including <a href="/services/drain-jetting/" class="text-primary hover:underline">drain jetting</a> can also help keep your drains clear. Read our <a href="/blog/prevent-blocked-drains-kitchen/" class="text-primary hover:underline">guide to preventing kitchen drain blockages</a> for more tips.'
   },
   {
     question: "Are your engineers qualified and insured?",
-    answer: "Yes, all our engineers are fully trained and experienced in drainage work. We are also fully insured, giving you peace of mind that your property is protected while we carry out the work."
+    answer: 'Yes, all our engineers are fully trained and experienced in drainage work. We are also fully insured, giving you peace of mind that your property is protected while we carry out the work. Learn more <a href="/about/" class="text-primary hover:underline">about our team</a>.'
   }
 ];

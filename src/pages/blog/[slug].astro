@@ -63,7 +63,9 @@ function formatContent(content: string): string {
       // Regular paragraphs
       return `<p class="text-muted-foreground mb-4 leading-relaxed">${paragraph}</p>`;
     })
-    .join('');
+    .join('')
+    // Convert markdown links [text](url) to HTML anchor tags
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-primary hover:underline font-medium">$1</a>');
 }
 ---
 

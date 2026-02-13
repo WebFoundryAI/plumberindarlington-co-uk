@@ -55,9 +55,11 @@ Unexplained damp patches on walls or floors near drainage pipes could indicate a
 
 ## What to Do Next
 
-If you notice any of these warning signs, it's best to act quickly. While minor slow drainage might be resolved with a plunger, persistent issues usually require professional attention. Our team at ${BRAND.brandName} can quickly diagnose the problem using CCTV drain surveys and clear blockages using high-pressure jetting.
+If you notice any of these warning signs, it's best to act quickly. While minor slow drainage might be resolved with a plunger, persistent issues usually require professional attention. Our team at ${BRAND.brandName} can quickly diagnose the problem using [CCTV drain surveys](/services/cctv-drain-surveys/) and clear blockages using [high-pressure jetting](/services/drain-jetting/).
 
-Call us on ${BRAND.phoneFormatted} for a no-obligation quote, or contact us online to book an appointment.`,
+If you're experiencing a complete blockage, our [blocked drain specialists](/services/blocked-drains/) are available 24/7 across [Manchester](/locations/manchester/) and surrounding areas. For urgent situations, our [emergency drain service](/services/emergency-drain-services/) guarantees a rapid response.
+
+Call us on ${BRAND.phoneFormatted} for a no-obligation quote, or [contact us online](/contact/) to book an appointment.`,
     author: "Blocked Drains Manchester",
     publishDate: "2026-01-15",
     category: "Drain Maintenance",
@@ -125,9 +127,11 @@ This helps break down organic matter without using harsh chemicals that can dama
 
 ## When to Call a Professional
 
-If you notice water draining slowly despite following these tips, or if you experience recurring blockages, there may be a deeper issue in your drainage system. A professional CCTV drain survey can identify the root cause and prevent future problems.
+If you notice water draining slowly despite following these tips, or if you experience recurring blockages, there may be a deeper issue in your drainage system. A professional [CCTV drain survey](/services/cctv-drain-surveys/) can identify the root cause and prevent future problems.
 
-Contact ${BRAND.brandName} on ${BRAND.phoneFormatted} for expert advice and assistance.`,
+For persistent kitchen blockages, professional [drain jetting](/services/drain-jetting/) thoroughly cleans the pipe walls and removes grease buildup far more effectively than DIY methods. If you have a [blocked sink](/services/blocked-drains/blocked-sink/) that won't clear, our engineers can usually resolve it within the hour.
+
+Contact ${BRAND.brandName} on ${BRAND.phoneFormatted} for expert advice and assistance, or [get in touch online](/contact/).`,
     author: "Blocked Drains Manchester",
     publishDate: "2026-01-10",
     category: "Drain Maintenance",
@@ -204,9 +208,11 @@ Choose a drainage company that provides:
 - Recommendations for remedial work
 - No-obligation quotes for any repairs needed
 
-At ${BRAND.brandName}, we provide comprehensive pre-purchase drain surveys across Manchester and Greater Manchester. Our engineers explain exactly what they find and provide honest advice about any issues.
+At ${BRAND.brandName}, we provide comprehensive [pre-purchase drain surveys](/services/cctv-drain-surveys/pre-purchase-survey/) across [Manchester](/locations/manchester/) and Greater Manchester. Our engineers explain exactly what they find and provide honest advice about any issues.
 
-Book your survey today by calling ${BRAND.phoneFormatted} or contact us online.`,
+If a survey reveals damage, we also offer professional [drain repairs](/services/drain-repairs/) including [pipe relining](/services/drain-repairs/pipe-relining/) and [drain excavation](/services/drain-repairs/drain-excavation/) to resolve problems quickly.
+
+Book your [CCTV drain survey](/services/cctv-drain-surveys/) today by calling ${BRAND.phoneFormatted} or [contact us online](/contact/).`,
     author: "Blocked Drains Manchester",
     publishDate: "2026-01-05",
     category: "CCTV Surveys",
@@ -309,9 +315,11 @@ When you call ${BRAND.brandName} for emergency assistance, we'll ask:
 - Whether it's affecting multiple properties
 - Your contact details
 
-We aim to arrive within 1-2 hours for emergency callouts across Manchester and Greater Manchester. Our team is available 24 hours a day, 7 days a week.
+We aim to arrive within 1-2 hours for [emergency callouts across Manchester](/locations/manchester/emergency-drain-services/) and Greater Manchester. Our [emergency drain services](/services/emergency-drain-services/) team is available 24 hours a day, 7 days a week.
 
-Call us immediately on ${BRAND.phoneFormatted} if you're experiencing a drain emergency.`,
+Whether you're dealing with a [flooding emergency](/services/emergency-drain-services/flooding-emergency/) or a [sewage emergency](/services/emergency-drain-services/sewage-emergency/), our engineers carry specialist equipment including [CCTV cameras](/services/cctv-drain-surveys/) and [high-pressure jetting](/services/drain-jetting/) to diagnose and resolve problems on the first visit.
+
+Call us immediately on ${BRAND.phoneFormatted} if you're experiencing a drain emergency, or [request urgent help online](/contact/).`,
     author: "Blocked Drains Manchester",
     publishDate: "2025-12-28",
     category: "Emergency Services",
@@ -422,7 +430,9 @@ While DIY drain rods might seem cheaper initially, consider:
 - Pipe damage from improper rodding can cost thousands to repair
 - Professional jetting provides a lasting solution
 
-For reliable drain clearing across Manchester, call ${BRAND.brandName} on ${BRAND.phoneFormatted}.`,
+If you suspect pipe damage is causing recurring issues, a [CCTV drain survey](/services/cctv-drain-surveys/) can confirm whether [drain repairs](/services/drain-repairs/) are needed before committing to more extensive work.
+
+For reliable [drain clearing across Manchester](/locations/manchester/drain-jetting/), call ${BRAND.brandName} on ${BRAND.phoneFormatted} or [request a quote online](/contact/). We also cover [Salford](/locations/salford/), [Stockport](/locations/stockport/), and [Altrincham](/locations/altrincham/).`,
     author: "Blocked Drains Manchester",
     publishDate: "2025-12-20",
     category: "Drain Services",
@@ -452,4 +462,21 @@ export function getRecentPosts(count: number = 5): BlogPost[] {
   return [...BLOG_POSTS]
     .sort((a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime())
     .slice(0, count);
+}
+
+// Blog posts related to each service - used for cross-linking on service pages
+export const SERVICE_BLOG_POSTS: Record<string, string[]> = {
+  "blocked-drains": ["signs-of-blocked-drain", "prevent-blocked-drains-kitchen"],
+  "drain-unblocking": ["signs-of-blocked-drain", "prevent-blocked-drains-kitchen"],
+  "cctv-drain-surveys": ["cctv-drain-survey-home-buyers", "signs-of-blocked-drain"],
+  "drain-jetting": ["drain-jetting-vs-drain-rods", "prevent-blocked-drains-kitchen"],
+  "emergency-drain-services": ["emergency-drain-problems-what-to-do", "signs-of-blocked-drain"],
+  "drain-repairs": ["cctv-drain-survey-home-buyers", "drain-jetting-vs-drain-rods"],
+};
+
+export function getRelatedBlogPosts(serviceSlug: string): BlogPost[] {
+  const relatedSlugs = SERVICE_BLOG_POSTS[serviceSlug] || [];
+  return relatedSlugs
+    .map((slug) => getBlogPostBySlug(slug))
+    .filter((post): post is BlogPost => post !== undefined);
 }
