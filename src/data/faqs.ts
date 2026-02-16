@@ -153,3 +153,6 @@ export const PAGE_FAQS: FAQ[] = [
     answer: 'Yes, all our engineers are fully trained and experienced in drainage work. We are also fully insured, giving you peace of mind that your property is protected while we carry out the work. Learn more <a href="/about/" class="text-primary hover:underline">about our team</a>.'
   }
 ];
+
+/** Alias used by the homepage */
+export const HOMEPAGE_FAQS = PAGE_FAQS;

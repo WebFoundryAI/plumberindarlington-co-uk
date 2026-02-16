@@ -30,7 +30,7 @@ compatibility_date = "2024-12-20"
 
 # Build Configuration
 [build]
-command = "npm install && npm run build"
+command = "bun install && bun run build"
 cwd = "./"
 main = "dist/worker.js"
 

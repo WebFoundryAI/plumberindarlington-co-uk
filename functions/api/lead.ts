@@ -1,7 +1,7 @@
 // Cloudflare Pages Function version of lead capture endpoint
 // Mirrors logic used in netlify/functions/api-lead.ts
 
-export const onRequestPost: PagesFunction = async (context) => {
+export const onRequestPost = async (context: any) => {
   const RATE_LIMIT_WINDOW_MS = 15 * 60 * 1000;
   const RATE_LIMIT_MAX = 5;
 

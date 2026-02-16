@@ -4,8 +4,8 @@ import HeroWithLeadForm from '../../components/HeroWithLeadForm.astro';
 import { LOCATIONS, getLocationBySlug } from '../../data/locations';
 import { SERVICES } from '../../data/services';
 import { BRAND } from '../../data/brand';
-import { LOCATION_FAQS } from '../../data/faqs';
-import { getBreadcrumbSchema, getLocationPageSchema, getFAQPageSchema } from '../../utils/schema';
+import { getLocationFAQs } from '../../data/faqs';
+import { getBreadcrumbSchema, getLocationPageSchema, getFAQSchema } from '../../utils/schema';
 
 export async function getStaticPaths() {
   return LOCATIONS.map((location) => ({ params: { slug: location.slug } }));
@@ -16,7 +16,7 @@ if (!location) return Astro.redirect('/locations/');
 
 const title = `Blocked Drains in ${location.name} | Local Drainage Engineers`;
 const description = `Need blocked drain help in ${location.name}? Fast response, fixed pricing, and 24/7 emergency support. Call ${BRAND.phoneFormatted}.`;
-const faqs = LOCATION_FAQS[location.slug] || LOCATION_FAQS.default;
+const faqs = getLocationFAQs(location.name);
 const pageSchema = [
   getLocationPageSchema(location),
   getBreadcrumbSchema([
@@ -24,7 +24,7 @@ const pageSchema = [
     { name: 'Locations', url: '/locations/' },
     { name: location.name, url: `/locations/${location.slug}/` },
   ]),
-  getFAQPageSchema(faqs, `/locations/${location.slug}/`),
+  getFAQSchema(faqs),
 ];
 ---
 
