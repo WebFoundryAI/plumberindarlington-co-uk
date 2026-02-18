@@ -1,12 +1,24 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest';
 
-// We need to dynamically import to reset module state between tests
 let onRequestPost: (context: any) => Promise<Response>;
+
+// Mock D1 database
+function createMockDB(shouldFail = false) {
+  return {
+    prepare: vi.fn(() => ({
+      bind: vi.fn(() => ({
+        run: shouldFail
+          ? vi.fn(() => Promise.reject(new Error('D1 write error')))
+          : vi.fn(() => Promise.resolve({ success: true })),
+      })),
+    })),
+  };
+}
 
 function createContext(
   body: object | string,
   headers: Record<string, string> = {},
-  env: Record<string, string> = {}
+  envOverrides: Record<string, any> = {}
 ) {
   const bodyStr = typeof body === 'string' ? body : JSON.stringify(body);
   return {
@@ -20,9 +32,8 @@ function createContext(
       body: bodyStr,
     }),
     env: {
-      SUPABASE_URL: 'https://test.supabase.co',
-      SUPABASE_SERVICE_ROLE_KEY: 'test-key',
-      ...env,
+      DB: createMockDB(),
+      ...envOverrides,
     },
   };
 }
@@ -34,12 +45,9 @@ const VALID_PAYLOAD = {
   service: 'Blocked Drains',
 };
 
-describe('Cloudflare Lead API', () => {
+describe('Cloudflare Lead API (D1)', () => {
   beforeEach(async () => {
     vi.resetModules();
-    vi.stubGlobal('fetch', vi.fn(() =>
-      Promise.resolve(new Response('', { status: 201 }))
-    ));
     // Clear rate limit state
     (globalThis as any).__leadRateLimit = undefined;
     const mod = await import('../../functions/api/lead');
@@ -54,7 +62,7 @@ describe('Cloudflare Lead API', () => {
           body: 'not json{',
           headers: { 'CF-Connecting-IP': '1.2.3.4' },
         }),
-        env: { SUPABASE_URL: 'https://test.supabase.co', SUPABASE_SERVICE_ROLE_KEY: 'k' },
+        env: { DB: createMockDB() },
       };
       const res = await onRequestPost(ctx);
       expect(res.status).toBe(400);
@@ -143,11 +151,9 @@ describe('Cloudflare Lead API', () => {
     });
 
     it('tracks different IPs independently', async () => {
-      // Exhaust IP 1
       for (let i = 0; i < 5; i++) {
         await onRequestPost(createContext(VALID_PAYLOAD));
       }
-      // IP 2 should still be allowed
       const ctx = createContext(VALID_PAYLOAD, { 'CF-Connecting-IP': '5.6.7.8' });
       const res = await onRequestPost(ctx);
       expect(res.status).toBe(200);
@@ -160,90 +166,88 @@ describe('Cloudflare Lead API', () => {
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(VALID_PAYLOAD),
         }),
-        env: { SUPABASE_URL: 'https://test.supabase.co', SUPABASE_SERVICE_ROLE_KEY: 'k' },
+        env: { DB: createMockDB() },
       };
       const res = await onRequestPost(ctx);
       expect(res.status).toBe(200);
     });
   });
 
-  describe('Record sanitization', () => {
-    it('trims whitespace and uppercases postcode', async () => {
-      const ctx = createContext({
-        name: '  John Doe  ',
-        phone: ' 07700900000 ',
-        postcode: '  m2 3wq  ',
-        service: ' Blocked Drains ',
-      });
-      await onRequestPost(ctx);
-      const fetchCall = vi.mocked(fetch).mock.calls[0];
-      const body = JSON.parse(fetchCall[1]!.body as string);
-      expect(body.name).toBe('John Doe');
-      expect(body.phone).toBe('07700900000');
-      expect(body.postcode).toBe('M2 3WQ');
-      expect(body.service).toBe('Blocked Drains');
-    });
-
-    it('sets optional address to null when empty', async () => {
-      const ctx = createContext({ ...VALID_PAYLOAD, address: '' });
-      await onRequestPost(ctx);
-      const fetchCall = vi.mocked(fetch).mock.calls[0];
-      const body = JSON.parse(fetchCall[1]!.body as string);
-      expect(body.address).toBeNull();
-    });
-
-    it('sets optional notes to null when empty', async () => {
-      const ctx = createContext({ ...VALID_PAYLOAD, notes: '  ' });
-      await onRequestPost(ctx);
-      const fetchCall = vi.mocked(fetch).mock.calls[0];
-      const body = JSON.parse(fetchCall[1]!.body as string);
-      expect(body.notes).toBeNull();
-    });
-
-    it('defaults source to "website" when not provided', async () => {
-      const ctx = createContext(VALID_PAYLOAD);
-      await onRequestPost(ctx);
-      const fetchCall = vi.mocked(fetch).mock.calls[0];
-      const body = JSON.parse(fetchCall[1]!.body as string);
-      expect(body.source).toBe('website');
-    });
-  });
-
-  describe('Supabase integration', () => {
-    it('returns 500 when SUPABASE_URL is missing', async () => {
-      const ctx = createContext(VALID_PAYLOAD, {}, { SUPABASE_URL: '', SUPABASE_SERVICE_ROLE_KEY: 'k' });
+  describe('D1 database integration', () => {
+    it('returns 500 when DB binding is missing', async () => {
+      const ctx = createContext(VALID_PAYLOAD, {}, { DB: undefined });
       const res = await onRequestPost(ctx);
       expect(res.status).toBe(500);
       const data: any = await res.json();
-      expect(data.error).toContain('Missing Supabase configuration');
+      expect(data.error).toContain('Database not configured');
     });
 
-    it('returns 500 when SUPABASE_SERVICE_ROLE_KEY is missing', async () => {
-      const ctx = createContext(VALID_PAYLOAD, {}, { SUPABASE_URL: 'https://test.supabase.co', SUPABASE_SERVICE_ROLE_KEY: '' });
-      const res = await onRequestPost(ctx);
-      expect(res.status).toBe(500);
-    });
-
-    it('returns 502 when Supabase responds with error', async () => {
-      vi.stubGlobal('fetch', vi.fn(() =>
-        Promise.resolve(new Response('Internal Server Error', { status: 500 }))
-      ));
-      const ctx = createContext(VALID_PAYLOAD);
+    it('returns 502 when D1 write fails', async () => {
+      const ctx = createContext(VALID_PAYLOAD, {}, { DB: createMockDB(true) });
       const res = await onRequestPost(ctx);
       expect(res.status).toBe(502);
       const data: any = await res.json();
       expect(data.error).toContain('Failed to store lead');
     });
 
-    it('sends correct headers to Supabase', async () => {
-      const ctx = createContext(VALID_PAYLOAD);
+    it('inserts correct values via prepared statement', async () => {
+      const mockDB = createMockDB();
+      const ctx = createContext(
+        { ...VALID_PAYLOAD, address: '123 High St', notes: 'Urgent', source: 'landing-page' },
+        {},
+        { DB: mockDB }
+      );
       await onRequestPost(ctx);
-      const fetchCall = vi.mocked(fetch).mock.calls[0];
-      const headers = fetchCall[1]!.headers as Record<string, string>;
-      expect(headers['content-type']).toBe('application/json');
-      expect(headers.apikey).toBe('test-key');
-      expect(headers.authorization).toBe('Bearer test-key');
-      expect(headers.prefer).toBe('return=minimal');
+      const bindCall = mockDB.prepare.mock.results[0].value.bind;
+      expect(bindCall).toHaveBeenCalledWith(
+        'John Doe',
+        '07700900000',
+        'M2 3WQ',
+        '123 High St',
+        'Blocked Drains',
+        'Urgent',
+        'landing-page',
+        '1.2.3.4',
+        null,
+      );
+    });
+
+    it('trims whitespace and uppercases postcode', async () => {
+      const mockDB = createMockDB();
+      const ctx = createContext(
+        { name: '  John Doe  ', phone: ' 07700900000 ', postcode: '  m2 3wq  ', service: ' Blocked Drains ' },
+        {},
+        { DB: mockDB }
+      );
+      await onRequestPost(ctx);
+      const bindCall = mockDB.prepare.mock.results[0].value.bind;
+      expect(bindCall).toHaveBeenCalledWith(
+        'John Doe',
+        '07700900000',
+        'M2 3WQ',
+        null,
+        'Blocked Drains',
+        null,
+        'website',
+        '1.2.3.4',
+        null,
+      );
+    });
+
+    it('sets optional address to null when empty', async () => {
+      const mockDB = createMockDB();
+      const ctx = createContext({ ...VALID_PAYLOAD, address: '' }, {}, { DB: mockDB });
+      await onRequestPost(ctx);
+      const bindCall = mockDB.prepare.mock.results[0].value.bind;
+      expect(bindCall.mock.calls[0][3]).toBeNull();
+    });
+
+    it('defaults source to "website" when not provided', async () => {
+      const mockDB = createMockDB();
+      const ctx = createContext(VALID_PAYLOAD, {}, { DB: mockDB });
+      await onRequestPost(ctx);
+      const bindCall = mockDB.prepare.mock.results[0].value.bind;
+      expect(bindCall.mock.calls[0][6]).toBe('website');
     });
   });
 });

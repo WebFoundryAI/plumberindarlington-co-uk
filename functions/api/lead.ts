@@ -1,5 +1,4 @@
-// Cloudflare Pages Function version of lead capture endpoint
-// Mirrors logic used in netlify/functions/api-lead.ts
+// Cloudflare Pages Function – lead capture using D1 database
 
 export const onRequestPost = async (context: any) => {
   const RATE_LIMIT_WINDOW_MS = 15 * 60 * 1000;
@@ -30,37 +29,28 @@ export const onRequestPost = async (context: any) => {
   if (String(payload.company ?? '').trim()) errors.push('spam detected');
   if (errors.length) return Response.json({ error: errors.join(', '), fields: errors }, { status: 400 });
 
-  const supabaseUrl = context.env.SUPABASE_URL as string | undefined;
-  const supabaseServiceRole = context.env.SUPABASE_SERVICE_ROLE_KEY as string | undefined;
-  if (!supabaseUrl || !supabaseServiceRole) {
-    return Response.json({ error: 'Missing Supabase configuration' }, { status: 500 });
+  const db = context.env.DB;
+  if (!db) {
+    return Response.json({ error: 'Database not configured' }, { status: 500 });
   }
 
-  const record = {
-    name: String(payload.name ?? '').trim(),
-    phone: String(payload.phone ?? '').trim(),
-    postcode: String(payload.postcode ?? '').trim().toUpperCase(),
-    address: String(payload.address ?? '').trim() || null,
-    service: String(payload.service ?? '').trim(),
-    notes: String(payload.notes ?? '').trim() || null,
-    source: String(payload.source ?? 'website').trim(),
-    ip_address: ip,
-    user_agent: context.request.headers.get('user-agent') || null,
-  };
-
-  const response = await fetch(`${supabaseUrl}/rest/v1/leads`, {
-    method: 'POST',
-    headers: {
-      'content-type': 'application/json',
-      apikey: supabaseServiceRole,
-      authorization: `Bearer ${supabaseServiceRole}`,
-      prefer: 'return=minimal',
-    },
-    body: JSON.stringify(record),
-  });
-
-  if (!response.ok) {
-    return Response.json({ error: 'Failed to store lead', details: await response.text() }, { status: 502 });
+  try {
+    await db.prepare(
+      `INSERT INTO leads (name, phone, postcode, address, service, notes, source, ip_address, user_agent)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`
+    ).bind(
+      String(payload.name ?? '').trim(),
+      String(payload.phone ?? '').trim(),
+      String(payload.postcode ?? '').trim().toUpperCase(),
+      String(payload.address ?? '').trim() || null,
+      String(payload.service ?? '').trim(),
+      String(payload.notes ?? '').trim() || null,
+      String(payload.source ?? 'website').trim(),
+      ip,
+      context.request.headers.get('user-agent') || null,
+    ).run();
+  } catch (err: any) {
+    return Response.json({ error: 'Failed to store lead', details: err.message }, { status: 502 });
   }
 
   return Response.json({ success: true });
