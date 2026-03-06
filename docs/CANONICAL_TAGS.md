@@ -1,6 +1,6 @@
 # Canonical Tag Implementation
 
-This document confirms the canonical tag strategy for manchesterblockeddrain.co.uk.
+This document confirms the canonical tag strategy for edinburghdrainunblocker.co.uk.
 
 ## ✅ Status: Fully Implemented
 
@@ -12,17 +12,17 @@ All pages have self-referencing canonical tags via the `RouteSEOHead` component.
 
 | Page Type | Canonical Format | Example |
 |-----------|------------------|---------|
-| Homepage | `https://manchesterblockeddrain.co.uk/` | With trailing slash |
-| All other pages | `https://manchesterblockeddrain.co.uk/path` | No trailing slash |
+| Homepage | `https://edinburghdrainunblocker.co.uk/` | With trailing slash |
+| All other pages | `https://edinburghdrainunblocker.co.uk/path` | No trailing slash |
 
 ### Examples
 
 ```
-Homepage:        https://manchesterblockeddrain.co.uk/
-Services:        https://manchesterblockeddrain.co.uk/services
-Service detail:  https://manchesterblockeddrain.co.uk/services/blocked-drains
-Location:        https://manchesterblockeddrain.co.uk/locations/salford
-Location+Service: https://manchesterblockeddrain.co.uk/locations/salford/blocked-drains
+Homepage:        https://edinburghdrainunblocker.co.uk/
+Services:        https://edinburghdrainunblocker.co.uk/services
+Service detail:  https://edinburghdrainunblocker.co.uk/services/blocked-drains
+Location:        https://edinburghdrainunblocker.co.uk/locations/salford
+Location+Service: https://edinburghdrainunblocker.co.uk/locations/salford/blocked-drains
 ```
 
 ---
@@ -119,13 +119,13 @@ Every page's canonical URL points to itself (self-referencing). There are no cro
 ```javascript
 // In browser console on any page:
 document.querySelector('link[rel="canonical"]').href
-// Should return: https://manchesterblockeddrain.co.uk/current-path
+// Should return: https://edinburghdrainunblocker.co.uk/current-path
 ```
 
 ### 2. View Source
 Check the `<head>` section for exactly ONE canonical tag:
 ```html
-<link rel="canonical" href="https://manchesterblockeddrain.co.uk/services/blocked-drains">
+<link rel="canonical" href="https://edinburghdrainunblocker.co.uk/services/blocked-drains">
 ```
 
 ### 3. Google Search Console
@@ -138,7 +138,7 @@ Check the `<head>` section for exactly ONE canonical tag:
 # Check multiple pages
 for url in "/" "/services" "/services/blocked-drains" "/locations" "/locations/salford"; do
   echo "Checking: $url"
-  curl -s "https://manchesterblockeddrain.co.uk$url" | grep -o '<link rel="canonical"[^>]*>'
+  curl -s "https://edinburghdrainunblocker.co.uk$url" | grep -o '<link rel="canonical"[^>]*>'
 done
 ```
 
@@ -201,6 +201,6 @@ This should not happen with `react-helmet-async` which deduplicates tags. If it 
 - ✅ Self-referencing canonicals (page points to itself)
 - ✅ No trailing slashes (except homepage)
 - ✅ HTTPS only
-- ✅ Consistent domain (manchesterblockeddrain.co.uk, no www)
+- ✅ Consistent domain (edinburghdrainunblocker.co.uk, no www)
 - ✅ URL normalizer strips trailing slashes at runtime
 - ✅ Deprecated `Seo.tsx` component removed

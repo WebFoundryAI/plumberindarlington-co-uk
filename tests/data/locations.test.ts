@@ -8,8 +8,8 @@ import {
 
 describe('Locations Data', () => {
   describe('LOCATIONS array integrity', () => {
-    it('contains exactly 10 locations', () => {
-      expect(LOCATIONS).toHaveLength(10);
+    it('contains exactly 9 locations', () => {
+      expect(LOCATIONS).toHaveLength(9);
     });
 
     it('every location has a unique slug', () => {
@@ -23,17 +23,17 @@ describe('Locations Data', () => {
       }
     });
 
-    it('every location has latitude within Greater Manchester bounds', () => {
+    it('every location has latitude within Edinburgh & Lothians bounds', () => {
       for (const loc of LOCATIONS) {
-        expect(loc.latitude).toBeGreaterThan(53.3);
-        expect(loc.latitude).toBeLessThan(53.7);
+        expect(loc.latitude).toBeGreaterThan(55.8);
+        expect(loc.latitude).toBeLessThan(56.1);
       }
     });
 
-    it('every location has longitude within Greater Manchester bounds', () => {
+    it('every location has longitude within Edinburgh & Lothians bounds', () => {
       for (const loc of LOCATIONS) {
-        expect(loc.longitude).toBeGreaterThan(-2.5);
-        expect(loc.longitude).toBeLessThan(-2.0);
+        expect(loc.longitude).toBeGreaterThan(-3.6);
+        expect(loc.longitude).toBeLessThan(-3.0);
       }
     });
 
@@ -45,8 +45,8 @@ describe('Locations Data', () => {
   });
 
   describe('PRIMARY_LOCATION', () => {
-    it('is "manchester"', () => {
-      expect(PRIMARY_LOCATION.slug).toBe('manchester');
+    it('is "edinburgh"', () => {
+      expect(PRIMARY_LOCATION.slug).toBe('edinburgh');
     });
 
     it('is first in LOCATIONS array', () => {
@@ -55,8 +55,8 @@ describe('Locations Data', () => {
   });
 
   describe('INDEXED_LOCATIONS', () => {
-    it('contains all 10 locations', () => {
-      expect(INDEXED_LOCATIONS).toHaveLength(10);
+    it('contains all 9 locations', () => {
+      expect(INDEXED_LOCATIONS).toHaveLength(9);
     });
 
     it('includes only locations without noindex', () => {
@@ -67,30 +67,29 @@ describe('Locations Data', () => {
 
     it('includes all location slugs', () => {
       const slugs = INDEXED_LOCATIONS.map((l) => l.slug);
-      expect(slugs).toContain('manchester');
-      expect(slugs).toContain('salford');
-      expect(slugs).toContain('stockport');
-      expect(slugs).toContain('altrincham');
-      expect(slugs).toContain('bolton');
-      expect(slugs).toContain('oldham');
-      expect(slugs).toContain('rochdale');
-      expect(slugs).toContain('sale');
-      expect(slugs).toContain('didsbury');
-      expect(slugs).toContain('chorlton');
+      expect(slugs).toContain('edinburgh');
+      expect(slugs).toContain('leith');
+      expect(slugs).toContain('musselburgh');
+      expect(slugs).toContain('dalkeith');
+      expect(slugs).toContain('livingston');
+      expect(slugs).toContain('corstorphine');
+      expect(slugs).toContain('morningside');
+      expect(slugs).toContain('portobello');
+      expect(slugs).toContain('bonnyrigg');
     });
   });
 
   describe('getLocationBySlug', () => {
-    it('returns correct location for "manchester"', () => {
-      const loc = getLocationBySlug('manchester');
+    it('returns correct location for "edinburgh"', () => {
+      const loc = getLocationBySlug('edinburgh');
       expect(loc).toBeDefined();
-      expect(loc!.name).toBe('Manchester');
+      expect(loc!.name).toBe('Edinburgh');
     });
 
-    it('returns correct location for "chorlton"', () => {
-      const loc = getLocationBySlug('chorlton');
+    it('returns correct location for "leith"', () => {
+      const loc = getLocationBySlug('leith');
       expect(loc).toBeDefined();
-      expect(loc!.name).toBe('Chorlton');
+      expect(loc!.name).toBe('Leith');
     });
 
     it('returns undefined for non-existent slug', () => {

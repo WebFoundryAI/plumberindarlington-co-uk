@@ -1,25 +1,25 @@
 export const BRAND = {
-  brandName: "Blocked Drains Manchester",
-  domain: "manchesterblockeddrain.co.uk",
-  primaryLocation: "Manchester",
-  serviceAreaLabel: "Manchester and Greater Manchester",
-  phone: "03338802296",
-  phoneFormatted: "0333 880 2296",
-  email: "contactus@manchesterblockeddrain.co.uk",
-  addressLine1: "Bartle House",
-  addressLine2: "Oxford Court, Manchester",
-  postcode: "M2 3WQ",
+  brandName: "Edinburgh Drain Unblocker",
+  domain: "edinburghdrainunblocker.co.uk",
+  primaryLocation: "Edinburgh",
+  serviceAreaLabel: "Edinburgh and the Lothians",
+  phone: "01312256612",
+  phoneFormatted: "0131 225 6612",
+  email: "contactus@edinburghdrainunblocker.co.uk",
+  addressLine1: "7 Exchange Crescent, Conference Square",
+  addressLine2: "Edinburgh",
+  postcode: "EH3 8AN",
   tagline: "Fast, Reliable Drainage Solutions",
   emergencyAvailable: true,
 
   // Per-site tracking & verification — update these when cloning the template
-  ga4Id: "G-ZBN7YE9HZJ",
-  gscVerification: "K-EecGB0etoqiVHnYYUt2Sc6LrEKjoGmykJD-HOd7fo",
+  ga4Id: "",
+  gscVerification: "",
 
   socialProfiles: [
-    "https://www.facebook.com/BlockedDrainsManchester",
-    "https://twitter.com/DrainManchester",
-    "https://www.instagram.com/blockeddrains_manchester",
-    "https://www.linkedin.com/company/blocked-drains-manchester"
+    "https://www.facebook.com/EdinburghDrainUnblocker",
+    "https://twitter.com/DrainEdinburgh",
+    "https://www.instagram.com/edinburgh_drain_unblocker",
+    "https://www.linkedin.com/company/edinburgh-drain-unblocker"
   ]
 };
