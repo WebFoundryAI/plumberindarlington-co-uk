@@ -409,3 +409,7 @@ Shildon's drainage infrastructure is a microcosm of County Durham's wider challe
     caseStudy: `Call-out to a Victorian terraced property in Old Shildon: The owner reported recurring blockages affecting both their property and the neighbour next door, with waste water backing up through the rear yard gully. Our CCTV survey revealed the shared rear drainage serving six properties had multiple joint failures along its length, with one complete joint separation allowing soil ingress and creating a persistent debris trap. The shared pipe was original Victorian clay, approximately 130 years old, and had reached the end of its serviceable life. We coordinated with all six affected households and Northumbrian Water to establish responsibility. The shared section was confirmed as adopted public sewer, and Northumbrian Water accepted the case for repair. In the interim, we provided high-pressure jetting to clear the immediate blockage and restore temporary flow. Result: Northumbrian Water subsequently relined the entire shared section, permanently resolving the recurring blockages for all six properties. Tip: If multiple Shildon terraced properties are experiencing drainage issues simultaneously, the problem is likely in the shared rear drainage. A CCTV survey establishes whether the blockage is in private or adopted drainage, determining who is responsible for the repair.`
   }
 };
+
+export function getLocationHubContent(slug: string): LocationHubContent | undefined {
+  return LOCATION_HUB_CONTENT[slug];
+}
