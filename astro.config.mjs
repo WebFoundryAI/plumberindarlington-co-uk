@@ -3,7 +3,7 @@ import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://plumberindarlington.co.uk/',
+  site: 'https://plumberindarlington.co.uk',
   integrations: [
     sitemap(),
     tailwind(),
