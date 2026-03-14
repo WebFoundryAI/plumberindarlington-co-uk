@@ -1,8 +1,8 @@
 export const BRAND = {
   brandName: "Plumber in Darlington",
   domain: "plumberindarlington.co.uk",
-  primaryLocation: "Manchester",
-  serviceAreaLabel: "Manchester and surrounding areas",
+  primaryLocation: "Darlington",
+  serviceAreaLabel: "Darlington and surrounding areas",
   phone: "01325222222",
   phoneFormatted: "01325 222222",
   email: "info@plumberindarlington.co.uk",

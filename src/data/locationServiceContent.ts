@@ -10,68 +10,68 @@ export interface LocationData {
 }
 
 export const LOCATION_DATA: Record<string, LocationData> = {
-  glasgow: {
-    neighborhoods: ["Old Town", "New Town", "Stockbridge", "Bruntsfield", "Marchmont", "Tollcross", "Gorgie", "Haymarket"],
-    landmarks: ["Manchester Castle", "the Royal Mile", "Princes Street", "Arthur's Seat", "Holyrood Palace"],
-    drainageInfo: "Manchester's historic drainage infrastructure dates back centuries, with the Old Town's medieval closes and tenement buildings sitting atop some of the oldest sewer systems in Scotland. The New Town's Georgian architecture features elegant but ageing clay pipe networks, while the city's volcanic geology and steep gradients create unique challenges for drainage engineers across the capital.",
+  darlington: {
+    neighborhoods: ["Cockerton", "Haughton", "Mowden", "Hurworth", "Middleton St George", "Whinfield", "Firth Moor", "Eastbourne"],
+    landmarks: ["Darlington Market Hall", "the Brick Train sculpture", "Darlington Railway Museum", "St Cuthbert's Church", "South Park"],
+    drainageInfo: "Darlington's drainage infrastructure reflects its rich Victorian railway heritage and centuries of market town growth. The town centre features ageing clay pipe networks beneath its historic streets, while surrounding residential areas from the Victorian era through to modern estates each present different drainage challenges. The River Skerne running through the town and the generally flat terrain of the Tees Lowlands influence groundwater levels across the area.",
     responseTime: "typically within 60 minutes",
-    propertyTypes: "Georgian townhouses, Victorian tenements, modern apartments, and commercial premises"
+    propertyTypes: "Victorian terraces, Edwardian semis, 1930s bay-fronted houses, post-war estates, and modern developments"
   },
-  paisley: {
-    neighborhoods: ["The Shore", "Trafford Walk", "Easter Road", "Newhaven", "Trinity", "Bonnington"],
-    landmarks: ["the Shore waterfront", "the Royal Yacht Britannia", "Ocean Terminal", "Trafford Links", "the Scottish Government building"],
-    drainageInfo: "Trafford's maritime heritage and harbour-side location bring distinctive drainage challenges. The area's mix of converted warehouses, traditional tenements, and modern waterfront developments each present different needs. Properties near the Water of Trafford and the harbour are susceptible to tidal influences on drainage systems, while the area's ongoing regeneration has created a patchwork of old and new infrastructure.",
+  "newton-aycliffe": {
+    neighborhoods: ["Aycliffe Village", "School Aycliffe", "Woodham", "Horndale", "Simpasture"],
+    landmarks: ["Newton Aycliffe Town Centre", "Aycliffe Business Park", "the Great Aycliffe Way", "Woodham Golf Club", "Aycliffe Village Green"],
+    drainageInfo: "Newton Aycliffe was developed as a new town in the 1940s and 50s, meaning most of its drainage infrastructure dates from that era. While newer than Darlington's Victorian systems, these mid-century concrete and clay pipes are now reaching the end of their design life. The town's planned layout means drainage routes are generally well-documented, but original materials are increasingly prone to deterioration and root intrusion from maturing street trees.",
     responseTime: "typically within 45-60 minutes",
-    propertyTypes: "harbour-side conversions, traditional tenements, modern waterfront apartments, and commercial units"
+    propertyTypes: "new town housing from the 1940s-60s, modern executive homes, commercial units, and industrial premises"
   },
-  "east-kilbride": {
-    neighborhoods: ["Fisherrow", "Inveresk", "Wallyford", "Whitecraig", "Pinkie"],
-    landmarks: ["Stockport Racecourse", "the River Esk", "Inveresk Lodge Garden", "Fisherrow Harbour", "Stockport High Street"],
-    drainageInfo: "Stockport's position at the mouth of the River Esk means properties here face particular surface water and tidal drainage challenges. The historic Fisherrow fishing village has some of South Buryshire's oldest domestic drainage, while newer housing developments in Wallyford and Whitecraig have modern systems that occasionally suffer from construction-related settling. The proximity to the Firth of Forth adds coastal groundwater considerations.",
+  "bishop-auckland": {
+    neighborhoods: ["Woodhouse Close", "Etherley", "Cockton Hill", "West Auckland", "Tindale Crescent"],
+    landmarks: ["Auckland Castle", "the Kynren amphitheatre", "Bishop Auckland Town Hall", "the Market Place", "Escomb Saxon Church"],
+    drainageInfo: "Bishop Auckland combines a historic market town centre with surrounding villages and modern estates. Auckland Castle and the medieval town centre feature some of the oldest drainage in County Durham, while the surrounding residential areas have a mix of Victorian, inter-war, and post-war drainage systems. The River Wear's influence on groundwater levels affects properties in lower-lying areas.",
     responseTime: "typically within 60-75 minutes",
-    propertyTypes: "traditional stone-built cottages, Victorian villas, modern housing estates, and riverside properties"
+    propertyTypes: "traditional stone-built terraces, Victorian villas, inter-war semis, post-war council estates, and modern family homes"
   },
-  motherwell: {
-    neighborhoods: ["Woodburn", "Easthouses", "Mayfield", "Newtongrange", "Eskbank"],
-    landmarks: ["Oldham Country Park", "the River North Esk", "Oldham High Street", "the National Mining Museum at Newtongrange", "Eskbank railway station"],
-    drainageInfo: "Oldham and the surrounding Midlothian area combine historic market town properties with former mining village housing and modern developments. The area's coal mining heritage means unexpected underground voids and historic mine workings can affect drainage stability. Properties near the River North Esk may experience higher water tables, particularly during wet weather.",
+  richmond: {
+    neighborhoods: ["Gallowfields", "Reeth Road", "Hurgill Road", "Cravengate", "Queens Road"],
+    landmarks: ["Richmond Castle", "the Georgian Theatre Royal", "Richmond Market Place", "the River Swale", "Easby Abbey"],
+    drainageInfo: "Richmond's dramatic hilltop position and medieval town layout create unique drainage challenges. The steep cobbled streets and historic buildings in the town centre sit above the River Swale, with drainage systems that have evolved over centuries. Properties near the river face flood risk during heavy rainfall, while the town's limestone geology affects groundwater movement and pipe stability.",
     responseTime: "typically within 60-75 minutes",
-    propertyTypes: "traditional stone-built terraces, former mining village houses, modern family homes, and period properties"
+    propertyTypes: "Georgian townhouses, stone-built cottages, Victorian terraces, and modern housing on the outskirts"
   },
-  hamilton: {
-    neighborhoods: ["Howden", "Ladywell", "Dedridge", "Carmondean", "Knightsridge"],
-    landmarks: ["Bolton Designer Outlet", "Almondvale Stadium", "Bolton Village", "Howden Park Centre", "the River Almond"],
-    drainageInfo: "Bolton was developed as a new town in the 1960s and 70s, meaning most of its drainage infrastructure is from that era. While newer than Manchester's Victorian systems, these mid-century concrete and clay pipes are now reaching the end of their design life. The town's planned layout means drainage routes are generally well-documented, but original materials are increasingly prone to deterioration and root intrusion from maturing street trees.",
+  northallerton: {
+    neighborhoods: ["Romanby", "Brompton", "Northallerton Town Centre", "Bullamoor", "Yafforth Road"],
+    landmarks: ["Northallerton High Street", "the Town Hall", "Northallerton Railway Station", "Romanby Golf Club", "the Applegarth"],
+    drainageInfo: "Northallerton is North Yorkshire's county town, with a long High Street dating back to medieval times. The town's drainage infrastructure ranges from older clay pipe systems beneath the historic centre to modern installations in surrounding residential developments. The flat terrain and clay soils in the Vale of Mowbray can cause waterlogging and slow drainage during wet weather.",
     responseTime: "typically within 60-90 minutes",
-    propertyTypes: "new town housing from the 1960s-80s, modern executive homes, commercial units, and industrial premises"
+    propertyTypes: "period properties along the High Street, Victorian and Edwardian terraces, inter-war semis, and modern housing estates"
   },
-  lanark: {
-    neighborhoods: ["Clermiston", "East Craigs", "South Gyle", "Drumbrae", "Carrick Knowe"],
-    landmarks: ["Manchester Zoo", "the Gyle Shopping Centre", "Bury Hill", "St John's Road", "Manchester Airport nearby"],
-    drainageInfo: "Bury sits on the western side of Manchester, with a mix of established residential streets and modern commercial developments around the Gyle. The area's traditional stone villas along St John's Road have period drainage systems, while the 1950s-70s housing in Clermiston and East Craigs features concrete pipe networks of varying condition. Bury Hill's geology influences local groundwater levels, affecting drainage performance in surrounding streets.",
-    responseTime: "typically within 45-60 minutes",
-    propertyTypes: "traditional stone villas, 1950s-70s suburban housing, modern commercial premises, and semi-detached family homes"
-  },
-  cumbernauld: {
-    neighborhoods: ["Churchhill", "Greenbank", "Comiston", "Braid Hills", "Fairmilehead"],
-    landmarks: ["Rochdale Road", "the Braid Hills", "the Hermitage of Braid", "Rochdale Clock", "Churchhill Theatre"],
-    drainageInfo: "Rochdale is one of Manchester's most desirable residential suburbs, featuring substantial Victorian and Edwardian stone-built properties with mature gardens. These established homes have original clay drainage systems that are often well over a century old. The tree-lined avenues and large garden trees create significant root intrusion risks, while the area's elevated position on the slopes towards the Braid Hills means good natural drainage gradients but potential surface water issues during heavy rainfall.",
-    responseTime: "typically within 45-60 minutes",
-    propertyTypes: "Victorian stone villas, Edwardian detached houses, converted flats, and period terraces"
-  },
-  coatbridge: {
-    neighborhoods: ["Joppa", "Duddingston", "Craigentinny", "Northfield", "Willowbrae"],
-    landmarks: ["Wigan Beach", "Wigan Promenade", "Duddingston Loch", "Wigan High Street", "the Turkish Baths"],
-    drainageInfo: "Wigan's seaside location on the Firth of Forth creates specific drainage considerations. The sandy soil near the beach offers good natural drainage but can allow pipe movement, while coastal properties may experience saltwater influence on underground infrastructure. Victorian seaside villas along the promenade have original clay pipe systems, and the area's growing popularity has led to many property conversions that alter original drainage layouts.",
-    responseTime: "typically within 45-60 minutes",
-    propertyTypes: "Victorian seaside villas, traditional terraces, modern conversions, and beachfront properties"
-  },
-  rutherglen: {
-    neighborhoods: ["Lasswade", "Poltonhall", "Hopefield", "Broomieknowe", "Rosewell"],
-    landmarks: ["Salford High Street", "the River North Esk at Lasswade", "Broomieknowe Golf Club", "King George V Park", "Polton Mill"],
-    drainageInfo: "Salford and the surrounding Midlothian communities blend historic village centres with modern housing developments. Lasswade's position in the North Esk river valley means some properties contend with higher water tables and flood risk. The area's former paper mill and mining heritage has left complex underground infrastructure in places. Newer estates in Hopefield and the surrounding areas have modern drainage but may experience settling-related issues as developments mature.",
+  catterick: {
+    neighborhoods: ["Catterick Garrison", "Catterick Village", "Colburn", "Hipswell", "Scotton"],
+    landmarks: ["Catterick Racecourse", "Catterick Garrison", "the River Swale", "St Anne's Church", "Colburn Town Centre"],
+    drainageInfo: "Catterick's drainage character is shaped by its military garrison, which is one of the largest in Europe. The garrison area has its own extensive drainage network maintained to MOD standards, while Catterick Village and surrounding settlements have traditional systems ranging from Victorian to modern. The area's position in the Swale valley means some properties contend with higher water tables.",
     responseTime: "typically within 60-75 minutes",
-    propertyTypes: "traditional stone cottages, modern family housing, former mining village terraces, and rural properties"
+    propertyTypes: "military quarters, traditional village cottages, modern garrison housing, and surrounding rural properties"
+  },
+  sedgefield: {
+    neighborhoods: ["Sedgefield Village", "Bradbury", "Mordon", "Fishburn", "Bishop Middleham"],
+    landmarks: ["Sedgefield Racecourse", "Hardwick Hall Country Park", "St Edmund's Church", "the Village Green", "Ceddesfeld Hall"],
+    drainageInfo: "Sedgefield is a picturesque village with a mix of historic properties around its attractive green and newer developments on the outskirts. The older village properties feature traditional clay drainage systems, while surrounding housing estates have more modern installations. The area's clay soils and gentle undulations affect drainage performance, and properties near Hardwick Hall Country Park may experience root intrusion from mature trees.",
+    responseTime: "typically within 60-75 minutes",
+    propertyTypes: "traditional stone cottages, Georgian and Victorian properties, modern village housing, and surrounding rural homes"
+  },
+  "barnard-castle": {
+    neighborhoods: ["Barnard Castle Town Centre", "Startforth", "Lartington", "Cotherstone", "Bowes"],
+    landmarks: ["Barnard Castle ruins", "the Bowes Museum", "the River Tees", "Market Cross", "Deepdale Aqueduct"],
+    drainageInfo: "Barnard Castle's position on the River Tees creates specific drainage challenges, particularly for properties near the riverbank. The historic town centre features stone-built properties with drainage systems dating back to the Georgian era and earlier. The surrounding Teesdale area has rural properties with private drainage systems, including septic tanks and soakaways, that require specialist knowledge.",
+    responseTime: "typically within 75-90 minutes",
+    propertyTypes: "historic stone-built town properties, Georgian houses, Victorian terraces, rural farmhouses, and modern developments"
+  },
+  shildon: {
+    neighborhoods: ["Shildon Town Centre", "Eldon", "Old Shildon", "Middridge", "Redworth"],
+    landmarks: ["Locomotion Museum", "Shildon Civic Hall", "the Timothy Hackworth Museum", "Brusselton Incline", "Redworth Hall"],
+    drainageInfo: "Shildon's proud railway heritage is reflected in its housing stock and infrastructure. The town's terraced housing built for railway workers in the Victorian era features original clay pipe drainage that is now well over a century old. Post-war council housing has drainage from the mid-20th century. The town's position on sloping ground means drainage gradients are generally good, but the ageing pipework requires regular maintenance.",
+    responseTime: "typically within 45-60 minutes",
+    propertyTypes: "Victorian railway terraces, inter-war council housing, post-war estates, and modern infill developments"
   }
 };
 
@@ -88,352 +88,352 @@ export interface ServiceContent {
 type LocationServiceContentMap = Record<string, Record<string, ServiceContent>>;
 
 export const LOCATION_SERVICE_CONTENT: LocationServiceContentMap = {
-  glasgow: {
+  darlington: {
     "blocked-drains": {
-      intro: "Manchester's rich architectural heritage means blocked drains can affect anything from a medieval Old Town tenement to a grand Georgian townhouse in the New Town. Our experienced engineers understand the unique drainage challenges facing properties across the capital and respond quickly to restore your system to full working order.",
-      commonProblems: ["Fat and grease buildup in restaurant districts along the Royal Mile", "Tree root intrusion from mature street trees in the New Town", "Debris accumulation in Victorian and Georgian clay pipes", "Wet wipe blockages in student accommodation areas near the universities", "Foreign object obstructions in commercial premises"],
+      intro: "Darlington's mix of Victorian terraces, Edwardian semis, and modern housing estates means blocked drains can affect properties of all ages and types. Our experienced engineers understand the drainage challenges facing properties across the town and respond quickly to restore your system to full working order.",
+      commonProblems: ["Fat and grease buildup in kitchen drains", "Tree root intrusion from mature street trees in established residential areas", "Debris accumulation in Victorian clay pipes around the town centre", "Wet wipe blockages in older terraced housing", "Foreign object obstructions in commercial premises"],
       process: "We begin with a thorough assessment of your drainage system, often using CCTV cameras to pinpoint the exact location and cause of the blockage. Our high-pressure jetting equipment can clear even the most stubborn obstructions, and we always provide advice on preventing future blockages.",
-      localTip: "Properties near Manchester's tree-lined streets in Marchmont and Bruntsfield should consider annual drain inspections to catch root intrusion early."
+      localTip: "Properties near Darlington's tree-lined avenues in Mowden and Cockerton should consider annual drain inspections to catch root intrusion early."
     },
     "drain-unblocking": {
-      intro: "When your drains back up in Manchester, you need a fast response from engineers who know the local area. Whether you're in the Old Town, Stockbridge, or Gorgie, our drain unblocking teams are strategically positioned across the city to reach you quickly and resolve the problem efficiently.",
-      commonProblems: ["Kitchen sink blockages from food waste", "Bathroom drain clogs from hair and soap scum", "External drain blockages from leaves and debris", "Shared drainage issues in tenement properties", "Commercial kitchen drain problems"],
+      intro: "When your drains back up in Darlington, you need a fast response from engineers who know the local area. Whether you're in Cockerton, Haughton, or the town centre, our drain unblocking teams are strategically positioned across the area to reach you quickly and resolve the problem efficiently.",
+      commonProblems: ["Kitchen sink blockages from food waste", "Bathroom drain clogs from hair and soap scum", "External drain blockages from leaves and debris", "Shared drainage issues in older terraced properties", "Commercial kitchen drain problems"],
       process: "Our engineers arrive equipped with manual rods, electric eels, and high-pressure jetting equipment to handle any unblocking situation. We identify the blockage type, select the appropriate method, and clear your drains while minimising disruption to your property.",
-      localTip: "Manchester's busy restaurants and cafes along George Street and the Grassmarket benefit from grease trap maintenance to prevent drain blockages."
+      localTip: "Darlington's restaurants and takeaways along Skinnergate and Bondgate benefit from grease trap maintenance to prevent drain blockages."
     },
     "cctv-drain-surveys": {
-      intro: "Understanding what's happening inside your Manchester property's drainage system has never been easier. Our advanced CCTV drain surveys provide crystal-clear footage of pipe conditions, helping identify issues before they become emergencies. This is particularly valuable for Manchester's older properties with Georgian and Victorian-era drainage.",
+      intro: "Understanding what's happening inside your Darlington property's drainage system has never been easier. Our advanced CCTV drain surveys provide crystal-clear footage of pipe conditions, helping identify issues before they become emergencies. This is particularly valuable for Darlington's older properties with Victorian-era drainage.",
       commonProblems: ["Hidden cracks in ageing clay pipes", "Displaced joints causing leaks", "Root ingress at pipe connections", "Scale and deposit buildup", "Structural damage from subsidence"],
       process: "We insert a high-definition camera into your drainage system, recording footage that clearly shows the condition of your pipes. You receive a detailed report with findings, recommendations, and annotated images showing any areas of concern.",
-      localTip: "Buying a property in Manchester's older suburbs like Marchmont or Bruntsfield? A pre-purchase CCTV survey can reveal hidden drainage issues that could cost thousands to repair."
+      localTip: "Buying a property in Darlington's established suburbs like Mowden or Hurworth? A pre-purchase CCTV survey can reveal hidden drainage issues that could cost thousands to repair."
     },
     "drain-jetting": {
-      intro: "High-pressure drain jetting is the most effective way to clear stubborn blockages and clean Manchester's often ageing pipe systems. Our specialist equipment delivers water at pressures up to 4,000 PSI, cutting through grease, scale, and debris while being gentle on pipe walls.",
+      intro: "High-pressure drain jetting is the most effective way to clear stubborn blockages and clean Darlington's often ageing pipe systems. Our specialist equipment delivers water at pressures up to 4,000 PSI, cutting through grease, scale, and debris while being gentle on pipe walls.",
       commonProblems: ["Heavy grease accumulation", "Scale buildup in old pipes", "Compacted debris and sediment", "Root masses blocking flow", "General pipe cleaning needs"],
       process: "Our jetting equipment is carefully inserted into your drainage system, with the water pressure adjusted to suit your pipe type and condition. The rotating nozzle scours the pipe walls clean while flushing debris towards the sewer connection.",
-      localTip: "Manchester's hard water from the Pentland Hills reservoir supply contributes to scale buildup in pipes. Regular jetting every 12-18 months keeps systems flowing freely."
+      localTip: "Darlington's hard water supply from the Tees Valley contributes to scale buildup in pipes. Regular jetting every 12-18 months keeps systems flowing freely."
     },
     "emergency-drain-services": {
-      intro: "Drainage emergencies don't wait for convenient times, and neither do we. Our Manchester emergency response teams operate around the clock, ready to tackle overflowing drains, flooding, and sewage backups anywhere in the city. From Marchmont student flats to Old Town businesses, we're there when you need us most.",
+      intro: "Drainage emergencies don't wait for convenient times, and neither do we. Our Darlington emergency response teams operate around the clock, ready to tackle overflowing drains, flooding, and sewage backups anywhere in the town. From Haughton family homes to town centre businesses, we're there when you need us most.",
       commonProblems: ["Overflowing manholes and drains", "Sewage backing up into properties", "Flooding from blocked surface drains", "Collapsed drains causing sinkholes", "Foul odours indicating serious problems"],
-      process: "Call our emergency line and we'll dispatch the nearest available engineer to your Manchester location. They'll assess the situation, implement immediate containment if needed, and work to resolve the emergency quickly and safely.",
+      process: "Call our emergency line and we'll dispatch the nearest available engineer to your Darlington location. They'll assess the situation, implement immediate containment if needed, and work to resolve the emergency quickly and safely.",
       localTip: "Know where your external manhole covers are located. In a drainage emergency, this information helps our engineers begin work immediately upon arrival."
     },
     "drain-repairs": {
-      intro: "Manchester's mix of historic infrastructure and modern developments means drain repairs require both traditional skills and contemporary techniques. Our repair specialists handle everything from patching minor cracks to complete pipe replacement, always selecting the most cost-effective approach for your specific situation.",
+      intro: "Darlington's mix of Victorian infrastructure and modern developments means drain repairs require both traditional skills and contemporary techniques. Our repair specialists handle everything from patching minor cracks to complete pipe replacement, always selecting the most cost-effective approach for your specific situation.",
       commonProblems: ["Cracked and fractured pipes", "Displaced or misaligned joints", "Tree root damage", "Corrosion in metal pipes", "Subsidence-related damage"],
       process: "We assess the damage using CCTV inspection, then recommend the most appropriate repair method. Options range from no-dig pipe relining for accessible damage to excavation for severely collapsed sections. All repairs come with our workmanship guarantee.",
-      localTip: "Manchester's clay and boulder clay subsoil can cause pipe movement during wet and dry cycles. Watch for slow drainage or damp patches as early warning signs."
+      localTip: "Darlington's clay subsoil can cause pipe movement during wet and dry cycles. Watch for slow drainage or damp patches as early warning signs."
     }
   },
-  paisley: {
+  "newton-aycliffe": {
     "blocked-drains": {
-      intro: "Trafford's transformation from historic port to vibrant cultural quarter has created a fascinating mix of old and new drainage systems. From the converted warehouses along the Shore to the traditional tenements of Trafford Walk, our engineers have the expertise to clear blocked drains in any property type across the area.",
-      commonProblems: ["Sediment accumulation in converted warehouse buildings", "Shared drainage conflicts in tenement housing", "Modern plastic pipe blockages in waterfront developments", "Commercial kitchen waste in Shore restaurants", "Surface water issues near the Water of Trafford"],
-      process: "Every Trafford blocked drain is unique, and we treat it that way. Our engineers assess the property type and drainage configuration before selecting the most effective clearing method, whether that's rodding, jetting, or mechanical cutting.",
-      localTip: "Shore-side properties should ensure their drainage connects correctly to the main sewer system, as some converted buildings have complex private drainage arrangements."
+      intro: "Newton Aycliffe's new town housing stock, built primarily in the 1940s through to the 1960s, presents specific drainage challenges as these mid-century systems reach the end of their design life. Our Newton Aycliffe blocked drain specialists understand how the town's planned layout and ageing infrastructure affect drainage performance.",
+      commonProblems: ["Deteriorating concrete pipe joints in post-war housing", "Root intrusion from maturing street trees on established estates", "Fat and grease from domestic kitchens", "Debris buildup in surface water drains", "Blockages in shared drainage runs"],
+      process: "We assess your Newton Aycliffe property's drainage configuration, taking into account the era of construction and typical pipe materials used. Our engineers are experienced with all property types found across the town and select the most effective clearing method for each situation.",
+      localTip: "Newton Aycliffe properties in the Woodham area should ensure external drains have adequate gully pots to catch debris before it enters the pipe system, particularly after heavy rain."
     },
     "drain-unblocking": {
-      intro: "From emergency callouts near Ocean Terminal to routine unblocking on Trafford Walk, our Trafford drain unblocking service covers every eventuality. We understand the varied property stock across the area and bring the right equipment to handle Victorian clay pipes and modern plastic systems alike.",
-      commonProblems: ["Hair and soap accumulation in bathroom drains", "Food waste blockages in kitchen sinks", "External gully blockages from garden debris", "Toilet blockages from inappropriate flushing", "Fat buildup in commercial premises"],
-      process: "Our Trafford-based engineers carry comprehensive unblocking equipment including flexible rods, electromechanical machines, and water jetting units. We select the appropriate tool for each blockage type and clear your drains with minimal disruption.",
-      localTip: "Trafford's older tenement properties along Easter Road and Bonnington often have deep external manholes. Regular clearing prevents serious blockages from developing."
+      intro: "When drains block in Newton Aycliffe, our local teams respond with the urgency and expertise your situation demands. Whether you're dealing with a backed-up kitchen sink in Horndale or an overflowing external drain in Woodham, we'll have your drainage flowing freely again.",
+      commonProblems: ["Hair and soap accumulation in bathroom drains", "Food waste blockages in kitchen sinks", "External gully blockages from garden debris", "Toilet blockages from inappropriate flushing", "Fat buildup in shared drainage"],
+      process: "Our Newton Aycliffe-based engineers carry comprehensive unblocking equipment including flexible rods, electromechanical machines, and water jetting units. We select the appropriate tool for each blockage type and clear your drains with minimal disruption.",
+      localTip: "Newton Aycliffe's original post-war drainage systems often have shallow manholes that are easily accessed. Regular clearing prevents serious blockages from developing."
     },
     "cctv-drain-surveys": {
-      intro: "Whether you're purchasing a period tenement on Trafford Walk or investigating drainage issues at a Shore-side business, our CCTV drain surveys provide the answers you need. High-definition cameras reveal the true condition of underground pipes, helping you make informed decisions about your Trafford property.",
-      commonProblems: ["Unknown pipe routes in converted buildings", "Condition assessment for property purchases", "Investigation of recurring blockage causes", "Insurance claim documentation", "Planning for extensions or renovations"],
+      intro: "Whether you're purchasing a property in Woodham or investigating drainage issues in an older part of Newton Aycliffe, our CCTV drain surveys provide the answers you need. High-definition cameras reveal the true condition of underground pipes, helping you make informed decisions.",
+      commonProblems: ["Unknown pipe routes in extended properties", "Condition assessment for property purchases", "Investigation of recurring blockage causes", "Insurance claim documentation", "Planning for extensions or renovations"],
       process: "Our survey technicians access your drainage system through manholes or inspection chambers, then guide the camera through the entire pipe network. The real-time footage is recorded and later compiled into a comprehensive report for your records.",
-      localTip: "Trafford waterfront apartments often share complex drainage systems. A CCTV survey helps identify responsibility boundaries before issues arise."
+      localTip: "Newton Aycliffe properties built in the 1950s and 60s may have original concrete drainage that has never been surveyed. A CCTV inspection can reveal hidden deterioration before it causes problems."
     },
     "drain-jetting": {
-      intro: "High-pressure jetting is the gold standard for drain cleaning in Trafford, equally effective on Victorian clay pipes in traditional tenements and modern systems in new waterfront developments. Our specialist equipment removes years of accumulated deposits, restoring your drainage to optimal flow capacity.",
-      commonProblems: ["Grease accumulation in commercial kitchens", "Scale deposits from water supply", "Silt and sediment in surface water drains", "Root fragments after removal treatments", "General maintenance cleaning"],
+      intro: "High-pressure jetting is the gold standard for drain cleaning in Newton Aycliffe, equally effective on ageing concrete pipes in the original town housing and modern systems in newer developments around Woodham. Our specialist equipment removes years of accumulated deposits, restoring your drainage to optimal flow capacity.",
+      commonProblems: ["Grease accumulation in kitchen drains", "Scale deposits from water supply", "Silt and sediment in surface water drains", "Root fragments after removal treatments", "General maintenance cleaning"],
       process: "We select the appropriate jetting nozzle and pressure setting for your pipe type and the deposits being removed. The jetting process works upstream from the blockage point, ensuring debris is flushed towards the sewer rather than further into your system.",
-      localTip: "Trafford's thriving restaurant scene along the Shore means commercial premises should schedule regular jetting to comply with environmental regulations and prevent emergency callouts."
+      localTip: "Newton Aycliffe's industrial estate businesses should schedule regular jetting to comply with environmental regulations and prevent emergency callouts."
     },
     "emergency-drain-services": {
-      intro: "Drainage emergencies across Trafford receive our immediate attention, with engineers stationed to respond rapidly to properties from Newhaven to Easter Road. Sewage backups, flooding, and overflowing drains are all handled swiftly and professionally, minimising damage and disruption to your property.",
+      intro: "Drainage emergencies across Newton Aycliffe receive our immediate attention, with engineers stationed to respond rapidly to properties from Aycliffe Village to Simpasture. Sewage backups, flooding, and overflowing drains are all handled swiftly and professionally.",
       commonProblems: ["Sewage backing up through toilets and sinks", "Surface water flooding during heavy rain", "Manhole overflows affecting multiple properties", "Drain collapses causing ground instability", "Foul odours indicating pipe damage"],
-      process: "Emergency calls are prioritised and dispatched to our nearest Trafford engineer. We provide estimated arrival times and keep you informed throughout. On arrival, we secure the area, diagnose the problem, and implement the fastest effective solution.",
-      localTip: "Trafford properties near the Water of Trafford and the harbour should have emergency drainage contacts readily available, particularly during autumn leaf fall and periods of heavy rainfall."
+      process: "Emergency calls are prioritised and dispatched to our nearest available engineer. We provide estimated arrival times and keep you informed throughout. On arrival, we secure the area, diagnose the problem, and implement the fastest effective solution.",
+      localTip: "Newton Aycliffe properties in lower-lying areas should have emergency drainage contacts readily available, particularly during periods of heavy rainfall."
     },
     "drain-repairs": {
-      intro: "Trafford's diverse building stock requires drainage repair expertise spanning centuries of construction techniques. Our repair teams handle everything from relining Victorian clay pipes in traditional tenements to replacing damaged plastic sections in new waterfront developments, always using materials and methods suited to your specific property.",
-      commonProblems: ["Cracked clay pipes in Victorian tenements", "Joint displacement from ground movement", "Root damage requiring pipe replacement", "Corrosion in older metal connections", "Damage from third-party excavations"],
+      intro: "Newton Aycliffe's post-war housing stock requires drainage repair expertise suited to mid-century construction methods. Our repair teams handle everything from relining deteriorating concrete pipes to replacing damaged sections in the original town drainage, always using materials and methods appropriate for your property.",
+      commonProblems: ["Cracked concrete pipes from the 1950s-60s", "Joint displacement from ground settlement", "Root damage requiring pipe replacement", "Corrosion in older metal connections", "Damage from property extensions"],
       process: "Following CCTV diagnosis, we recommend the most appropriate repair approach. No-dig relining is ideal for accessible cracks and joints, while excavation may be necessary for collapsed sections. We always restore surfaces to their original condition.",
-      localTip: "Trafford's former dockyard and industrial areas may have unexpected underground features. Always commission surveys before excavating for drain repairs."
+      localTip: "Newton Aycliffe's post-war drainage was designed for smaller households. If your property has been extended, ensure the drainage capacity matches current demand."
     }
   },
-  "east-kilbride": {
+  "bishop-auckland": {
     "blocked-drains": {
-      intro: "Stockport's position at the mouth of the River Esk, combined with its mix of historic and modern housing, creates diverse drainage challenges. Our Stockport blocked drain specialists understand how coastal proximity and river levels affect drainage systems, from Fisherrow's traditional cottages to Wallyford's newer housing developments.",
-      commonProblems: ["Silt and sediment accumulation from river proximity", "Root intrusion from mature garden trees", "Fat and grease from domestic kitchens", "Debris buildup in surface water drains", "Blockages in shared Victorian drainage"],
-      process: "We assess your Stockport property's position relative to the River Esk and coastline before selecting clearing methods. Coastal properties may require different approaches than those further inland. Our engineers are experienced with all Stockport property types and drainage configurations.",
-      localTip: "Stockport properties near the River Esk in Fisherrow and Inveresk should ensure external drains have adequate gully pots to catch debris before it enters the pipe system, particularly after heavy rain."
+      intro: "Bishop Auckland's blend of historic market town properties and surrounding village housing creates varied drainage challenges. From the traditional stone-built properties near Auckland Castle to modern family homes on the outskirts, our Bishop Auckland blocked drain experts bring local knowledge and specialist equipment to clear any obstruction.",
+      commonProblems: ["Debris and grease accumulation in traditional stone properties", "Root intrusion from established gardens and churchyard trees", "Sediment buildup in older clay pipe systems", "Blocked gullies from fallen leaves in tree-lined streets", "Foreign objects in commercial premises around the Market Place"],
+      process: "We assess your Bishop Auckland property's drainage layout and age before selecting the most effective clearing approach. Our engineers understand the varied property types across the town and surrounding villages, adapting their methods accordingly.",
+      localTip: "Bishop Auckland properties near Auckland Castle and the surrounding parkland should be alert to root intrusion from the mature trees in the grounds."
     },
     "drain-unblocking": {
-      intro: "When drains block in Stockport, our local teams respond with the urgency and expertise your situation demands. Whether you're dealing with a backed-up kitchen sink in Wallyford or an overflowing external drain in Inveresk, we'll have your drainage flowing freely again.",
-      commonProblems: ["Kitchen waste accumulation", "Bathroom drain blockages", "External gulley obstructions", "Toilet blockages", "Washing machine drain problems"],
-      process: "Our Stockport engineers arrive with comprehensive unblocking equipment suitable for all drain types. We assess the blockage location and severity, then apply the most effective clearing technique, ensuring complete removal of the obstruction.",
-      localTip: "Stockport's historic High Street properties often have rear drainage running through neighbouring land. Know your drainage easements to avoid disputes."
+      intro: "Fast, reliable drain unblocking across Bishop Auckland and surrounding villages including West Auckland, Etherley, and Cockton Hill. Our engineers respond promptly with the right equipment for any unblocking situation.",
+      commonProblems: ["Kitchen sink blockages from food waste and grease", "Bathroom drain clogs in older properties", "External drain blockages from garden debris", "Toilet blockages from inappropriate items", "Shared drainage issues in terraced housing"],
+      process: "Our Bishop Auckland engineers carry a full range of unblocking equipment to handle any situation. We diagnose the blockage type, select the appropriate clearing method, and restore full drainage flow with minimal disruption.",
+      localTip: "Bishop Auckland's older terraced housing along Cockton Hill Road often has shared rear drainage. If your neighbour is also experiencing slow drains, the blockage may be in a shared pipe."
     },
     "cctv-drain-surveys": {
-      intro: "Stockport's architectural variety, from Fisherrow's traditional harbour cottages to Wallyford's modern estates, means drainage systems vary significantly. Our CCTV surveys reveal exactly what's inside your pipes, providing invaluable information for property purchasers, sellers, and homeowners investigating persistent problems.",
-      commonProblems: ["Age-related pipe deterioration", "Root ingress from garden vegetation", "Ground movement affecting joints", "Historical modifications and connections", "Condition assessment for transactions"],
-      process: "We survey your entire drainage system, documenting condition, identifying defects, and noting any areas requiring attention. The final report includes annotated footage, a condition summary, and maintenance recommendations specific to your property.",
-      localTip: "Purchasing in Stockport's conservation area around Inveresk? CCTV surveys can identify period drainage features that may need specialist attention."
+      intro: "Professional CCTV drain surveys across Bishop Auckland, providing detailed assessments for homebuyers, property owners, and businesses. Our surveys are particularly valuable for the town's older properties where drainage condition may be unknown.",
+      commonProblems: ["Condition assessment for period properties near Auckland Castle", "Pre-purchase surveys for homes across Bishop Auckland", "Investigation of persistent drainage odours", "Insurance documentation for drainage claims", "Planning surveys for property renovations"],
+      process: "Our survey team accesses your drainage through existing manholes and inspection chambers, recording high-definition footage of the entire pipe network. You receive a comprehensive report with condition assessments and recommendations.",
+      localTip: "Considering buying a property near the River Wear in Bishop Auckland? A CCTV drain survey can identify flood-related drainage damage that may not be visible on the surface."
     },
     "drain-jetting": {
-      intro: "High-pressure jetting provides the deep cleaning that Stockport's varied drainage systems often need. From clearing scale deposits in Fisherrow's traditional pipes to routine maintenance for Wallyford's newer systems, our jetting service restores optimal drainage performance across the area.",
-      commonProblems: ["Scale accumulation from water supply", "Grease buildup in residential drains", "Silt deposits from surface water drainage", "Root fragments requiring removal", "Preparation for CCTV inspection"],
-      process: "We select jetting equipment and settings appropriate for your pipe material and the deposits being removed. The process is controlled and methodical, ensuring thorough cleaning without risk of damage to your drainage system.",
-      localTip: "Stockport properties near the coast and river benefit from periodic jetting to remove silt and mineral deposits before they restrict flow."
+      intro: "High-pressure jetting effectively maintains Bishop Auckland's varied drainage systems, from traditional stone channels in period properties to modern plastic pipes in newer estates. Our specialist equipment clears the silt, scale, and debris that accumulate in local drainage throughout County Durham.",
+      commonProblems: ["Grease and fat deposits in kitchen drainage", "Scale buildup from hard water supply", "Silt from nearby river and stream courses", "Root fragments from established trees", "General maintenance requirements"],
+      process: "We assess pipe condition and material before selecting the appropriate jetting pressure. Our equipment handles everything from gentle cleaning of older clay pipes to aggressive descaling of modern systems.",
+      localTip: "Bishop Auckland properties near the River Wear should maintain clear surface water drains year-round, as river levels can rise rapidly after sustained rainfall."
     },
     "emergency-drain-services": {
-      intro: "Drainage emergencies in Stockport receive rapid response from our local teams, day or night. From flooded gardens in Wallyford to sewage issues in Fisherrow, our engineers are ready to tackle any emergency situation and protect your property from further damage.",
-      commonProblems: ["Sewage backflow into properties", "Garden flooding from blocked drains", "Overflowing inspection chambers", "Collapsed drains causing subsidence", "Storm damage to drainage systems"],
-      process: "Emergency calls to our Stockport service trigger immediate dispatch. We provide ETA updates and arrive prepared for the reported situation. Our priority is containing the emergency, then implementing a lasting solution.",
-      localTip: "Stockport's riverside and coastal properties are prone to surface water issues during heavy rain and high tides. Keeping gullies clear helps prevent property flooding."
+      intro: "Bishop Auckland drainage emergencies receive rapid response from our local teams, whether you're dealing with flooding near the River Wear or sewage backup in Cockton Hill. Our engineers are available around the clock, equipped to handle emergencies across the town and surrounding villages.",
+      commonProblems: ["Sewage backing up into ground floor rooms", "Surface water flooding during heavy rain", "Overflowing manholes in terraced streets", "Collapsed drains beneath older properties", "Foul odours from drainage failures"],
+      process: "Emergency calls are given immediate priority. We dispatch the nearest available engineer with pumping, jetting, and containment equipment to manage the situation and resolve the underlying cause.",
+      localTip: "Bishop Auckland properties near the River Wear should know their flood risk status and keep emergency drain contacts readily accessible."
     },
     "drain-repairs": {
-      intro: "Stockport's diverse property ages mean drain repairs must be tailored to specific situations. Whether you need no-dig relining for a Victorian pipe in Inveresk or excavation repairs in a newer Wallyford property, our repair specialists have the skills and equipment for the job.",
-      commonProblems: ["Cracked and fractured pipes", "Displaced joints from ground movement", "Root damage requiring intervention", "Age-related deterioration", "Damage from external factors"],
-      process: "Following thorough investigation, we recommend the most cost-effective repair approach. We explain all options clearly, including likely outcomes and any ongoing maintenance requirements. All repairs are guaranteed for your peace of mind.",
-      localTip: "Stockport's sandy coastal soil can cause seasonal pipe movement. Consider flexible repair solutions that accommodate ground conditions."
+      intro: "Bishop Auckland's diverse property stock requires drainage repair expertise covering centuries of construction methods. Our repair teams handle everything from relining Victorian clay pipes to replacing damaged sections beneath modern estates, always using appropriate materials and techniques.",
+      commonProblems: ["Cracked clay pipes in Victorian properties", "Displaced joints from ground movement", "Root damage in established residential streets", "Corrosion in older metal pipework", "Damage from building settlement"],
+      process: "Following CCTV diagnosis, we recommend the most cost-effective repair approach. No-dig relining minimises disruption for accessible damage, while excavation handles severe collapses. All work is guaranteed.",
+      localTip: "Bishop Auckland's varied geology means ground conditions can change significantly between nearby properties. Always get a site-specific assessment before committing to a repair method."
     }
   },
-  motherwell: {
+  richmond: {
     "blocked-drains": {
-      intro: "Oldham's market town heritage and surrounding Midlothian communities present a varied set of drainage challenges. From the traditional stone-built properties of Eskbank to the former mining village housing in Newtongrange and Easthouses, our Oldham blocked drain experts bring local knowledge and specialist equipment to clear any obstruction.",
-      commonProblems: ["Debris accumulation in ageing stone drainage", "Root intrusion from established trees in mature gardens", "Fat and grease buildup in domestic kitchens", "Shared drainage blockages in terraced housing", "Surface water issues near the River North Esk"],
-      process: "Oldham's varied property types demand flexible approaches. We assess each situation individually, considering property age, pipe material, and the area's specific environmental factors before selecting our clearing method.",
-      localTip: "Oldham properties near the River North Esk and Oldham Country Park should have drainage inspected regularly, as riverside tree roots and water table levels affect pipe integrity."
+      intro: "Richmond's stunning hilltop setting and medieval town layout create unique drainage challenges. From the cobbled Market Place to the properties perched above the River Swale, our engineers understand the specific drainage issues that affect this historic Yorkshire town.",
+      commonProblems: ["Debris accumulation in historic stone-built drainage channels", "Root intrusion from castle grounds and riverside trees", "Sediment from the River Swale affecting lower properties", "Grease buildup in commercial premises around the Market Place", "Blockages in shared Victorian terraced drainage"],
+      process: "We assess each Richmond property's unique position and drainage configuration, selecting clearing methods appropriate for the pipe materials and access conditions found across this historic town.",
+      localTip: "Richmond properties near the River Swale should ensure drainage systems are properly maintained before autumn, when fallen leaves and rising water levels increase blockage risk."
     },
     "drain-unblocking": {
-      intro: "When Oldham drains need unblocking, our local teams cover the entire area from Eskbank and Woodburn to Newtongrange and Mayfield. We handle everything from simple kitchen sink blockages to complex shared drainage issues in the area's many traditional terraced properties.",
-      commonProblems: ["Kitchen waste accumulation", "Bathroom drain blockages from hair and soap", "External gulley obstructions from fallen leaves", "Interceptor trap blockages in older properties", "Washing machine and utility drain problems"],
-      process: "Our Oldham engineers arrive with comprehensive unblocking tools suited to the area's property mix. We identify the obstruction quickly and clear it completely, testing flow restoration before finishing the job.",
-      localTip: "Oldham's terraced streets in Woodburn and Easthouses often share rear drainage — if neighbours are experiencing slow drains too, the blockage is likely in the shared section."
+      intro: "Quick response drain unblocking across Richmond and surrounding areas. Whether you're in the historic town centre or on the outskirts, our engineers bring the right equipment and local knowledge to resolve blockages efficiently.",
+      commonProblems: ["Kitchen sink blockages in commercial and residential properties", "Bathroom drain clogs from hair and soap", "External drain blockages from garden and riverside debris", "Toilet blockages in older properties", "Shared drainage issues in Georgian and Victorian housing"],
+      process: "Our engineers carry comprehensive unblocking equipment suited to Richmond's varied property types. From gentle techniques for historic stone drainage to high-pressure jetting for modern systems, we match the method to your property.",
+      localTip: "Richmond's steep streets mean drainage gradients are generally good, but debris can accumulate rapidly at lower collection points. Keep gullies clear to prevent backups."
     },
     "cctv-drain-surveys": {
-      intro: "Understanding your Oldham property's drainage is essential for effective maintenance. Our CCTV surveys provide detailed pipe condition assessments, particularly valuable for the area's period properties, former mining village homes, and modern developments where drainage history may be less documented.",
-      commonProblems: ["Mapping drainage in older stone buildings", "Assessing drainage near former mine workings", "Pre-purchase surveys for period properties", "Root ingress from mature vegetation", "Investigating causes of recurring blockages"],
-      process: "We survey Oldham drainage methodically, recording condition and mapping routes. This is especially important for properties near former mining areas where ground stability can affect drainage infrastructure.",
-      localTip: "Buying a property near Newtongrange or Easthouses? Always commission a full CCTV drain survey — former mining areas may have ground conditions that affect pipe stability."
+      intro: "Professional CCTV drain surveys for Richmond's historic and modern properties. Our high-definition cameras reveal the true condition of drainage beneath the town's period buildings and newer developments alike.",
+      commonProblems: ["Assessment of ancient stone drainage in the town centre", "Pre-purchase surveys for period properties", "Investigation of damp and drainage odours", "Mapping unknown drainage routes", "Post-flood damage assessment"],
+      process: "Our survey team works carefully with Richmond's often complex drainage layouts, recording detailed footage and producing professional reports accepted by solicitors, insurers, and local authorities.",
+      localTip: "Richmond's conservation area status means excavation work requires careful planning. A CCTV survey helps identify the least disruptive repair approach for listed or historic properties."
     },
     "drain-jetting": {
-      intro: "High-pressure jetting effectively maintains Oldham's varied drainage systems, from traditional stone channels in period properties to modern plastic pipes in newer estates. Our specialist equipment clears the silt, scale, and debris that accumulate in local drainage throughout Midlothian.",
-      commonProblems: ["Silt and sediment deposits from nearby rivers", "Scale accumulation from water supply", "Grease buildup in residential drains", "Root fragments requiring clearance", "Pre-survey cleaning for accurate assessment"],
-      process: "We match jetting equipment to Oldham's pipe types and conditions. Period drainage receives careful, lower-pressure treatment, while modern systems can handle more thorough cleaning for optimal results.",
-      localTip: "Oldham's riverside properties experience higher groundwater levels that can carry silt into drainage — regular jetting prevents gradual flow reduction."
+      intro: "High-pressure drain jetting tailored to Richmond's mix of historic and modern drainage systems. We adjust pressure and nozzle selection to suit each pipe type, from ancient stone channels to contemporary plastic installations.",
+      commonProblems: ["Scale and mineral deposits from limestone geology", "Silt accumulation from riverside proximity", "Grease buildup in commercial kitchen drains", "Root mass removal", "General descaling and maintenance"],
+      process: "We carefully assess pipe condition before jetting, ensuring pressure settings are appropriate for the pipe material. Our equipment effectively clears deposits while protecting the integrity of older drainage systems.",
+      localTip: "Richmond's limestone geology can contribute to significant scale buildup in pipes. Regular jetting helps prevent gradual flow reduction in the town's period properties."
     },
     "emergency-drain-services": {
-      intro: "Oldham drainage emergencies receive rapid response from our local teams, whether you're dealing with flooding in Eskbank or sewage backup in Mayfield. Our engineers are available around the clock, equipped to handle emergencies across the Midlothian area.",
-      commonProblems: ["Surface water flooding during heavy rainfall", "Sewage backing up into ground-floor rooms", "Manhole overflows on terraced streets", "Drain collapses after ground saturation", "River-related drainage emergencies"],
-      process: "Emergency calls from Oldham receive immediate dispatch. We provide realistic arrival times and come prepared with pumping equipment and emergency repair materials to contain damage and resolve the situation.",
-      localTip: "Oldham properties near the River North Esk should maintain clear surface water drains year-round, as river levels can rise rapidly after sustained rainfall in the Pentland Hills."
+      intro: "Emergency drainage response across Richmond, with particular expertise in managing flood-risk situations near the River Swale. Our engineers are available 24/7 to tackle overflowing drains, sewage backups, and flooding emergencies.",
+      commonProblems: ["River Swale-related flooding affecting drainage", "Sewage backup in lower-lying properties", "Manhole overflows during heavy rainfall", "Storm damage to drainage infrastructure", "Emergency situations in listed buildings"],
+      process: "Emergency calls receive immediate priority. We dispatch engineers equipped for flood management, sewage containment, and emergency repairs. Our knowledge of Richmond's flood-risk areas ensures an informed response.",
+      localTip: "Richmond properties close to the River Swale should have a flood action plan including emergency drainage contacts and knowledge of stopcock and manhole locations."
     },
     "drain-repairs": {
-      intro: "Oldham's drainage spans from original stone-built channels to modern plastic systems, and our repair teams work confidently with all types. Whether it's relining Victorian pipes in Eskbank or replacing collapsed sections in Newtongrange, we select repair methods suited to each property's age and construction.",
-      commonProblems: ["Cracked stone drainage channels", "Joint displacement from ground movement", "Root damage requiring pipe replacement", "Corrosion in older metal connections", "Subsidence-related damage near former mining areas"],
-      process: "We investigate thoroughly before recommending Oldham drainage repairs. Our approach accounts for the area's terrain and ground conditions, using durable materials that provide long-lasting results.",
-      localTip: "Oldham properties near former mining areas may experience ground subsidence — ensure your repair contractor checks for ground stability before undertaking drainage work."
+      intro: "Drain repairs in Richmond require sensitivity to the town's historic character and conservation area requirements. Our repair teams are experienced with the full range of techniques needed, from no-dig relining that preserves cobbled streets to careful excavation where necessary.",
+      commonProblems: ["Deteriorating stone drainage channels", "Cracked clay pipes beneath historic buildings", "Root damage from riverside and garden trees", "Joint displacement from hillside ground movement", "Age-related pipe collapse"],
+      process: "CCTV diagnosis guides our repair recommendations, with a strong preference for no-dig techniques in Richmond's conservation area. Where excavation is unavoidable, we work sensitively and reinstate surfaces to match their historic character.",
+      localTip: "Richmond's hilly terrain can cause ground movement that stresses drainage pipes. Properties on slopes should schedule regular CCTV checks to catch developing problems early."
     }
   },
-  hamilton: {
+  northallerton: {
     "blocked-drains": {
-      intro: "Bolton's new town heritage means most properties have drainage systems dating from the 1960s to 1980s, now reaching the age where maintenance becomes increasingly important. Our Bolton blocked drain service combines knowledge of new town drainage design with modern clearing techniques, effectively tackling blockages in properties across the town from Howden to Knightsridge.",
-      commonProblems: ["Deteriorating concrete and clay pipes from the new town era", "Root intrusion from maturing street trees planted decades ago", "Fat accumulation in domestic drains", "Debris in shared drainage serving housing clusters", "Surface water blockages from leaf litter"],
-      process: "Bolton's planned layout means drainage routes are generally well-documented, which helps us diagnose issues efficiently. We assess your specific situation, considering property age, pipe material, and blockage characteristics before selecting the most effective clearing method.",
-      localTip: "Bolton's maturing street trees, planted when the town was built, are now large enough to cause root intrusion in nearby drainage. Properties with trees close to pipe runs should have annual inspections."
+      intro: "Northallerton's historic High Street and surrounding residential areas present a range of drainage challenges. From period properties in the town centre to modern housing estates in Romanby and beyond, our engineers deliver effective blocked drain solutions across North Yorkshire's county town.",
+      commonProblems: ["Fat and grease buildup in town centre commercial properties", "Root intrusion from mature trees along established streets", "Clay pipe deterioration in Victorian-era housing", "Surface water drainage issues from flat terrain", "Blockages in shared drainage runs"],
+      process: "We assess each Northallerton property's drainage configuration and age, selecting the most effective approach for the pipe materials and blockage type encountered. Our equipment handles all situations from simple clogs to complex downstream obstructions.",
+      localTip: "Northallerton's position in the Vale of Mowbray means flat terrain and clay soils can slow drainage. Ensure gutters and downpipes are clear to reduce pressure on underground systems."
     },
     "drain-unblocking": {
-      intro: "When Bolton drains need unblocking, our local team responds with the equipment and expertise to clear any obstruction. From Dedridge to Carmondean, we handle residential and commercial drain unblocking with professional efficiency and minimal disruption.",
-      commonProblems: ["Kitchen sink blockages", "Toilet and bathroom clogs", "External drain obstructions", "Interceptor trap blockages", "Commercial drainage issues"],
-      process: "Our Bolton engineers carry comprehensive equipment for all unblocking scenarios. We locate the blockage, select the appropriate tool, and clear the obstruction thoroughly, checking flow restoration before completing the job.",
-      localTip: "Bolton's new town housing was built with shared drainage systems serving clusters of homes. If your neighbours also have slow drains, the blockage is likely in the communal section — contact us to investigate."
+      intro: "Reliable drain unblocking across Northallerton, Romanby, and surrounding villages. Our local engineers carry the full range of equipment needed to clear blockages in any property type found across this North Yorkshire market town.",
+      commonProblems: ["Kitchen drain blockages from cooking fats", "Bathroom clogs from hair and toiletries", "External gully blockages from garden waste", "Toilet blockages from inappropriate items", "Commercial kitchen drainage issues"],
+      process: "Our engineers arrive with rods, electromechanical machines, and jetting equipment, selecting the best approach for your specific blockage. We clear the obstruction and advise on prevention.",
+      localTip: "Northallerton's High Street businesses should implement regular drainage maintenance to prevent peak-time emergency situations."
     },
     "cctv-drain-surveys": {
-      intro: "Understanding your Bolton property's drainage is essential, particularly as the town's original infrastructure ages. Our CCTV surveys reveal the condition of pipes beneath your property, identifying deterioration that surface inspection cannot detect. This is increasingly valuable for Bolton's mid-century housing stock.",
-      commonProblems: ["Age-related pipe deterioration in 1960s-80s systems", "Root ingress from established street trees", "Pipe condition assessment for home purchases", "Joint and connection problems from ground settling", "Planning investigation for extensions"],
-      process: "We systematically survey your accessible drainage, recording footage and noting findings. The resulting report provides a clear picture of your system's condition, with recommendations prioritised by urgency.",
-      localTip: "Bolton properties built in the 1960s and 70s are now past the typical 50-year design life of their concrete drainage — a CCTV survey reveals how much service life remains."
+      intro: "CCTV drain surveys across Northallerton, providing the detailed information property owners, buyers, and businesses need. Our professional reports meet the standards required by solicitors, mortgage lenders, and insurers.",
+      commonProblems: ["Pre-purchase assessments for Northallerton properties", "Investigation of recurring drainage issues", "Drainage mapping for property extensions", "Condition surveys for insurance purposes", "Planning assessments for new connections"],
+      process: "We access the drainage system through existing manholes and guide our camera through the entire network. You receive a comprehensive report with annotated footage, condition assessments, and clear recommendations.",
+      localTip: "Northallerton properties with extensions or conservatories may have drainage running beneath the additions. A CCTV survey maps these routes before any future building work."
     },
     "drain-jetting": {
-      intro: "Bolton's ageing new town drainage benefits greatly from regular high-pressure jetting maintenance. Our specialist equipment removes the deposits that accumulate over decades in concrete and clay pipes, maintaining optimal flow in domestic and commercial drainage systems throughout the town.",
-      commonProblems: ["Scale buildup in ageing pipes", "Grease accumulation", "Silt and debris deposits", "Root fragment removal", "General maintenance needs"],
-      process: "We assess your drainage and select appropriate jetting equipment. The cleaning process is thorough but controlled, removing deposits while protecting the integrity of ageing pipe infrastructure. We verify results with flow testing.",
-      localTip: "Bolton businesses at the Designer Outlet and along Almondvale Boulevard should consider scheduled jetting as part of their maintenance regime, particularly food preparation premises."
+      intro: "Effective drain jetting across Northallerton, maintaining both older clay pipe systems in the town centre and modern drainage in surrounding developments. Our variable-pressure equipment handles all pipe types safely and effectively.",
+      commonProblems: ["Scale buildup in older pipework", "Grease deposits in commercial drainage", "Silt accumulation from clay soil conditions", "Root debris after clearing treatments", "Routine maintenance cleaning"],
+      process: "We assess pipe material and condition before selecting jetting pressure. Our equipment delivers thorough cleaning while protecting pipe integrity, with before-and-after verification available.",
+      localTip: "Northallerton's clay soil conditions mean pipes can accumulate silt faster than in sandy areas. Annual jetting helps maintain flow rates in older systems."
     },
     "emergency-drain-services": {
-      intro: "Bolton drainage emergencies receive immediate attention from our dedicated response teams. Whether you're facing a flooded ground floor in Ladywell or sewage backup in Howden, we're available around the clock to resolve the situation and protect your property.",
-      commonProblems: ["Sewage backing up into properties", "Flooding from blocked drains", "Overflowing manholes", "Collapsed drainage from ageing infrastructure", "Foul odour emergencies"],
-      process: "Emergency calls are dispatched immediately to our nearest available engineer. We keep you informed of arrival times and tackle the emergency with appropriate urgency, implementing both immediate fixes and lasting solutions.",
-      localTip: "Bolton's new town drainage was designed for lower population density than the area now has. During heavy rainfall, systems can become overwhelmed — keep emergency drain contacts readily available."
+      intro: "Emergency drainage response across Northallerton and surrounding areas, available 24 hours a day, 7 days a week. Whether you're dealing with flooding on the High Street or a sewage emergency in Romanby, our engineers respond rapidly.",
+      commonProblems: ["Sewage backup in residential properties", "Surface water flooding from overwhelmed drains", "Manhole overflows during storm events", "Drain collapses beneath established streets", "Commercial drainage emergencies"],
+      process: "Emergency calls are prioritised immediately. We dispatch the nearest engineer with full emergency equipment including pumps, jetting gear, and containment materials.",
+      localTip: "Northallerton's flat terrain means surface water can pool rather than drain naturally. If you notice standing water near your property during rain, contact us for a drainage assessment."
     },
     "drain-repairs": {
-      intro: "Bolton's new town housing stock is reaching the age where drainage repairs become increasingly necessary. Our repair specialists understand the materials and methods used in 1960s-80s construction and provide repair solutions that extend the life of ageing systems while delivering reliable results.",
-      commonProblems: ["Cracked concrete drainage pipes", "Deteriorating clay pipe joints", "Root damage from established trees", "Ground settling causing pipe displacement", "Age-related material degradation"],
-      process: "We investigate thoroughly before recommending repairs, ensuring you understand all options and their implications. Repair work is completed to high standards with appropriate guarantees.",
-      localTip: "Bolton's new town infrastructure is reaching the end of its design life in many areas. Consider proactive repair and relining rather than waiting for complete failure."
+      intro: "Professional drain repairs across Northallerton, from no-dig relining that minimises disruption to full excavation where necessary. Our engineers handle repairs to all pipe types and ages found across this historic market town.",
+      commonProblems: ["Aged clay pipes cracking and fragmenting", "Joint displacement from clay soil movement", "Root intrusion causing pipe damage", "Pipe corrosion in older metal sections", "Settlement damage in newer developments"],
+      process: "CCTV diagnosis identifies the exact nature and extent of damage, guiding our repair recommendation. We explain all options clearly and provide fixed quotes before work begins.",
+      localTip: "Northallerton's clay soils expand and contract with moisture changes, which can stress pipe joints over time. Regular monitoring of drainage performance helps catch problems early."
     }
   },
-  lanark: {
+  catterick: {
     "blocked-drains": {
-      intro: "Bury's blend of established residential streets and modern commercial developments creates varied drainage challenges. Our Bury blocked drain specialists understand the differences between period stone villas along St John's Road and the mid-century housing in Clermiston and East Craigs, bringing the right expertise to every callout.",
-      commonProblems: ["Root intrusion from mature garden trees and hedgerows", "Fat and grease buildup from busy household kitchens", "Debris accumulation in period clay pipes", "Surface water blockages in the Gyle commercial area", "Shared drainage issues in semi-detached housing"],
-      process: "We assess each Bury blockage considering the property type, pipe age, and drainage layout. Period properties along St John's Road need different handling than the 1960s housing in Clermiston, and our engineers adapt their approach accordingly.",
-      localTip: "Bury's leafy streets and mature gardens along Bury Road and St John's Road are beautiful but pose significant root intrusion risks — schedule annual CCTV inspections if you have large trees within 5 metres of drainage runs."
+      intro: "Catterick's mix of military garrison housing, traditional village properties, and modern developments creates diverse drainage needs. Our engineers understand the different drainage systems across the area and bring the right expertise to every callout.",
+      commonProblems: ["Debris accumulation in older village drainage", "Root intrusion from established trees", "Grease buildup in garrison catering facilities", "Surface water issues in low-lying areas near the River Swale", "Blockages in modern estate drainage"],
+      process: "We tailor our approach to the property type and drainage system, whether it's a traditional village cottage or a modern family home. Our engineers carry equipment suited to all drainage configurations found across the Catterick area.",
+      localTip: "Catterick Village properties near the River Swale should be particularly attentive to drainage maintenance during autumn and winter when flood risk increases."
     },
     "drain-unblocking": {
-      intro: "When drains block in Bury, our local teams respond promptly with the right equipment for every property type. From period homes along Bury Road to modern commercial units at the Gyle, we clear blockages efficiently while respecting your property.",
-      commonProblems: ["Kitchen sink blockages from food waste", "Bathroom drain clogs in family homes", "External gulley obstructions from garden debris", "Utility room and laundry drain blockages", "Commercial drainage issues at the Gyle"],
-      process: "Our Bury engineers arrive equipped for the area's varied property types. We locate the blockage precisely, select the least disruptive clearing method, and restore full drainage flow.",
-      localTip: "Bury properties with gravel driveways should fit gulley guards to prevent stones entering surface water drains."
+      intro: "Prompt drain unblocking across Catterick, Colburn, and the surrounding area. Our engineers respond quickly to clear blockages in all property types, from garrison quarters to village cottages.",
+      commonProblems: ["Kitchen and bathroom blockages in family housing", "External drain clogs from garden debris", "Shared drainage issues in terraced housing", "Toilet blockages from inappropriate items", "Commercial kitchen waste accumulation"],
+      process: "Our local engineers carry comprehensive equipment and respond promptly to all Catterick callouts. We clear the blockage efficiently and advise on preventing future issues.",
+      localTip: "Catterick Garrison residents should report drainage issues promptly through the appropriate channels, as shared systems mean one blockage can affect multiple properties."
     },
     "cctv-drain-surveys": {
-      intro: "Whether you're buying a stone villa on St John's Road or investigating drainage at a South Gyle business unit, our CCTV surveys provide the detailed assessment you need. We reveal the true condition of pipes beneath Bury's diverse range of properties.",
-      commonProblems: ["Pre-purchase surveys for period stone villas", "Root ingress investigation in mature gardens", "Mapping complex drainage in commercial premises", "Condition assessment of mid-century pipe systems", "Insurance and renovation planning requirements"],
-      process: "We survey Bury properties thoroughly, documenting all drainage routes including connections to outbuildings and extensions. Reports are detailed and professional, suitable for property transactions and insurance purposes.",
-      localTip: "Planning an extension on your Bury home? A pre-build CCTV drain survey identifies any pipes that need protecting or redirecting before construction begins."
+      intro: "CCTV drain surveys across the Catterick area, providing detailed drainage assessments for homebuyers, property owners, and landlords. Our professional surveys reveal hidden issues that surface inspection cannot detect.",
+      commonProblems: ["Pre-purchase surveys for properties across the Catterick area", "Drainage condition assessment for rental properties", "Investigation of recurring problems", "Mapping drainage routes for extensions", "Insurance and claims documentation"],
+      process: "Our technicians access the drainage through existing points and record comprehensive footage. You receive a professional report with condition assessments and recommendations.",
+      localTip: "If you're buying a property near Catterick Racecourse or the River Swale, a CCTV survey can identify flood-related drainage damage that may not be apparent during a dry viewing."
     },
     "drain-jetting": {
-      intro: "High-pressure jetting maintains Bury's period and modern drainage at peak performance. Our careful approach removes accumulated deposits from Victorian clay pipes along St John's Road and clears root masses from garden-heavy properties in East Craigs, restoring optimal flow throughout your system.",
-      commonProblems: ["Root mass accumulation from garden trees", "Scale deposits from water supply", "Grease and fat buildup over time", "Silt and garden debris in surface water drains", "General maintenance for residential drainage networks"],
-      process: "We adjust jetting pressure and nozzle selection to suit each pipe's material and age. Bury's older properties receive gentler treatment that effectively clears deposits without risking damage to original drainage.",
-      localTip: "Bury properties with large gardens should combine annual jetting with root inhibitor treatment to keep drainage clear year-round."
+      intro: "Professional drain jetting across Catterick and surrounding areas, effective on all pipe types from older clay systems to modern plastic installations. Our variable-pressure equipment delivers thorough cleaning safely.",
+      commonProblems: ["Scale deposits from hard water", "Grease accumulation in kitchen drains", "Silt from nearby watercourses", "Root debris removal", "General maintenance cleaning"],
+      process: "We assess pipe condition first, then select the appropriate pressure and nozzle. Our jetting process clears deposits thoroughly while protecting pipe integrity.",
+      localTip: "Catterick properties with nearby trees should consider annual jetting to prevent root-related blockages from developing."
     },
     "emergency-drain-services": {
-      intro: "Drainage emergencies in Bury demand swift, professional response. Whether you're facing sewage backup in a period villa or flooding at a Clermiston family home, our emergency teams are available around the clock to protect your property from damage.",
-      commonProblems: ["Sewage backing up into ground floors", "Garden flooding from overwhelmed drainage", "Overflowing inspection chambers", "Drain collapse beneath driveways and patios", "Storm water overwhelming period drainage systems"],
-      process: "Emergency calls from Bury are prioritised and dispatched immediately. Our engineers understand the area's property types and act quickly to contain damage while implementing effective, lasting solutions.",
-      localTip: "Bury properties near the base of Bury Hill may experience increased surface water runoff during heavy rain — ensure gullies and downpipe connections are clear."
+      intro: "24/7 emergency drainage response across Catterick, Colburn, and surrounding areas. Our engineers are ready to tackle flooding, sewage backup, and drainage failures at any time of day or night.",
+      commonProblems: ["Sewage backup from overloaded systems", "Flooding from River Swale proximity", "Drain collapses in older infrastructure", "Storm water overwhelming drainage", "Emergency situations affecting multiple properties"],
+      process: "Emergency calls receive immediate dispatch. Our engineers arrive with full emergency equipment and work to contain and resolve the situation as quickly as possible.",
+      localTip: "Catterick properties in the Swale valley should have emergency contacts and a basic flood plan prepared, particularly during autumn and winter months."
     },
     "drain-repairs": {
-      intro: "Repairing drainage beneath Bury's varied properties requires specialist care. Our repair teams work with all property ages across the area, from restoring Victorian clay pipes in period stone villas to fixing mid-century systems in Clermiston and East Craigs.",
-      commonProblems: ["Root damage to clay pipe joints", "Cracked pipes beneath driveways and patios", "Displaced joints from ground movement", "Age-related deterioration of period drainage", "Damage from extension and renovation projects"],
-      process: "We investigate thoroughly and recommend repairs suited to your property's character. No-dig relining preserves mature gardens and landscaping, while excavation is reserved for severe damage requiring full replacement.",
-      localTip: "Bury's clay subsoil and mature tree cover cause seasonal ground movement — flexible repair solutions like pipe relining accommodate this better than rigid replacements."
+      intro: "Professional drain repairs across the Catterick area, with expertise covering traditional village drainage systems and modern installations alike. We offer both no-dig solutions and excavation where needed.",
+      commonProblems: ["Aged clay pipes in village properties", "Joint displacement from ground movement", "Root damage from established trees", "Deteriorating concrete pipes in post-war housing", "Flood-related pipe damage"],
+      process: "CCTV diagnosis guides our repair recommendations. We explain all available options, provide fixed quotes, and carry out repairs to a high standard with our workmanship guarantee.",
+      localTip: "Catterick's river valley location means some areas experience ground movement from seasonal water table changes. Regular drainage checks help identify stress on pipes before failure occurs."
     }
   },
-  cumbernauld: {
+  sedgefield: {
     "blocked-drains": {
-      intro: "Rochdale's reputation as one of Manchester's most desirable suburbs comes with distinctive drainage challenges. The area's substantial Victorian and Edwardian stone-built properties feature original clay drainage systems, while tree-lined avenues contribute to root intrusion issues. Our Rochdale specialists understand these local factors and deliver effective blocked drain solutions.",
-      commonProblems: ["Tree root intrusion from mature gardens and avenues", "Aged clay pipe deterioration", "Fat buildup from busy household kitchens", "Leaf debris in autumn months from tree-lined streets", "Shared drainage in converted period properties"],
-      process: "We approach Rochdale blocked drains with appreciation for the area's period properties. Our clearing methods are effective yet gentle on original drainage features, preserving the integrity of your home's infrastructure.",
-      localTip: "Rochdale's beautiful mature trees along Rochdale Road and surrounding avenues are a root intrusion risk. Consider annual CCTV checks if you have large trees near your drainage runs."
+      intro: "Sedgefield's attractive village setting with its mix of period and modern properties creates specific drainage needs. Our engineers bring local knowledge of the village and surrounding communities to every callout, handling everything from blocked drains in stone cottages to modern estate drainage issues.",
+      commonProblems: ["Root intrusion from mature trees around the village green", "Clay pipe deterioration in older village properties", "Fat and grease buildup in kitchen drains", "Leaf debris blocking external gullies", "Surface water issues from clay soils"],
+      process: "We assess each Sedgefield property's drainage age and configuration before selecting the most effective clearing method. Our equipment handles all situations from simple domestic blockages to complex drainage issues.",
+      localTip: "Sedgefield properties near Hardwick Hall Country Park should be aware of root intrusion risk from the park's mature tree stock."
     },
     "drain-unblocking": {
-      intro: "Rochdale residents deserve drain unblocking services that match the quality of their homes. Our local teams respond promptly to calls from Churchhill to Comiston, bringing the expertise needed to clear blockages in period properties without causing unnecessary disruption.",
-      commonProblems: ["Bathroom drain clogs", "Kitchen sink blockages", "External gulley obstructions", "Downpipe connections", "Cellar drainage issues"],
-      process: "Our Rochdale engineers understand period property drainage. We use appropriate techniques for each situation, whether that's careful rodding of delicate clay pipes or jetting for more robust modern sections.",
-      localTip: "Rochdale's Victorian properties often have drainage running beneath conservatories and extensions. Know your drainage routes before planning building work."
+      intro: "Reliable drain unblocking across Sedgefield and surrounding villages including Fishburn and Bishop Middleham. Our local engineers respond promptly with the equipment needed for any unblocking situation.",
+      commonProblems: ["Kitchen sink blockages from cooking waste", "Bathroom drain clogs", "External drain blockages from garden debris", "Toilet blockages", "Shared drainage issues in older village housing"],
+      process: "Our engineers carry rods, electromechanical machines, and jetting equipment, selecting the best method for your specific situation. We clear the blockage and advise on prevention.",
+      localTip: "Sedgefield's village properties often have longer drainage runs to the main sewer. Regular maintenance prevents buildup in these extended pipe runs."
     },
     "cctv-drain-surveys": {
-      intro: "Rochdale's premium property market makes thorough drainage assessment essential for buyers and sellers alike. Our CCTV surveys provide detailed condition reports that protect your investment, revealing the true state of underground drainage in the area's sought-after Victorian and Edwardian homes.",
-      commonProblems: ["Pre-purchase condition assessment", "Root ingress investigation", "Drainage route mapping", "Period feature documentation", "Insurance requirements"],
-      process: "We survey Rochdale properties with appreciation for their character and value. Our reports are comprehensive and professional, suitable for property transactions and insurance purposes.",
-      localTip: "Rochdale home sellers can benefit from proactive drainage surveys, addressing any issues before they become negotiating points in what is Manchester's most competitive property market."
+      intro: "CCTV drain surveys for Sedgefield properties, from period cottages around the green to modern housing on the outskirts. Our surveys provide the detailed information needed for property purchases, insurance claims, and maintenance planning.",
+      commonProblems: ["Pre-purchase surveys for village properties", "Investigation of damp and drainage odours", "Drainage mapping for renovations", "Condition assessment of older systems", "Post-storm damage checks"],
+      process: "Our technicians survey the entire drainage network, producing comprehensive footage and professional reports that are accepted by solicitors, insurers, and local authorities.",
+      localTip: "Sedgefield's period properties may have drainage layouts that have evolved over many years. A CCTV survey maps the actual routes, which may differ from original plans."
     },
     "drain-jetting": {
-      intro: "High-pressure jetting maintains Rochdale's period drainage at peak performance. Our careful approach removes decades of accumulated deposits from Victorian clay pipes, restoring flow capacity while preserving the integrity of original drainage features.",
-      commonProblems: ["Scale from water supply", "Grease accumulation over time", "Root mass removal", "Silt and debris clearing", "Pre-survey preparation"],
-      process: "Rochdale's period drainage requires measured jetting approaches. We adjust pressure and nozzle selection to suit pipe age and condition, achieving thorough cleaning without risk of damage.",
-      localTip: "Rochdale's elevated position means good natural drainage gradients, but pipe scale buildup can still restrict flow. Periodic jetting maintains optimal performance and extends drainage lifespan."
+      intro: "Professional drain jetting for Sedgefield properties, handling everything from gentle cleaning of period clay pipes to thorough descaling of modern systems. Our variable-pressure equipment maintains drainage performance across the village.",
+      commonProblems: ["Scale buildup from hard water", "Grease deposits in kitchen drains", "Silt from clay soil conditions", "Root debris clearing", "Annual maintenance cleaning"],
+      process: "We match jetting pressure and nozzle selection to your pipe type and condition, ensuring thorough cleaning without risking damage to older systems.",
+      localTip: "Sedgefield's clay soils can contribute to silt accumulation in drainage. Annual jetting keeps village properties flowing freely."
     },
     "emergency-drain-services": {
-      intro: "Drainage emergencies in Rochdale receive our immediate attention, with local engineers ready to protect your home from damage. Whether you're facing sewage backup in a Victorian stone villa or flooding in a converted flat, we respond with the urgency your situation demands.",
-      commonProblems: ["Sewage backing up into cellars", "Garden flooding from blocked drains", "Manhole overflows", "Drain collapse affecting foundations", "Persistent foul odours"],
-      process: "Emergency response to Rochdale properties is swift and professional. We understand the area's property values and act to minimise damage and disruption while resolving the underlying problem.",
-      localTip: "Rochdale properties with cellars should ensure drainage pumps and non-return valves are regularly serviced to prevent backup during storms."
+      intro: "Emergency drainage response for Sedgefield and surrounding villages, available around the clock. Our engineers handle sewage emergencies, flooding, and drain collapses with professional urgency.",
+      commonProblems: ["Sewage backup in residential properties", "Surface water flooding from overwhelmed village drains", "Manhole overflows", "Drain collapses in older infrastructure", "Storm damage to drainage systems"],
+      process: "Emergency calls receive immediate priority. We dispatch engineers with full emergency equipment to contain and resolve the situation quickly.",
+      localTip: "Sedgefield's rural drainage connections can be affected by agricultural activity in surrounding fields. If you notice unusual drainage behaviour after heavy rain, call us promptly."
     },
     "drain-repairs": {
-      intro: "Repairing drainage in Rochdale's character properties requires specialist knowledge and sympathetic approaches. Our repair team works with all property ages, from original Victorian installations to modern connections, always selecting methods that preserve your home's integrity while delivering lasting results.",
-      commonProblems: ["Aged clay pipe cracking", "Root damage to joints", "Ground movement effects", "Historical modification issues", "Cellar drainage problems"],
-      process: "We investigate Rochdale drainage issues thoroughly, recommending repairs that suit your property's age and construction. No-dig techniques are often ideal for period properties, avoiding disruption to mature gardens and original features.",
-      localTip: "Rochdale's Victorian drainage often includes original salt-glazed pipes. These can be repaired and relined rather than replaced, preserving heritage features."
+      intro: "Expert drain repairs across Sedgefield, with sensitivity to the village's character and conservation requirements. Our repair options range from minimally disruptive relining to full excavation where necessary.",
+      commonProblems: ["Aged clay pipes cracking in period properties", "Joint displacement from clay soil movement", "Root damage from mature village trees", "Pipe deterioration in older drainage runs", "Settlement-related damage"],
+      process: "CCTV diagnosis identifies damage precisely, guiding our repair approach. We favour no-dig techniques in the village setting and reinstate all surfaces to match their surroundings.",
+      localTip: "Sedgefield's conservation area status means excavation work may require additional planning. No-dig relining can often resolve pipe damage without disturbing the village streetscape."
     }
   },
-  coatbridge: {
+  "barnard-castle": {
     "blocked-drains": {
-      intro: "Wigan's seaside location on the Firth of Forth creates specific drainage considerations, from sandy soil conditions near the beach to Victorian pipe systems in the area's traditional villas. Our Wigan blocked drain specialists understand how coastal proximity affects drainage systems and bring the expertise needed for properties from the Promenade to Duddingston.",
-      commonProblems: ["Sand infiltration into coastal drainage systems", "Root intrusion from garden trees in established streets", "Fat and grease buildup from domestic kitchens", "Debris accumulation in Victorian clay pipes", "Surface water issues on low-lying coastal properties"],
-      process: "We assess your Wigan property's position and drainage layout before selecting clearing methods. Coastal properties may require different approaches than those further inland in Duddingston or Willowbrae. Our engineers are experienced with all property types along the coast.",
-      localTip: "Wigan's sandy soil near the beach can shift around pipes, creating gaps where debris enters the system. Properties close to the shore should have drainage checked more frequently."
+      intro: "Barnard Castle's riverside location and historic town centre create distinctive drainage challenges. Our engineers understand the specific issues facing properties in this beautiful Teesdale market town, from flood-risk drainage near the River Tees to ageing systems beneath historic stone buildings.",
+      commonProblems: ["River-related sediment in drainage near the Tees", "Root intrusion from mature trees in established gardens", "Grease buildup in town centre commercial properties", "Aged stone and clay drainage in historic buildings", "Surface water issues after heavy Teesdale rainfall"],
+      process: "We assess each Barnard Castle property's position relative to the river and its drainage age before selecting clearing methods. Our engineers are experienced with the full range of property types and drainage systems found across Teesdale.",
+      localTip: "Barnard Castle properties near the River Tees should ensure all drainage inspection chambers are accessible and maintained, particularly before the autumn flood-risk season."
     },
     "drain-unblocking": {
-      intro: "When drains block in Wigan, our local teams respond with the urgency and expertise your situation demands. Whether you're dealing with a backed-up kitchen sink in Joppa or an overflowing external drain in Craigentinny, we'll have your drainage flowing freely again.",
-      commonProblems: ["Kitchen waste accumulation", "Bathroom drain blockages", "External gulley obstructions", "Toilet blockages in seaside properties", "Washing machine drain problems"],
-      process: "Our Wigan engineers arrive with comprehensive unblocking equipment suitable for all drain types. We assess the blockage location and severity, then apply the most effective clearing technique, ensuring complete removal of the obstruction.",
-      localTip: "Wigan's promenade properties often have rear drainage running close to neighbouring boundaries. Know your drainage layout to identify the responsible party when blockages occur."
+      intro: "Fast drain unblocking across Barnard Castle and surrounding Teesdale villages. Whether you're in the town centre or a rural property in Startforth or Cotherstone, we respond with the right equipment and expertise.",
+      commonProblems: ["Kitchen and bathroom blockages in residential properties", "External drain clogs from garden and riverside debris", "Grease and fat in commercial premises", "Toilet blockages", "Blocked gullies from leaf fall"],
+      process: "Our engineers carry comprehensive equipment for all unblocking situations. We select the appropriate method for your property type and drainage system, clearing the blockage and advising on prevention.",
+      localTip: "Barnard Castle's exposed position in upper Teesdale means autumn leaf fall can be heavy. Keep gullies and drain covers clear to prevent blockages."
     },
     "cctv-drain-surveys": {
-      intro: "Wigan's varied property market, from Victorian seaside villas to modern conversions, makes drainage condition assessment increasingly important. Our CCTV surveys reveal exactly what's inside your pipes, providing essential information for property transactions and ongoing maintenance in this popular coastal suburb.",
-      commonProblems: ["Sand and silt infiltration assessment", "Age-related pipe deterioration in Victorian villas", "Root ingress from established gardens", "Drainage route mapping before renovations", "Condition assessment for property purchases"],
-      process: "We survey your entire drainage system, documenting condition, identifying defects, and noting any coastal-specific issues. The final report includes annotated footage, a condition summary, and maintenance recommendations.",
-      localTip: "Purchasing a Victorian villa on Wigan's promenade? A pre-purchase CCTV survey is essential — seaside conditions accelerate pipe deterioration and hidden defects are common."
+      intro: "Professional CCTV drain surveys in Barnard Castle and across Teesdale. Our detailed surveys are essential for understanding drainage condition in the town's historic properties and for pre-purchase assessments.",
+      commonProblems: ["Assessment of historic stone drainage systems", "Pre-purchase surveys for period properties", "Investigation of damp related to drainage", "Post-flood damage assessment", "Drainage mapping for renovations"],
+      process: "Our survey team carefully navigates the often complex drainage layouts found in Barnard Castle properties, producing detailed reports with footage, condition assessments, and prioritised recommendations.",
+      localTip: "Barnard Castle's historic buildings may have drainage that has been modified multiple times over the centuries. A CCTV survey reveals the actual layout and condition."
     },
     "drain-jetting": {
-      intro: "High-pressure jetting provides the deep cleaning that Wigan's coastal drainage systems often need. Our service removes sand, silt, and scale deposits from Victorian pipes along the promenade and clears accumulated debris from properties throughout Joppa and Duddingston.",
-      commonProblems: ["Sand and silt accumulation from coastal proximity", "Scale buildup from water supply", "Grease accumulation in residential drains", "Root fragments requiring removal", "Preparation for CCTV inspection"],
-      process: "We select jetting equipment and settings appropriate for your pipe material and the deposits being removed. Coastal properties often have sand and silt that requires specific nozzle selection for effective removal.",
-      localTip: "Wigan's coastal properties experience faster silt accumulation than inland areas. Consider jetting every 12 months rather than the usual 18 to maintain optimal flow."
+      intro: "Drain jetting across Barnard Castle, with pressure and technique adapted to suit the town's range of drainage systems. From delicate cleaning of historic stone channels to thorough maintenance of modern installations.",
+      commonProblems: ["Sediment from river proximity", "Scale deposits from Teesdale water supply", "Grease buildup in commercial properties", "Root debris from mature trees", "General maintenance requirements"],
+      process: "We assess pipe material and condition carefully before jetting, selecting appropriate pressure for the system. Our equipment delivers effective cleaning while preserving pipe integrity.",
+      localTip: "Barnard Castle's hard water from the Pennine uplands can cause significant scale buildup. Regular jetting prevents gradual flow restriction."
     },
     "emergency-drain-services": {
-      intro: "Drainage emergencies in Wigan receive rapid response from our local teams, day or night. From flooded basements near the promenade to sewage issues in Northfield, our engineers are ready to tackle any emergency and protect your property from further damage.",
-      commonProblems: ["Sewage backflow into properties", "Coastal flooding from overwhelmed drainage", "Overflowing inspection chambers", "Collapsed drains in sandy soil", "Storm surge affecting coastal drainage"],
-      process: "Emergency calls to our Wigan service trigger immediate dispatch. We provide ETA updates and arrive prepared for the reported situation. Our priority is containing the emergency, then implementing a lasting solution.",
-      localTip: "Wigan's coastal properties should have non-return valves fitted on main drainage connections to prevent high tide or storm surge from forcing water back into the system."
+      intro: "Emergency drainage response for Barnard Castle and Teesdale, available 24/7. River Tees flood risk makes emergency preparedness particularly important for properties in this area.",
+      commonProblems: ["River flooding overwhelming drainage systems", "Sewage backup during flood events", "Storm damage to drainage infrastructure", "Collapsed drains in historic buildings", "Emergency situations in isolated rural properties"],
+      process: "Emergency calls receive immediate attention. We dispatch engineers with full emergency equipment, including pumps and containment gear essential for river-proximity situations.",
+      localTip: "Barnard Castle residents near the River Tees should sign up for Environment Agency flood alerts and ensure drainage systems are well-maintained before flood-risk seasons."
     },
     "drain-repairs": {
-      intro: "Repairing drainage in Wigan's coastal environment requires understanding the specific challenges of sandy soil, saltwater proximity, and the area's mix of Victorian and modern properties. Our repair specialists select methods and materials suited to these seaside conditions, ensuring lasting results.",
-      commonProblems: ["Cracked pipes from sand movement", "Root damage from garden vegetation", "Joint displacement in sandy soil", "Saltwater corrosion affecting connections", "Sand infiltration through damaged joints"],
-      process: "We assess Wigan drainage repairs with coastal conditions in mind. Materials are chosen for saltwater resistance, and repair methods account for the sandy, mobile soil conditions prevalent near the shore.",
-      localTip: "Wigan's sandy soil conditions can make traditional excavation repairs more straightforward than in rocky Manchester locations — but pipe bedding must be done carefully to prevent future settlement."
+      intro: "Sensitive drain repairs in Barnard Castle, respecting the town's historic character while delivering lasting solutions. Our engineers are experienced with repair techniques suited to period properties and conservation areas.",
+      commonProblems: ["Deteriorating stone drainage channels", "Cracked clay pipes in historic buildings", "Root damage from riverside trees", "Flood-related pipe displacement", "Age-related pipe collapse"],
+      process: "CCTV diagnosis identifies damage precisely. We favour no-dig techniques where possible to minimise disruption to Barnard Castle's historic streetscape, but can excavate where necessary.",
+      localTip: "Barnard Castle's conservation area and many listed buildings mean repair work requires careful planning. We advise on the most appropriate techniques to satisfy both conservation requirements and drainage needs."
     }
   },
-  rutherglen: {
+  shildon: {
     "blocked-drains": {
-      intro: "Salford and the surrounding Midlothian communities blend historic village charm with modern housing developments, each with their own drainage characteristics. Our Salford blocked drain service covers everything from Lasswade's traditional stone cottages to Hopefield's newer family homes, bringing local expertise to every callout.",
-      commonProblems: ["Root intrusion from established village trees and hedgerows", "Fat and grease buildup in domestic kitchens", "Debris accumulation in older stone drainage systems", "Surface water blockages from leaf litter", "Shared drainage conflicts in terraced housing"],
-      process: "We assess each Salford blockage considering the property type, drainage age, and local conditions. Traditional stone properties need different handling than modern estates, and our engineers adapt their approach accordingly.",
-      localTip: "Salford properties near the River North Esk at Lasswade should have drainage inspected after periods of heavy rainfall when debris and silt can accumulate rapidly."
+      intro: "Shildon's Victorian railway terraces and post-war housing estates each present different drainage challenges. Our engineers understand the typical pipe materials and layouts found across this historic railway town and bring the right equipment to resolve blockages efficiently.",
+      commonProblems: ["Fat and grease buildup in terraced housing kitchen drains", "Root intrusion from street trees and hedgerows", "Deteriorating clay pipes in Victorian terraces", "Debris in surface water drains", "Blockages in shared rear drainage"],
+      process: "We assess your Shildon property's era and drainage configuration before selecting the clearing method. Our engineers are experienced with the terraced housing and estate drainage typical of the town.",
+      localTip: "Shildon's Victorian terraces often have shared rear drainage. If multiple properties are affected, the blockage may be in the communal drain rather than your private pipework."
     },
     "drain-unblocking": {
-      intro: "When Salford drains need unblocking, our local team responds with the equipment and expertise to clear any obstruction. From Lasswade to Rosewell, we handle residential drain unblocking with professional efficiency and minimal disruption to your home.",
-      commonProblems: ["Kitchen sink blockages", "Toilet and bathroom clogs", "External drain obstructions", "Interceptor trap blockages in older properties", "Utility room drainage issues"],
-      process: "Our Salford engineers carry comprehensive equipment for all unblocking scenarios. We locate the blockage, select the appropriate tool, and clear the obstruction thoroughly, checking flow restoration before completing the job.",
-      localTip: "Salford's older stone-built properties often have deep inspection chambers. Ensure access covers are in good condition and accessible for maintenance."
+      intro: "Reliable drain unblocking across Shildon, from the Victorian terraces of Old Shildon to modern developments. Our engineers respond quickly with equipment suited to the town's varied housing stock.",
+      commonProblems: ["Kitchen sink blockages from cooking waste", "Bathroom clogs in older properties", "External gully blockages", "Toilet blockages from inappropriate items", "Shared drainage problems in terraced streets"],
+      process: "Our Shildon engineers carry the full range of unblocking equipment. We diagnose the blockage, clear it efficiently, and provide advice to prevent recurrence.",
+      localTip: "Shildon's terraced housing means a blockage in one property can sometimes affect neighbours. If you're experiencing slow drains, check with your neighbours whether they have the same issue."
     },
     "cctv-drain-surveys": {
-      intro: "Understanding your Salford property's drainage is essential for proper maintenance and informed decision-making. Our CCTV surveys reveal the condition of pipes beneath your property, identifying issues that surface inspection cannot detect. This is particularly valuable in the Midlothian area where ground conditions vary.",
-      commonProblems: ["Unknown drainage routes in period properties", "Pipe condition assessment for home purchases", "Root ingress detection from mature gardens", "Joint and connection problems from ground settling", "Planning investigation for extensions"],
-      process: "We systematically survey your accessible drainage, recording footage and noting findings. The resulting report provides a clear picture of your system's condition, with recommendations prioritised by urgency.",
-      localTip: "Salford properties near former paper mill and mining sites may have unexpected underground features. Surveys help identify complex drainage arrangements before problems develop."
+      intro: "CCTV drain surveys across Shildon, providing essential drainage intelligence for homebuyers, property owners, and landlords. Our surveys are particularly valuable for the town's older housing where drainage condition is often unknown.",
+      commonProblems: ["Assessing ageing clay pipes in Victorian terraces", "Pre-purchase surveys for Shildon properties", "Investigation of persistent damp", "Drainage mapping for home improvements", "Insurance documentation"],
+      process: "Our survey team accesses the drainage through manholes and inspection chambers, recording comprehensive footage of the entire network. Reports are delivered within 24 hours.",
+      localTip: "Shildon's Victorian terraces were built with clay drainage designed for much smaller households. A CCTV survey can reveal whether your drainage has been upgraded to match modern demands."
     },
     "drain-jetting": {
-      intro: "Regular high-pressure jetting is valuable maintenance for Salford's drainage systems. Our specialist equipment handles everything from clearing root masses in Lasswade's older properties to descaling pipes in Hopefield's modern housing, maintaining optimal flow throughout the area.",
-      commonProblems: ["Scale buildup from water supply", "Grease accumulation in residential drains", "Silt and sediment from nearby river and streams", "Root fragments after cutting treatment", "General preventative maintenance cleaning"],
-      process: "We assess your drainage and select appropriate jetting equipment. The cleaning process is thorough but controlled, removing deposits while protecting your pipe integrity. We verify results with flow testing.",
-      localTip: "Salford properties with gardens backing onto the River North Esk valley experience more silt buildup — consider jetting every 12 months rather than the usual 18."
+      intro: "Effective drain jetting across Shildon, maintaining both the Victorian clay pipe systems in the older terraces and modern drainage in newer developments. Our equipment handles all pipe types safely.",
+      commonProblems: ["Grease accumulation in kitchen drains", "Scale deposits in older pipework", "Silt and debris buildup", "Root fragment clearing", "Routine maintenance"],
+      process: "We assess pipe material and condition before jetting, adjusting pressure appropriately. Our thorough cleaning restores full flow capacity and extends the life of your drainage system.",
+      localTip: "Shildon's older clay drainage benefits from regular maintenance jetting to prevent the gradual buildup that leads to sudden blockages."
     },
     "emergency-drain-services": {
-      intro: "Salford drainage emergencies receive immediate attention from our dedicated response teams. Whether you're facing a flooded garden in Hopefield or sewage backup in Lasswade, we're available around the clock to resolve the situation and protect your property.",
-      commonProblems: ["Sewage backing up into properties", "Flooding from blocked drains", "Overflowing manholes on residential streets", "Collapsed drainage from ground movement", "Foul odour emergencies"],
-      process: "Emergency calls are dispatched immediately to our nearest available engineer. We keep you informed of arrival times and tackle the emergency with appropriate urgency, implementing both immediate fixes and lasting solutions.",
-      localTip: "Salford's river valley location means water levels can rise quickly after sustained rain in the Pentland Hills. Keep emergency drain contacts readily available and know your manhole locations."
+      intro: "Emergency drainage response across Shildon, available 24/7. Our engineers handle sewage emergencies, flooding, and drain collapses with the urgency these situations demand.",
+      commonProblems: ["Sewage backup in terraced properties", "Surface water flooding during heavy rain", "Shared drain overflows affecting multiple homes", "Drain collapses in ageing infrastructure", "Foul odours from drainage failures"],
+      process: "Emergency calls receive immediate priority. We dispatch engineers with pumping, jetting, and containment equipment to manage the emergency and resolve the cause.",
+      localTip: "Shildon's terraced streets mean drainage emergencies can quickly affect multiple properties. Report problems early to prevent escalation."
     },
     "drain-repairs": {
-      intro: "Salford's property stock spans traditional stone cottages to modern family homes, and our drain repair expertise matches this diversity. From relining Victorian pipes in Lasswade to replacing damaged sections in Hopefield, we provide repair solutions appropriate to each property type.",
-      commonProblems: ["Cracked stone drainage channels in period properties", "Clay pipe deterioration from age", "Joint failures from ground movement", "Root damage from established trees", "Ground settling effects on newer developments"],
-      process: "We investigate thoroughly before recommending repairs, ensuring you understand all options and their implications. Repair work is completed to high standards with appropriate guarantees.",
-      localTip: "Salford's mix of former mining land and river valley geology means ground conditions can vary — always commission a proper survey before planning drainage repair work."
+      intro: "Drain repairs across Shildon, handling the full range of issues found in the town's Victorian and post-war housing stock. From no-dig relining to excavation, we select the most effective and economical approach.",
+      commonProblems: ["Cracked and fragmenting clay pipes", "Displaced joints in Victorian drainage", "Root damage requiring pipe replacement", "Corroded metal pipe sections", "Subsidence-related damage"],
+      process: "CCTV diagnosis guides our repair recommendation. No-dig relining is often ideal for Shildon's terraced properties where garden access is limited. Excavation is available for severe collapses.",
+      localTip: "Shildon's sloping terrain generally provides good drainage gradients, but the Victorian pipework's age means regular monitoring is advisable to catch deterioration early."
     }
   }
 };
 
 /**
- * How It Works steps per service (with {location} and {responseTime} placeholders)
+ * Shared templates used across all locations (with placeholders)
  */
 export interface HowItWorksStep {
   title: string;
@@ -490,7 +490,7 @@ export const SERVICE_WHY_CHOOSE_US: Record<string, string[]> = {
     "Local engineers who respond to {location} properties {responseTime}",
     "No call-out fee — you only pay for completed work",
     "Equipment suited to {propertyTypes}",
-    "Familiarity with Scottish Water infrastructure and local council requirements"
+    "Familiarity with Northumbrian Water infrastructure and local council requirements"
   ],
   "drain-unblocking": [
     "Rapid response across {location} — engineers arrive {responseTime}",
@@ -502,7 +502,7 @@ export const SERVICE_WHY_CHOOSE_US: Record<string, string[]> = {
     "HD camera equipment producing detailed, professional-grade reports",
     "Engineers who understand drainage typical of {propertyTypes}",
     "Response to {location} bookings {responseTime}",
-    "Reports accepted by solicitors, insurers, and Scottish Water"
+    "Reports accepted by solicitors, insurers, and Northumbrian Water"
   ],
   "drain-jetting": [
     "Variable-pressure jetting units safe for all pipe materials",
@@ -514,7 +514,7 @@ export const SERVICE_WHY_CHOOSE_US: Record<string, string[]> = {
     "Genuine 24/7 availability — nights, weekends, and bank holidays included",
     "Emergency engineers reach {location} {responseTime}",
     "Fully equipped vans carrying pumps, jetting gear, and repair materials",
-    "Experienced with flood-risk and sewage situations across Manchester and surrounding areas"
+    "Experienced with flood-risk and sewage situations across Darlington and surrounding areas"
   ],
   "drain-repairs": [
     "Both no-dig relining and excavation capabilities in-house",
@@ -536,7 +536,7 @@ export const SERVICE_FAQ_TEMPLATES: Record<string, FAQTemplate[]> = {
   "blocked-drains": [
     {
       question: "How quickly can you reach {location} to clear a blocked drain?",
-      answer: "Our engineers are based across Manchester and surrounding areas and typically reach {location} {responseTime}. For urgent blockages causing flooding or sewage backup, we prioritise dispatch to minimise property damage."
+      answer: "Our engineers are based across Darlington and surrounding areas and typically reach {location} {responseTime}. For urgent blockages causing flooding or sewage backup, we prioritise dispatch to minimise property damage."
     },
     {
       question: "What does it cost to clear a blocked drain in {location}?",
@@ -554,7 +554,7 @@ export const SERVICE_FAQ_TEMPLATES: Record<string, FAQTemplate[]> = {
     },
     {
       question: "Do you charge a call-out fee for drain unblocking in {location}?",
-      answer: "No. We never charge a call-out fee for drain unblocking in {location} or anywhere else across Manchester and surrounding areas. You only pay for the work carried out, and we confirm the price before we start."
+      answer: "No. We never charge a call-out fee for drain unblocking in {location} or anywhere else across Darlington and surrounding areas. You only pay for the work carried out, and we confirm the price before we start."
     },
     {
       question: "Should I try to unblock the drain myself before calling you?",
@@ -592,7 +592,7 @@ export const SERVICE_FAQ_TEMPLATES: Record<string, FAQTemplate[]> = {
   "emergency-drain-services": [
     {
       question: "How quickly can you respond to a drain emergency in {location}?",
-      answer: "Our emergency teams are positioned across Manchester and surrounding areas and reach {location} {responseTime}. We operate around the clock — 24 hours a day, 7 days a week, including bank holidays — so help is available whenever you need it."
+      answer: "Our emergency teams are positioned across Darlington and surrounding areas and reach {location} {responseTime}. We operate around the clock — 24 hours a day, 7 days a week, including bank holidays — so help is available whenever you need it."
     },
     {
       question: "What counts as a drainage emergency?",

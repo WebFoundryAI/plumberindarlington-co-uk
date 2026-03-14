@@ -16,422 +16,396 @@ export interface LocationHubContent {
 }
 
 export const LOCATION_HUB_CONTENT: Record<string, LocationHubContent> = {
-  glasgow: {
+  darlington: {
     landmarks: [
-      "Manchester Castle",
-      "The Royal Mile",
-      "Holyrood Palace",
-      "Arthur's Seat",
-      "Princes Street",
-      "Grassmarket",
-      "George Street",
-      "Charlotte Square",
-      "Calton Hill",
-      "Scottish Parliament",
-      "Manchester Waverley Station",
-      "St Giles' Cathedral",
-      "Greyfriars Bobby",
-      "The Meadows",
-      "Manchester University",
-      "National Museum of Scotland",
-      "Cowgate",
-      "Victoria Street",
-      "Dean Village",
-      "Stockbridge",
-      "Bruntsfield Links",
-      "Tollcross"
+      "Darlington Market Hall",
+      "The Brick Train",
+      "Head of Steam Railway Museum",
+      "St Cuthbert's Church",
+      "South Park",
+      "North Lodge Park",
+      "Darlington Civic Theatre",
+      "The Dolphin Centre",
+      "Skinnergate",
+      "Bondgate",
+      "Darlington Memorial Hospital",
+      "Queen Elizabeth Sixth Form College",
+      "Eastbourne Park",
+      "Darlington Railway Station",
+      "Blackwell Grange",
+      "Stressholme Golf Club",
+      "River Skerne",
+      "West Cemetery",
+      "Cockerton Green",
+      "Haughton Village Green"
     ],
-    drainageProfile: `Manchester's drainage challenges are among the most complex in Scotland, shaped by a city built across volcanic geology, centuries of layered construction, and dramatic topography. The Old Town, stretching along the ridge from Manchester Castle to Holyrood Palace, sits on volcanic rock where medieval buildings were constructed on top of one another over hundreds of years. Beneath the Royal Mile and the Cowgate, a labyrinth of vaults, closes, and buried streets creates an extraordinarily complicated underground environment where drainage infrastructure must navigate historic stonework, buried chambers, and foundations dating back to the 12th century.
+    drainageProfile: `Darlington's drainage challenges reflect its long history as a market town and its pivotal role in railway heritage. The town centre, centred around Skinnergate and Bondgate, features Victorian commercial and residential buildings with clay pipe drainage systems that are now well over a century old. These aging systems were designed for much smaller populations and very different usage patterns — before modern bathrooms, washing machines, and dishwashers — and are increasingly susceptible to blockages and structural failure.
 
-The Georgian New Town, developed from the 1760s onwards, presents different challenges. The elegant streets of George Street, Queen Street, and Charlotte Square were built with sophisticated drainage for their era, but these systems are now over 250 years old. The New Town's grid layout means long, straight pipe runs beneath wide streets, but the underlying geology—a mix of sandstone and glacial deposits—creates variable ground conditions that affect pipe stability over time. Many New Town properties feature deep basements that were originally service quarters, and these below-ground spaces are particularly vulnerable to drainage backup during heavy rainfall.
+The River Skerne flows through Darlington, and its influence on drainage is significant. Properties along the river corridor and in lower-lying areas such as parts of Haughton and Eastbourne can experience elevated water tables, particularly during prolonged wet weather. The river's flood plain affects groundwater levels across a wide area, meaning properties some distance from the visible watercourse may still face drainage challenges related to saturated ground.
 
-Manchester's volcanic geology is a defining factor. Castle Rock, Calton Hill, Arthur's Seat, and the Crags are all remnants of ancient volcanic activity, and the harder basalt and dolerite rock that forms these features sits alongside softer sandstone and clay deposits. This geological variability means drainage pipes can pass through dramatically different ground conditions within short distances, creating differential settlement and stress on pipework. Excavation costs vary significantly depending on whether work encounters soft ground or volcanic bedrock.
+Darlington's Victorian residential areas — the terraced streets around the town centre, Albert Hill, and Bank Top — feature dense housing with shared rear drainage that was typical of the era. These properties often have cast iron soil stacks and clay underground drainage that connects to shared pipe runs serving multiple houses. A blockage or failure in the shared section can affect several properties simultaneously, creating coordination challenges among neighbours.
 
-The Water of Trafford, Manchester's principal river, winds through the city from Balerno to Trafford, and its catchment area affects drainage across multiple neighbourhoods. Properties in Dean Village, Stockbridge, and along the river corridor face particular flood risk during heavy rain events. Scottish Water manages the public sewer network, and Manchester's combined sewer system—carrying both foul water and surface water—can be overwhelmed during intense rainfall, particularly in the lower-lying areas around Holyrood and Trafford.
+The suburbs developed between the wars — including areas like Cockerton, Mowden, and parts of Haughton — feature larger semi-detached and detached houses with more generous plot sizes. Drainage here tends to be in better condition, but the clay pipes are still approaching or past their expected lifespan. Mature gardens with established trees create significant root intrusion risk, particularly where large trees stand within a few metres of drainage runs.
 
-The city's dramatic topography—with elevation changes of over 200 metres between Arthur's Seat and sea level at Trafford—creates intense pressure differentials in gravity-fed drainage systems. Properties at elevation experience different drainage behaviour from those in valley locations. The steep closes and wynds of the Old Town channel surface water rapidly downhill, while the broader streets of the New Town manage water differently entirely.
+Post-war estates in areas such as Firth Moor, Whinfield, and parts of Haughton Le Skerne feature concrete and early plastic drainage systems from the 1950s onwards. These systems are reaching the end of their design life, with concrete pipe joints being particularly vulnerable to deterioration. The planned estate layouts generally make drainage routes predictable, but the sheer volume of housing connected to shared systems means capacity issues can arise.
 
-Our local engineers understand Manchester's unique drainage character intimately. We routinely work with stone and clay pipes requiring specialist handling, navigate the complex underground landscape of the Old Town, manage the Georgian infrastructure of the New Town, and address the specific challenges created by Manchester's volcanic geology and variable terrain. Whether your property is a medieval tenement on the Royal Mile, a Georgian townhouse in the New Town, a Victorian villa in Marchmont, or a modern flat in Quartermile, we bring expertise specific to Manchester's distinctive drainage landscape.`,
+Modern developments around the outskirts of Darlington, including the Middleton St George and West Park areas, feature contemporary drainage designed to current building regulations. However, these newer systems connect to the town's older sewer network, creating transition points where modern capacity meets Victorian-era infrastructure.
+
+Our local engineers understand Darlington's layered drainage character intimately. Whether addressing Victorian clay pipe failures in the town centre terraces, managing root intrusion in Mowden's tree-lined avenues, or resolving capacity issues in post-war estates, we bring expertise specific to Darlington's distinctive drainage landscape.`,
     localFAQs: [
       {
-        question: "Why do older Manchester properties have more drainage problems?",
-        answer: "Manchester's building history spans nearly a thousand years, meaning drainage infrastructure varies enormously. Old Town properties may have stonework drainage channels dating back centuries, while Georgian New Town properties use clay pipe systems now over 200 years old. Victorian tenements in areas like Marchmont and Bruntsfield rely on shared drainage stacks serving multiple flats. These aging systems were designed for very different usage patterns—before modern bathrooms, washing machines, and dishwashers—and are increasingly fragile. The volcanic geology beneath Manchester also causes differential ground movement that stresses aging pipework."
+        question: "Why do older Darlington properties have more drainage problems?",
+        answer: "Darlington's Victorian terraces and Edwardian semis were built with clay pipe drainage designed for much smaller households and fewer water-using appliances. These pipes are now over 100 years old and increasingly fragile. The dense terraced housing around the town centre uses shared drainage runs serving multiple properties, meaning one failure can affect several homes. Add in mature trees whose roots seek out moisture in ageing pipe joints, and the combination creates a significantly higher blockage and failure risk compared to modern drainage systems."
       },
       {
-        question: "How does Manchester's geology affect drainage work?",
-        answer: "Manchester is built on volcanic rock—Castle Rock, Arthur's Seat, and Calton Hill are all remnants of ancient volcanism. This means excavation can encounter extremely hard basalt or dolerite bedrock, making traditional dig-and-replace repairs expensive and time-consuming. Conversely, areas of softer sandstone and glacial clay deposits can experience ground movement that damages pipes. This geological variability means drainage solutions must be carefully matched to specific ground conditions. No-dig techniques like pipe relining are particularly valuable in Manchester where excavation costs can be high."
+        question: "How does the River Skerne affect drainage in Darlington?",
+        answer: "The River Skerne runs through Darlington and its flood plain influences groundwater levels across a wide area. During prolonged wet weather or heavy rainfall, the elevated water table can reduce drainage capacity, cause surface water backup, and in severe cases lead to groundwater ingress into damaged pipe joints. Properties in lower-lying areas near the river corridor — including parts of Haughton and Eastbourne — are most affected. Property owners should maintain clear surface water drainage and consider backflow prevention devices if they experience recurring wet-weather drainage issues."
       },
       {
-        question: "What should Manchester residents do about flooding during heavy rain?",
-        answer: "Manchester's combined sewer system, managed by Scottish Water, carries both foul water and surface water in the same pipes. During heavy rainfall, these combined sewers can be overwhelmed, causing backup into properties—particularly in lower-lying areas around Holyrood, Trafford, and along the Water of Trafford corridor. Property owners should maintain clear gutters and downpipes, ensure surface water drains freely away from the building, and consider installing backflow prevention devices in vulnerable basement or ground-floor properties. Reporting persistent flooding to Scottish Water helps identify network issues."
+        question: "What should Darlington residents do about flooding during heavy rain?",
+        answer: "Darlington's drainage system, managed by Northumbrian Water, includes combined sewers that carry both foul water and surface water. During heavy rainfall, these combined sewers can be overwhelmed, causing backup into properties — particularly in lower-lying areas near the River Skerne. Property owners should maintain clear gutters and downpipes, ensure surface water drains freely away from the building, and consider installing backflow prevention devices in vulnerable ground-floor properties. Reporting persistent flooding to Northumbrian Water helps identify network issues."
       },
       {
-        question: "Are tenement flats in Manchester more prone to drainage issues?",
-        answer: "Yes, Manchester's tenement buildings—common across Marchmont, Bruntsfield, Rochdale, and many other areas—share vertical drainage stacks serving multiple flats. A blockage in one flat can affect properties above and below. Shared responsibility for maintenance can also create coordination challenges among multiple owners. Regular maintenance of shared drainage, clear communication between neighbours, and professional CCTV surveys to identify developing problems are all important for tenement residents."
+        question: "Are terraced houses in Darlington more prone to drainage issues?",
+        answer: "Yes, Darlington's terraced housing — common across Albert Hill, Bank Top, and the town centre — shares drainage infrastructure serving multiple properties. A blockage in one property can affect homes above and below in the drainage run. Shared responsibility for maintenance can create coordination challenges among multiple owners. Regular maintenance of shared drainage, clear communication between neighbours, and professional CCTV surveys to identify developing problems are all important for terraced property residents."
       }
     ],
-    caseStudy: `Recent call-out to a Georgian townhouse in Manchester's New Town: The property owner on Heriot Row reported water backing up into the basement kitchen during heavy rain events. Our CCTV survey revealed a combination of issues typical of New Town properties—the original clay drainage, now over 230 years old, had developed multiple fractures where it passed through different geological layers beneath the street. Tree root intrusion from the private garden to the rear had colonised approximately 35% of the pipe diameter over a 12-metre section. Using high-pressure jetting, we carefully cleared the root mass and flushed accumulated silt from the fractured sections. Given the property's listed building status and the difficulty of excavation through the New Town's stone-flagged pavements, the homeowner opted for structural pipe relining—a no-dig solution that restored full pipe integrity with a 10-year warranty. Result: fully restored drainage with no disruption to the historic streetscape. Tip: New Town property owners should schedule preventative CCTV surveys every two to three years—early detection of root intrusion and pipe deterioration prevents costly emergency situations in these prestigious properties.`
+    caseStudy: `Recent call-out to a Victorian terraced house near Darlington town centre: The property owner on Victoria Road reported water backing up into the ground-floor kitchen during heavy rain events. Our CCTV survey revealed a combination of issues typical of Darlington's older terraced housing — the original clay drainage, now over 120 years old, had developed multiple fractures where it connected to the shared rear drainage serving the terrace. Tree root intrusion from a neighbour's mature sycamore had colonised approximately 40% of the pipe diameter over a 10-metre section. Using high-pressure jetting, we carefully cleared the root mass and flushed accumulated silt from the fractured sections. Given the shared nature of the drainage and the difficulty of excavation in a rear yard, the homeowner opted for structural pipe relining — a no-dig solution that restored full pipe integrity with a 10-year warranty. Result: fully restored drainage with no disruption to the rear yard or neighbouring properties. Tip: Darlington terraced property owners should schedule preventative CCTV surveys every two to three years — early detection of root intrusion and pipe deterioration prevents costly emergency situations.`
   },
 
-  paisley: {
+  "newton-aycliffe": {
     landmarks: [
-      "The Shore",
-      "Trafford Links",
-      "Royal Yacht Britannia",
-      "Ocean Terminal",
-      "Trafford Walk",
-      "Constitution Street",
-      "Water of Trafford Walkway",
-      "Trafford Theatre",
-      "Trafford Docks",
-      "Newhaven Harbour",
-      "Trinity House",
-      "South Trafford Parish Church"
+      "Newton Aycliffe Town Centre",
+      "Aycliffe Business Park",
+      "Woodham Golf Club",
+      "Great Aycliffe Way",
+      "Aycliffe Village Green",
+      "St Andrew's Church",
+      "Woodham Burn",
+      "The Oak Leaf Sports Complex",
+      "Agnew Community Centre",
+      "School Aycliffe Village",
+      "ROF 59 Activity Centre",
+      "West Park"
     ],
-    drainageProfile: `Trafford's drainage infrastructure tells the story of one of Scotland's most historic port towns, now undergoing dramatic regeneration. For centuries an independent burgh with its own character distinct from Manchester, Trafford's drainage systems reflect layers of maritime, industrial, and residential development stretching back to medieval times. The area around The Shore and Constitution Street features some of the oldest drainage infrastructure in the Manchester area, with stone-built channels and clay pipes serving properties that have been continuously occupied for hundreds of years.
+    drainageProfile: `Newton Aycliffe was designated as a new town in 1947, built to house workers from the nearby Royal Ordnance Factory and the expanding Aycliffe Trading Estate. This post-war origin gives the town a very different drainage character from historic market towns like Darlington — most of Newton Aycliffe's drainage infrastructure was installed during a concentrated period of construction in the late 1940s through to the 1960s.
 
-The Water of Trafford reaches the sea here, and the river's influence on Trafford's drainage cannot be overstated. Properties along The Shore, Bernard Street, and the lower sections of Trafford Walk sit at or near sea level, making them vulnerable to tidal influence, river flooding, and drainage backup during heavy rainfall events. The combination of high water table, tidal variation, and aging infrastructure creates persistent moisture management challenges for property owners in these waterfront locations.
+The original new town housing estates — including areas such as Horndale, Simpasture, and the streets around the town centre — feature concrete and clay pipe drainage systems that were well-engineered for their time but are now reaching the end of their 60-80 year design life. Concrete pipe joints are particularly susceptible to deterioration after decades of use, and the maturing street trees planted when the town was built have now developed root systems large enough to penetrate pipe joints and crack pipes from outside.
 
-Trafford's modern waterfront regeneration—centred on Ocean Terminal, the Western Harbour development, and the extensive apartment complexes along the waterfront—has introduced contemporary drainage systems designed for high-density residential living. However, these modern systems often connect to older infrastructure serving the wider Trafford area, creating transition zones where new meets old. The contrast between a modern waterfront apartment's plastic drainage and the Victorian cast iron or even older stone drainage serving nearby traditional tenements is stark.
+Woodham, developed later from the 1980s onwards as a more affluent extension to the town, features modern drainage designed to higher specifications. These systems are generally in good condition, but the properties' larger gardens and established planting can still create root intrusion risks. The Woodham Burn watercourse running through the area affects local groundwater levels and adds a surface water dimension to drainage management.
 
-Trafford Walk, one of Manchester's longest and busiest streets, features a dense mix of tenement residential properties above ground-floor commercial premises. The drainage here serves both residential and commercial needs—restaurants, takeaways, and food businesses along Trafford Walk create significant grease and fat accumulation that demands regular maintenance. The volume of commercial food preparation along this corridor makes it one of the most demanding drainage environments in Manchester.
+Aycliffe Village, the original settlement predating the new town, retains its historic village character with older stone-built properties that have traditional drainage systems. These contrast sharply with the planned estate drainage of the surrounding new town, and the transition between old and new infrastructure at the village boundary can create challenges.
 
-The traditional tenement buildings throughout Trafford—particularly around Easter Road, Trafford Links, and the streets between Trafford Walk and the waterfront—feature shared vertical drainage stacks typical of Manchester's tenement architecture. These buildings, mostly dating from the Victorian and Edwardian eras, rely on cast iron soil stacks and clay underground drainage that is increasingly reaching the end of its serviceable life.
+Newton Aycliffe's planned layout is an advantage for drainage engineers — unlike historic towns with organically developed drainage, the new town's systems were designed to a coherent plan with documented routes and specifications. However, decades of modifications, extensions, and property improvements have introduced variations from the original design, and comprehensive records may not reflect the current configuration.
 
-Newhaven, historically a fishing village at the western end of Trafford, has its own distinct drainage character. The tight-knit cottages and converted fishermen's houses along the harbour feature small-bore drainage that was adequate for their original purpose but struggles with modern usage demands. Recent redevelopment around Newhaven harbour has introduced modern drainage, but connection to older networks remains a challenge.
-
-Our engineers understand Trafford's complex layering of maritime heritage, Victorian tenement infrastructure, and modern waterfront development. Whether addressing tidal influence on waterfront properties, managing grease buildup along Trafford Walk, or maintaining aging tenement stacks, we bring local knowledge specific to this unique Manchester neighbourhood.`,
+The large Aycliffe Business Park, one of the biggest in the northeast, generates significant commercial and industrial drainage demands that must be managed alongside the town's residential systems.`,
     localFAQs: [
       {
-        question: "How does Trafford's waterfront location affect drainage?",
-        answer: "Properties near The Shore, the docks, and along the Water of Trafford sit close to sea level and are influenced by tidal variation. High water table means subsurface moisture is a constant challenge. During heavy rain combined with high tides, drainage backup is more likely. Waterfront property owners should understand their building's specific flood defence measures and maintain drainage systems proactively. Modern waterfront developments typically have pumped drainage systems that require regular maintenance."
+        question: "Why is Newton Aycliffe's post-war drainage now causing problems?",
+        answer: "Newton Aycliffe was built primarily in the late 1940s to 1960s, meaning its drainage infrastructure is now 60-80 years old — approaching or past the typical design life for concrete and clay pipes of that era. The concrete pipe joints used in many new town installations deteriorate over time, allowing root intrusion and groundwater ingress. The maturing street trees planted with the original development now have root systems large enough to damage pipes. This combination of ageing materials and growing vegetation means blockage and failure rates increase significantly as the infrastructure ages."
       },
       {
-        question: "What drainage challenges do Trafford Walk commercial properties face?",
-        answer: "Trafford Walk's concentration of restaurants, takeaways, and food businesses creates significant grease and fat accumulation in drainage systems. Commercial properties should install and regularly service grease traps, arrange quarterly professional jetting, and ensure staff understand proper disposal of cooking oils and food waste. Residential flats above commercial premises can be affected by commercial drainage issues—understanding the building's drainage configuration is important."
+        question: "Do newer properties in Woodham have drainage issues?",
+        answer: "While Woodham's 1980s and later housing has drainage designed to more modern standards, it is not immune to problems. Established garden trees and hedges can create root intrusion risk, and the Woodham Burn watercourse affects local groundwater levels. Additionally, property extensions, conservatories, and driveways added since construction can alter surface water drainage patterns. Properties that have been significantly extended should verify that their drainage capacity matches current demands."
       },
       {
-        question: "Are modern Trafford waterfront apartments free from drainage issues?",
-        answer: "Modern developments at Ocean Terminal and Western Harbour have superior drainage design, but they are not immune to problems. High-density living creates heavy drainage demands, and many modern systems connect to older infrastructure serving the wider Trafford area. Pumped drainage systems in waterside developments require regular maintenance. Building factors should have maintenance schedules for shared drainage infrastructure—residents should ensure these are being followed."
+        question: "What should Newton Aycliffe residents know about their drainage?",
+        answer: "Newton Aycliffe's planned new town layout means drainage routes are generally well-documented, but decades of modifications may have altered original configurations. Residents should know the location of their manholes and inspection chambers, understand which drains are private (their responsibility) and which are adopted by Northumbrian Water, and be aware that maturing trees can damage drainage pipes. If your property hasn't had a drainage survey in recent years, a CCTV inspection is a worthwhile investment given the age of the town's infrastructure."
       }
     ],
-    caseStudy: `Call-out to a traditional tenement on Constitution Street: Ground-floor residents reported persistent damp and slow drainage that worsened during high tides. Our CCTV survey revealed the building's Victorian clay drainage had multiple joint failures in the section running beneath the street, allowing groundwater ingress—a common issue in Trafford given the high water table. The proximity to the Water of Trafford meant the drainage was effectively sitting in saturated ground. We coordinated with the building's other flat owners to fund a comprehensive solution: high-pressure jetting to clear accumulated silt, followed by structural relining of the worst-affected 18-metre section. We also recommended improved surface water management around the building's rear court. Result: eliminated groundwater ingress and restored full drainage function. The building's owners established a shared maintenance fund for future drainage upkeep. Tip: Trafford properties near the waterfront should treat drainage maintenance as an ongoing requirement, not a one-off fix—the high water table demands regular attention.`
+    caseStudy: `Call-out to a 1950s semi-detached property in Horndale: The homeowner reported multiple fixtures draining slowly, with occasional sewage smells from the rear garden manhole. Our CCTV survey revealed the original concrete drainage had deteriorated significantly — pipe joints had opened up, allowing tree root intrusion from the front garden privet hedge at two locations, and a 4-metre section had accumulated sediment due to loss of gradient from joint settlement. We cleared the root masses and sediment with high-pressure jetting, then installed structural relining across the most damaged 12-metre section. The relining sealed the open joints permanently, preventing future root ingress without the need to excavate the front garden. Result: full drainage restored with a 50-year lining warranty. The homeowner also arranged for the privet hedge roots to be managed by a tree surgeon to reduce future pressure on the new liner. Tip: Newton Aycliffe properties with mature hedging or street trees within 3 metres of drainage runs should schedule CCTV surveys every two to three years to catch root intrusion before it causes a complete blockage.`
   },
 
-  "east-kilbride": {
+  "bishop-auckland": {
     landmarks: [
-      "Stockport Racecourse",
-      "River Esk",
-      "Stockport Old Bridge",
-      "Fisherrow Harbour",
-      "Stockport Links",
-      "Pinkie House",
-      "Stockport Grammar School",
-      "Loretto School",
-      "Inveresk Lodge Garden",
-      "Stockport High Street",
-      "Levenhall Links",
-      "Newhailes House"
+      "Auckland Castle",
+      "The Kynren Amphitheatre",
+      "Bishop Auckland Market Place",
+      "Bishop Auckland Town Hall",
+      "St Andrew's Church",
+      "Escomb Saxon Church",
+      "Binchester Roman Fort",
+      "Newton Cap Viaduct",
+      "Auckland Walk",
+      "Wear Valley",
+      "Bishop Auckland Golf Club"
     ],
-    drainageProfile: `Stockport, known as "The Honest Toun," is one of the oldest settlements in Scotland, with a history stretching back to Roman times when the fort at Inveresk overlooked the River Esk crossing. This deep history means the town's drainage infrastructure spans an extraordinary range of ages and construction methods—from stone-built channels in the oldest parts of the High Street to modern plastic systems in recent housing developments on the town's periphery.
+    drainageProfile: `Bishop Auckland's drainage character is shaped by its position at the confluence of the River Wear and the River Gaunless, its long history as a market town and seat of the Prince Bishops of Durham, and its mixed building stock spanning several centuries.
 
-The River Esk is central to Stockport's drainage story. The river bisects the town, and properties on both banks face flood risk during heavy rainfall and periods of high river flow. The stretch between the Old Bridge and Fisherrow is particularly vulnerable, as the river narrows here before reaching the Firth of Forth. Properties in the riverside area of Millhill and along the Eskside have experienced flooding events that overwhelm both the river's capacity and the town's combined sewer system. Scottish Water has invested in flood prevention measures, but individual property owners must also manage their own drainage effectively.
+The town centre, clustered around the Market Place and in the shadow of Auckland Castle, features traditional stone-built properties with drainage systems that range from Georgian-era installations to Victorian improvements. The historic core's organic street layout means drainage routes can be complex and unpredictable, often following paths established long before modern planning standards existed.
 
-Fisherrow, the historic fishing quarter at the river mouth, features tightly packed cottages with drainage systems that were designed for a very different era. The narrow lanes and close proximity of buildings make access for drainage work challenging, and the coastal location means salt air accelerates corrosion of cast iron pipework. The water table here is high, influenced by both the river and the sea, creating persistent moisture management challenges.
+The surrounding residential areas developed primarily during the Victorian era and early twentieth century, with terraced streets climbing the hillsides around the town centre. These properties have clay pipe drainage typical of their era, now well over a century old in many cases. The hilly terrain provides good natural drainage gradients but creates pressure on pipes at lower elevations where water naturally collects.
 
-The older residential areas around the High Street, Bridge Street, and Inveresk feature a mix of stone-built and Victorian drainage serving properties ranging from 18th-century townhouses to Victorian terraces. The Inveresk area, on elevated ground above the river, benefits from natural drainage but features aging clay pipe systems that are increasingly fragile. The affluent properties around Inveresk Lodge Garden and along Carberry Road have extensive grounds where mature tree root intrusion is a recurring drainage challenge.
+The River Wear's presence creates specific drainage challenges for properties in the valley floor. Flooding is a known risk in Bishop Auckland, and properties near the river can experience elevated water tables that affect drainage performance. The Gaunless Valley adds another dimension, with properties along this secondary watercourse also facing flood-related drainage issues.
 
-Modern housing developments on Stockport's eastern and southern edges—around Wallyford and the expanding Craighall area—feature contemporary drainage systems designed to current standards. However, the rapid pace of development in this area means surface water management has become critical. The increase in impermeable surfaces from new construction can increase flood risk downstream, and connection of new developments to existing sewer infrastructure sometimes creates capacity challenges.
+Surrounding villages — including West Auckland, Etherley, and Tindale Crescent — have their own distinct drainage characteristics, ranging from historic village centres with traditional systems to twentieth-century housing estates with planned drainage. The Woodhouse Close estate, built in the post-war period, has drainage infrastructure of similar vintage to Newton Aycliffe and faces comparable age-related challenges.
 
-Stockport's mixed character—ancient town centre, Victorian residential areas, coastal fishing quarter, and modern suburban expansion—demands drainage expertise that understands each context. Whether dealing with a centuries-old High Street property, a riverside home at flood risk, or a new-build with connection challenges, Stockport's drainage needs are as varied as the town itself.`,
+Bishop Auckland's regeneration, centred on Auckland Castle and the Kynren attraction, has brought renewed investment to the town but also increased demands on existing drainage infrastructure as properties are renovated and repurposed.`,
     localFAQs: [
       {
-        question: "How does the River Esk affect drainage in Stockport?",
-        answer: "The River Esk creates significant flood risk for properties on both banks, particularly in the stretch between the Old Bridge and Fisherrow where the river narrows before reaching the sea. During heavy rainfall, the river can overwhelm the town's combined sewer system, causing backup into riverside properties. Property owners near the Esk should maintain clear surface drainage, consider backflow prevention devices, and stay informed about Scottish Water's flood management measures for the area."
+        question: "How does the River Wear affect Bishop Auckland's drainage?",
+        answer: "The River Wear creates flood risk for properties in the valley floor and along its banks. During heavy or prolonged rainfall, elevated water tables can reduce drainage capacity and cause surface water backup. Properties near the river should maintain clear drainage, consider backflow prevention devices, and be aware of Environment Agency flood warnings for the area. The River Gaunless adds additional flood risk in its valley corridor."
       },
       {
-        question: "What drainage issues are specific to Fisherrow's historic cottages?",
-        answer: "Fisherrow's tightly packed former fishing cottages present unique challenges: narrow access lanes make drainage work difficult, coastal salt air corrodes cast iron pipework, and the high water table from proximity to both the river and sea creates persistent moisture issues. Many cottages have drainage systems that were adequate for their original purpose but struggle with modern bathroom and kitchen demands. Professional survey is essential before purchasing or renovating Fisherrow properties."
+        question: "What drainage challenges do Bishop Auckland's older properties face?",
+        answer: "Bishop Auckland's Victorian terraces and Georgian town centre properties have clay and stone drainage systems that are well over a century old. These ageing systems are vulnerable to root intrusion from mature trees, joint deterioration allowing ground water ingress, and capacity limitations — they were designed for much smaller households than modern families generate. The hilly terrain puts additional pressure on lower sections of drainage runs where water flow concentrates."
       },
       {
-        question: "Are new-build properties in Stockport's expanding areas immune to drainage problems?",
-        answer: "Not entirely. While modern drainage systems are superior to older infrastructure, rapid development around Wallyford and Craighall has increased impermeable surface area, potentially creating surface water management challenges. New developments connecting to existing sewer infrastructure can create capacity issues, particularly during heavy rainfall. New-build owners should understand how their property's drainage connects to the wider network and maintain gutters, downpipes, and any soakaways on their property."
+        question: "Is drainage an issue in Bishop Auckland's newer housing areas?",
+        answer: "Post-war estates like Woodhouse Close have drainage infrastructure from the 1950s and 60s that is now reaching the end of its design life. Even modern developments can experience issues where they connect to the town's older sewer network. Bishop Auckland's clay soil conditions in some areas can also cause ground movement that stresses pipe joints over time, regardless of the drainage system's age."
       }
     ],
-    caseStudy: `Recent call-out to a Victorian terrace near Stockport High Street: The homeowner reported recurring blockages that worsened after heavy rainfall, with water backing up through the ground-floor toilet. Our CCTV survey revealed a partially collapsed clay pipe where it passed beneath the rear garden wall—a common failure point where ground movement at structural boundaries stresses aging pipework. Additionally, river silt had accumulated in the lower section of the drain, reducing capacity by approximately 30%. We cleared the silt with high-pressure jetting and installed a structural reline over the collapsed section. Given the property's proximity to the River Esk, we also recommended a non-return valve to protect against river-related backup. Result: fully restored drainage with protection against both pipe failure and river flooding. Tip: Properties near the River Esk in Stockport should consider non-return valves as standard protection—they are a modest investment that prevents costly flood damage.`
+    caseStudy: `Emergency call-out to a property near the River Wear in Bishop Auckland during heavy rainfall: The homeowner reported water backing up through the downstairs toilet and flooding the utility room. Our emergency team arrived within the hour and found the external manhole overflowing. CCTV investigation revealed a collapsed clay pipe where the property's drainage crossed the rear garden boundary — years of river-related ground saturation had undermined the pipe bedding, causing a 3-metre section to lose gradient and eventually collapse. We provided immediate emergency pumping and temporary bypass piping, then returned the following day to excavate and replace the collapsed section with new plastic pipework on a properly engineered bed. A non-return valve was installed to protect against future river-related backup. Result: permanent repair with flood protection, completed within 48 hours of the emergency call. Tip: Bishop Auckland properties near the River Wear should install non-return valves as standard protection and schedule annual drainage checks before the autumn flood-risk season.`
   },
 
-  motherwell: {
+  richmond: {
     landmarks: [
-      "Oldham Country Park",
-      "Oldham Palace",
-      "River North Esk",
-      "River South Esk",
-      "Oldham High Street",
-      "St Nicholas Buccleuch Parish Church",
-      "Ironmills Park",
-      "Oldham Corn Exchange",
-      "King's Park",
-      "Woodburn",
-      "Oldham Campus"
+      "Richmond Castle",
+      "Georgian Theatre Royal",
+      "Richmond Market Place",
+      "River Swale",
+      "Easby Abbey",
+      "The Green Howards Museum",
+      "Richmond Falls",
+      "Round Howe",
+      "Castle Walk",
+      "The Station",
+      "Swale House",
+      "Richmond Bridge"
     ],
-    drainageProfile: `Oldham sits at the confluence of the River North Esk and the River South Esk, a geographical fact that profoundly shapes the town's drainage character. This Midlothian market town has a rich history as the estate town for Oldham Palace, and its drainage infrastructure reflects centuries of development from a small agricultural settlement to a substantial commuter town serving Manchester.
+    drainageProfile: `Richmond's dramatic hilltop position above the River Swale makes it one of the most visually striking towns in northern England, but this topography also creates distinctive drainage challenges. The medieval town was built on the steep slopes below Richmond Castle, and its drainage systems have evolved over centuries, from rudimentary stone channels to Victorian clay pipes and modern plastic installations.
 
-The river confluence creates the most significant drainage challenge in Oldham. Properties in the lower-lying areas near the rivers—particularly around Ironmills Park, the Eskbank area, and stretches of the High Street—face genuine flood risk during heavy rainfall when both rivers are in spate. The combined flow of the North and South Esk can overwhelm local drainage infrastructure, and the town's combined sewer system can back up during these events. SEPA (the Scottish Environment Protection Agency) has identified flood risk zones in Oldham that property owners should be aware of.
+The town centre, with its large cobbled Market Place and narrow medieval streets, sits on a limestone ridge above the river. This geology provides natural drainage through the permeable rock, but the same geological features that aid surface drainage can create challenges below ground. Limestone is susceptible to dissolution, creating voids and fissures that can undermine drainage pipes and cause unexpected ground movement.
 
-The historic town centre around the High Street and the older properties near Oldham Palace feature stone and clay drainage systems that reflect the town's long history. Some of the drainage serving properties along the High Street dates back to the 18th century, with later Victorian additions and modifications creating a layered system that can be difficult to map accurately. The Corn Exchange area and surrounding streets feature drainage that was designed for a market town's needs—including handling waste from livestock markets and small industries—creating an infrastructure legacy that modern residential use has inherited.
+The steep streets leading down from the Market Place to the River Swale create excellent drainage gradients but concentrate water flow at lower elevations. Properties at the bottom of these gradients — near the river and around Bridge Street — can receive significant surface water runoff during heavy rainfall, combining with the river's own flood risk. The River Swale is one of England's fastest-rising rivers, and flooding is a real concern for riverside properties.
 
-Oldham's former mining heritage has left its mark underground. The town lies within the wider Midlothian coalfield, and while deep mining has long ceased, the legacy of subsidence and ground instability in some areas can affect drainage infrastructure. Pipes in former mining areas may experience movement and cracking that would not occur in geologically stable ground. Properties in areas with mining history should be particularly vigilant about drainage condition.
+Richmond's Georgian and Victorian residential streets, including areas along Cravengate and Queens Road, feature traditional clay pipe drainage serving stone-built properties. The combination of limestone geology, steep gradients, and aging pipework creates specific maintenance demands. Root intrusion from the mature trees lining many of Richmond's streets adds to the challenge.
 
-The Woodburn area and surrounding council and ex-council housing estates feature drainage from the mid-20th century onwards—typically a mix of clay and early plastic pipework that served public housing developments. These systems are generally adequate but approaching the age where maintenance becomes increasingly important. The housing density in these areas means shared drainage infrastructure is common.
+The conservation area status of much of Richmond's town centre means any drainage work must respect the historic character of the streetscape. Excavation through cobbled surfaces or near listed buildings requires careful planning, making no-dig repair techniques particularly valuable in this setting.
 
-Modern developments on the edges of Oldham—including new housing around the bypass and toward Salford—feature contemporary drainage systems but face the same challenge as other expanding towns: connecting new capacity to existing infrastructure that may already be near its limits.
-
-The combination of river confluence flood risk, historic town centre infrastructure, mining legacy ground conditions, and expanding modern development makes Oldham's drainage context varied and demanding. Property-specific assessment is essential for understanding individual drainage needs and risks.`,
+Modern housing developments on Richmond's outskirts have contemporary drainage, but these systems connect to the town's older sewer network, creating the familiar challenge of new capacity meeting historic infrastructure.`,
     localFAQs: [
       {
-        question: "How serious is flood risk in Oldham?",
-        answer: "Oldham's position at the confluence of the North and South Esk rivers creates genuine flood risk, particularly in lower-lying areas near the rivers and around Ironmills Park. SEPA has identified flood risk zones in the town. During heavy rainfall, both rivers can rise rapidly, overwhelming local drainage and causing sewer backup. Property owners in riverside areas should check SEPA flood maps, maintain clear drainage, install backflow prevention where appropriate, and consider flood resilience measures for ground-floor and basement areas."
+        question: "How does Richmond's steep terrain affect drainage?",
+        answer: "Richmond's dramatic hillside setting creates excellent drainage gradients but concentrates water flow at lower elevations. Properties near the river at the bottom of steep streets can receive significant surface water runoff during heavy rainfall. The limestone geology beneath the town provides natural drainage in some areas but can create underground voids that affect pipe stability. These factors combine to create a drainage environment that requires local knowledge and expertise."
       },
       {
-        question: "Does Oldham's mining history affect drainage?",
-        answer: "Yes. Oldham lies within the Midlothian coalfield, and while deep mining has ceased, the legacy of ground movement and subsidence in some areas can crack or displace drainage pipes over time. If your property is in an area with mining history, regular CCTV surveys are particularly important to detect developing problems before they cause blockages or collapses. Your property's mining risk assessment—available from the Coal Authority—can help you understand the level of risk."
+        question: "What drainage risks do properties near the River Swale face?",
+        answer: "The River Swale is one of England's fastest-rising rivers, and flood risk is a serious consideration for riverside properties in Richmond. During heavy rainfall in the Yorkshire Dales, river levels can rise dramatically within hours. Properties near the river face not only direct flood risk but also drainage backup from elevated water tables and sewer surcharging during flood events. Flood protection measures, including non-return valves and maintained drainage systems, are essential."
       },
       {
-        question: "What should I know about drainage when buying an older Oldham High Street property?",
-        answer: "Older High Street properties may have drainage systems with multiple layers of modification spanning centuries. Original stone drainage channels may have been supplemented with Victorian clay pipes and later plastic additions. Understanding the full drainage configuration through professional CCTV survey is essential before purchase. Additionally, river proximity flood risk should be assessed, and any property with a basement or lower ground floor should be evaluated for backup vulnerability."
+        question: "Does Richmond's conservation area status affect drainage repairs?",
+        answer: "Yes. Much of Richmond's town centre is a conservation area with many listed buildings and historic cobbled surfaces. Drainage repair work must respect this character, which can limit excavation options. No-dig repair techniques such as pipe relining are particularly valuable in Richmond, allowing pipe damage to be resolved without disturbing the historic streetscape. Where excavation is unavoidable, surfaces must be reinstated to conservation standards."
       }
     ],
-    caseStudy: `Emergency call-out to a property in Eskbank during a heavy rainfall event: The homeowner reported water entering the ground floor through both the toilet and shower drain as the River North Esk rose rapidly. Our emergency response team found the property's drainage was being overwhelmed by river-influenced backup through the combined sewer system—a common occurrence in this riverside area during intense rainfall. After the immediate event, we returned to install a non-return valve on the main drain connection and performed a full CCTV survey. The survey revealed the clay drainage had cracked in two locations where it crossed ground that had settled—likely related to the area's mining legacy. We repaired these sections with structural relining and ensured the non-return valve provided ongoing protection against future river backup events. Result: comprehensive flood protection combining structural repair and backflow prevention. The homeowner reported no further issues during subsequent heavy rainfall events. Tip: Oldham properties in the river confluence area should treat flood protection as a priority investment—combining non-return valves with drainage maintenance provides the most effective defence.`
+    caseStudy: `Call-out to a Georgian townhouse overlooking Richmond Market Place: The owner reported recurring blockages that had been cleared multiple times but kept returning within weeks. Our CCTV survey revealed the underlying cause — the original stone drainage channel running beneath the property had partially collapsed where it transitioned to Victorian clay pipework added during a later renovation. The collapse was creating a debris trap where grease and waste accumulated, causing repeated blockages. Given the property's listed status and the cobbled courtyard above the damaged section, excavation would have been highly disruptive and costly. We opted for a no-dig solution: high-pressure jetting to clear the accumulated debris, followed by structural relining across the transition zone. The resin liner bridged the gap between the stone channel and the clay pipe, creating a smooth, sealed bore. Result: the recurring blockage cycle was permanently resolved without any disruption to the listed property or its historic courtyard. Tip: Richmond property owners experiencing recurring blockages should invest in a thorough CCTV survey — the root cause is often a structural issue that simple clearing cannot permanently resolve.`
   },
 
-  hamilton: {
+  northallerton: {
     landmarks: [
-      "Bolton Designer Outlet",
-      "Almondvale Shopping Centre",
-      "The Centre",
-      "Bolton FC Stadium",
-      "Almond Valley Heritage Centre",
-      "River Almond",
-      "Howden Park Centre",
-      "Deans Community High School",
-      "Knightsridge",
-      "Dedridge",
-      "Eliburn",
-      "Murieston"
+      "Northallerton High Street",
+      "Town Hall",
+      "Northallerton Railway Station",
+      "All Saints Church",
+      "The Applegarth",
+      "Romanby Golf Club",
+      "North Yorkshire County Hall",
+      "Betty's Tea Room",
+      "Northallerton Leisure Centre",
+      "Castle Hills",
+      "Standard of England"
     ],
-    drainageProfile: `Bolton is Scotland's largest new town, designated in 1962 and developed rapidly through the 1960s, 70s, and 80s to accommodate population overflow from Manchester and Manchester. This planned new-town origin gives Bolton a drainage character fundamentally different from Manchester's historic neighbourhoods—the infrastructure was designed from scratch to serve modern residential, commercial, and industrial needs. However, the rapid pace of development and the materials available at the time mean Bolton's drainage systems are now reaching a critical age.
+    drainageProfile: `Northallerton's position as North Yorkshire's county town is reflected in its long, characterful High Street, which has served as the town's commercial heart since medieval times. The drainage beneath this historic thoroughfare has evolved over centuries, from basic stone channels to Victorian clay pipe systems and modern connections, creating a complex underground landscape.
 
-The earliest phases of development—in areas like Craigshill, Howden, and Ladywell—used drainage technology typical of the 1960s: pitch fibre pipes, early PVC, and clay systems. Pitch fibre pipes, widely used in British housing from the 1950s through the 1970s, are particularly problematic. These pipes, made from wood cellulose impregnated with coal tar, were cheap and easy to install but have a limited lifespan. After 40 to 60 years, pitch fibre pipes delaminate, blister internally, and lose their circular profile, causing restrictions and blockages. Many Bolton properties from this era still rely on original pitch fibre drainage that is now overdue for replacement.
+The High Street's period properties — Georgian, Victorian, and Edwardian — sit above drainage that varies significantly in age and condition depending on when each property was built or last renovated. The narrow plots typical of High Street commercial properties often have drainage running beneath or very close to buildings, making access for maintenance and repair challenging without causing disruption to businesses above.
 
-The planned layout of Bolton—with its system of separated vehicle and pedestrian routes, large roundabouts, and neighbourhood villages—means drainage routing follows the town's master plan rather than organic development. This is generally advantageous, as pipe runs tend to be logical and accessible. However, the extensive use of open drainage channels, balancing ponds, and surface water management features means homeowners sometimes have drainage responsibilities beyond their immediate property boundary that they may not be aware of.
+Northallerton sits in the Vale of Mowbray, a wide flat valley between the North York Moors and the Yorkshire Dales. This flat terrain means natural drainage gradients are gentle, and surface water can be slow to clear during heavy rainfall. The clay soils prevalent in the vale compound this issue — they are relatively impermeable, meaning rainwater tends to run off the surface rather than soaking into the ground, increasing the load on the drainage system during wet weather.
 
-The River Almond flows through the Almond Valley at the heart of Bolton, and properties in the Almond Valley corridor—including areas near Eliburn and Murieston—have flood risk considerations during heavy rainfall. The town's surface water drainage was designed to handle specific rainfall volumes, but climate change has increased the frequency of intense rainfall events that exceed original design parameters.
+Romanby, now effectively a suburb of Northallerton but historically a separate village, has its own character. The older village core has traditional drainage, while extensive modern housing developments around its edges feature contemporary systems. The transition between old and new drainage at the village-suburb boundary can create challenges.
 
-Later development phases through the 1980s and 1990s in areas like Murieston, Eliburn, and Dedridge used improved materials, but these systems are now themselves 30 to 40 years old and beginning to require attention. The most recent developments on Bolton's periphery feature modern drainage to current standards, but connect to the town's existing network.
+Brompton, another satellite settlement, has a mix of period village properties and modern housing. The village's position on Brompton Beck means some properties face watercourse-related drainage challenges, particularly during wet weather when the beck rises.
 
-Bolton's commercial and industrial areas—particularly around the Almondvale and Houston Industrial Estate—have distinct drainage requirements. Commercial kitchens, car washes, and industrial premises create specific drainage challenges including grease accumulation and chemical contamination that require specialist management.
-
-Understanding Bolton's new-town drainage context—particularly the prevalence of pitch fibre pipes in older areas, the planned drainage routing, and the River Almond flood risk—helps property owners implement appropriate maintenance strategies. The age profile of Bolton's housing stock means many properties across the town will need drainage attention in the coming years as original systems reach the end of their designed lifespan.`,
+Northallerton's continued growth, with new housing developments on the town's outskirts, places increasing demands on the sewer network managed by Northumbrian Water. These modern systems are well-designed individually but must connect to the town's older infrastructure, creating capacity questions as the population grows.`,
     localFAQs: [
       {
-        question: "What are pitch fibre pipes and why are they a problem in Bolton?",
-        answer: "Pitch fibre pipes were widely used in British housing construction from the 1950s through the 1970s, making them extremely common in Bolton's earliest development areas like Craigshill, Howden, and Ladywell. Made from wood cellulose impregnated with coal tar pitch, these pipes were affordable and easy to install but have a limited lifespan of 40 to 60 years. They delaminate, blister internally, and lose their round shape over time, causing flow restrictions and blockages. If your Bolton property dates from the 1960s or 70s and has never had drainage work, there is a high probability you have pitch fibre pipes that need assessment."
+        question: "Why does Northallerton's flat terrain cause drainage issues?",
+        answer: "Northallerton sits in the Vale of Mowbray, a wide flat valley with gentle natural drainage gradients. This means surface water clears slowly during heavy rainfall. The clay soils prevalent in the area are relatively impermeable, so rainwater runs off rather than soaking in, increasing the load on underground drainage during wet weather. Properties on flat ground may need to ensure their drainage maintains adequate fall to prevent water pooling in pipes."
       },
       {
-        question: "Is flooding a concern in Bolton?",
-        answer: "Bolton's surface water drainage was designed as part of the new-town master plan, with balancing ponds and open channels managing runoff. However, the system was designed for historical rainfall patterns, and increasingly intense rainfall events can exceed its capacity. Properties near the River Almond corridor—around Eliburn and Murieston—have particular flood risk. Additionally, if surface water features like soakaways and drainage channels on your property are not maintained, they can fail during heavy rain. Regular maintenance of all drainage elements on your property is important."
+        question: "What drainage challenges do High Street businesses face?",
+        answer: "Northallerton's historic High Street properties have drainage that varies enormously in age and condition. The narrow plots mean drainage often runs beneath or very close to buildings, making access difficult. Commercial premises, particularly food businesses, must manage grease and waste carefully to prevent blockages. Regular professional maintenance is more cost-effective than emergency callouts for busy High Street businesses."
       },
       {
-        question: "Should I have my Bolton property's drainage surveyed if there are no visible problems?",
-        answer: "Yes, particularly if your property dates from the 1960s or 70s. Pitch fibre pipe deterioration is progressive—it often worsens significantly before causing visible symptoms. A CCTV survey can reveal internal blistering, delamination, and reduced pipe diameter before a complete blockage occurs. Early detection allows planned remediation rather than emergency repair, which is both less disruptive and more cost-effective. Properties from the 1980s onwards should also consider surveys as they approach 40 years of age."
+        question: "How does new housing development affect Northallerton's drainage?",
+        answer: "Northallerton's growth with new housing estates increases demand on the sewer network managed by Northumbrian Water. While new developments have well-designed drainage, they connect to the town's older infrastructure. During heavy rainfall, the combined load from new and existing properties can challenge the network's capacity. Property owners across the town should ensure their own drainage is well-maintained to reduce the load on shared infrastructure."
       }
     ],
-    caseStudy: `Call-out to a 1970s property in Craigshill: The homeowner reported recurring slow drainage and occasional gurgling sounds from the kitchen sink and downstairs toilet. Initial rodding provided temporary relief, but problems returned within weeks. Our CCTV survey revealed the cause—the property's original pitch fibre drainage, now over 50 years old, had severely delaminated. The internal surface had blistered and collapsed in multiple locations, reducing the effective pipe diameter by over 50% in the worst section. This is a textbook pitch fibre failure pattern common across Bolton's earliest developments. We recommended and installed structural pipe relining throughout the affected 22-metre main drain run, restoring full bore capacity with a modern internal lining that carries a 10-year warranty. Result: permanently resolved the recurring blockage issue and future-proofed the drainage against further pitch fibre deterioration. Tip: If your Bolton property was built in the 1960s or 70s and you experience recurring slow drainage, pitch fibre pipe failure is the most likely cause—CCTV survey will confirm the diagnosis quickly.`
+    caseStudy: `Call-out to a period property on Northallerton High Street: The business owner reported persistent slow drainage from the commercial kitchen that had worsened over several months despite regular drain cleaning. Our CCTV survey identified a significant grease accumulation approximately 15 metres downstream where the property's drainage merged with a shared run serving adjacent buildings. The flat terrain meant low flow velocity in this section, allowing grease to solidify rather than being carried away. We cleared the accumulation with high-pressure jetting and installed a proper grease trap in the property's kitchen waste line. We also jetted the shared section with cooperation from neighbouring property owners. Result: the persistent slow drainage was resolved, and the new grease trap prevents recurrence. The shared section was adopted into a maintenance schedule with neighbouring businesses. Tip: Northallerton High Street food businesses should install properly sized grease traps and arrange quarterly jetting of downstream drainage — the flat terrain means grease accumulates faster than in hillier locations.`
   },
 
-  lanark: {
+  catterick: {
     landmarks: [
-      "Manchester Zoo",
-      "Bury Hill",
-      "Bury Old Parish Church",
-      "Bury High Street",
-      "St Margaret's Park",
-      "Murrayfield Stadium",
-      "Ravelston",
-      "Clermiston",
-      "East Craigs",
-      "Gyle Shopping Centre",
-      "Manchester Gateway Station",
-      "Carrick Knowe"
+      "Catterick Racecourse",
+      "Catterick Garrison",
+      "River Swale",
+      "St Anne's Church",
+      "Catterick Bridge",
+      "Colburn Town Centre",
+      "Hipswell Village",
+      "Scotton Village",
+      "Catterick Village Green",
+      "Catterick Falls"
     ],
-    drainageProfile: `Bury is one of Manchester's most established western suburbs, with a character shaped by its position at the foot of Bury Hill and its evolution from an independent village to an integral part of the city. The area's drainage profile reflects this layered history—from the medieval core around Bury High Street and the Old Parish Church, through substantial 1930s suburban development, to post-war housing estates and modern commercial developments around the Gyle.
+    drainageProfile: `Catterick's character is defined by the presence of Catterick Garrison, one of the largest military installations in Europe, alongside the original village and surrounding rural communities. This creates a unique drainage environment where military infrastructure, traditional village systems, and modern civilian housing all coexist.
 
-Bury Hill, a prominent geological feature rising to 161 metres, dominates the area and profoundly influences drainage patterns. Surface water from the hill's slopes drains toward properties at lower elevations, and properties on the hillside or at its foot can experience significant surface water flow during heavy rainfall. The hill's geology—a mixture of dolerite, sandstone, and glacial deposits—creates variable ground conditions that affect both surface water behaviour and underground drainage stability.
+Catterick Garrison itself has extensive drainage infrastructure maintained by the Ministry of Defence. The garrison's housing, mess facilities, vehicle wash-down areas, and operational buildings all generate significant drainage demands. While the military infrastructure is generally well-maintained, the interface between garrison drainage and the civilian network managed by Northumbrian Water can create challenges, particularly where garrison expansion has connected to village-era infrastructure.
 
-The 1930s housing that characterises much of Bury—substantial semi-detached and detached houses along streets like Bury Road, Kaimes Road, and around Carrick Knowe—features drainage systems now approaching 90 years of age. These properties typically use clay drainage pipes with cement-jointed connections, and while the construction quality was generally good for its era, the combination of age, ground movement, and tree root pressure from the established gardens that characterise this area creates recurring maintenance demands. The mature trees in Bury's gardens and along its streets—including many specimen trees in larger properties near the hill—are a persistent source of root intrusion into aging clay pipes.
+Catterick Village, the historic settlement predating the garrison by many centuries, retains its traditional character with stone-built properties clustered around the green and along the road to the medieval bridge over the River Swale. The village's drainage is traditional — clay and stone pipe systems serving properties built long before modern drainage standards existed. The village's riverside location adds flood risk to the drainage equation.
 
-Manchester Zoo, one of Bury's most prominent landmarks, sits on the slopes of Bury Hill. The surrounding residential streets serve substantial family homes that have often been extended and modified over the decades, adding bathrooms, utility rooms, and kitchen extensions that increase drainage demand beyond original design capacity. Understanding whether your property's drainage has been properly upgraded to match its current configuration is important.
+Colburn, originally a small village but now a substantial settlement closely connected to the garrison, has housing from multiple eras. Post-war military housing sits alongside private developments from the 1970s onwards and more recent family housing. Each era's drainage has its own characteristics and maintenance needs.
 
-The post-war housing developments in Clermiston and East Craigs feature different drainage infrastructure—typically a mix of clay and early PVC systems serving more uniform housing types. These areas were developed with planned drainage routing, but the systems are now 50 to 70 years old and beginning to require attention.
+The River Swale is a dominant feature of the Catterick landscape. Like Richmond upstream, the Swale's rapid response to rainfall in the Yorkshire Dales means flood risk is a real consideration for properties in the valley floor. The river's influence on groundwater levels extends well beyond the visible floodplain, affecting drainage performance across a wide area during wet weather.
 
-The Gyle area and Manchester Park represent Bury's modern commercial character, with drainage designed for retail, office, and transport infrastructure. Manchester Gateway Station and the surrounding development have contemporary drainage, but connection to the wider network serving older Bury can create transition challenges.
-
-Bury's drainage needs reflect its suburban maturity—properties with established gardens, aging but well-built infrastructure, and increasing demands from modern living. Regular maintenance and early intervention prevent the costly emergency situations that arise when 90-year-old drainage systems are pushed beyond their current capacity.`,
+Hipswell and Scotton, smaller communities on higher ground above the Swale valley, have traditional village drainage with the advantage of better natural gradients but face the challenges common to all ageing rural drainage systems.`,
     localFAQs: [
       {
-        question: "Why is tree root intrusion so common in Bury properties?",
-        answer: "Bury is characterised by mature, well-established gardens—many properties have had the same trees and hedging for 70 or 80 years since the 1930s suburban development. These mature root systems actively seek out moisture in underground pipes, and the clay drainage common in Bury properties provides exactly that through aging joints and hairline cracks. Tree roots can occupy significant portions of pipe diameter before causing noticeable blockage symptoms. Preventative root cutting and pipe relining are the most effective long-term solutions."
+        question: "How does the garrison affect drainage in the Catterick area?",
+        answer: "Catterick Garrison generates significant drainage demands from housing, catering, and operational facilities. The garrison's drainage infrastructure is generally well-maintained by the MOD, but the interface between military and civilian drainage networks can create challenges. Civilian properties near the garrison boundary should understand how their drainage connects to the wider network and whether any shared infrastructure is involved."
       },
       {
-        question: "How does Bury Hill affect drainage in the area?",
-        answer: "Bury Hill's slopes channel surface water toward properties at lower elevations, particularly during heavy rainfall. Properties at the base of the hill or on lower slopes can experience significant surface water flow from above. Ensuring proper surface water management—clear gutters, functional drains, and appropriate garden grading to direct water away from the property—is particularly important for properties in the hill's drainage catchment. Some properties benefit from French drains or other subsurface water management solutions."
+        question: "What flood risk do Catterick properties near the River Swale face?",
+        answer: "The River Swale responds rapidly to rainfall in the Yorkshire Dales, with water levels capable of rising dramatically within hours. Properties in the Swale valley floor near Catterick Bridge and the village face direct flood risk, while properties further from the river can still experience elevated water tables and drainage backup during flood events. Checking Environment Agency flood maps, installing non-return valves, and maintaining clear drainage are all important protective measures."
       },
       {
-        question: "Should I worry about drainage in a 1930s Bury property?",
-        answer: "Properties from the 1930s have clay drainage systems approaching 90 years of age. While the construction quality was generally good, these systems are now in their later life. Common issues include joint deterioration, hairline cracking from ground movement, tree root intrusion, and reduced capacity due to internal scaling and deposits. A professional CCTV survey provides clear information about your specific drainage condition and helps plan maintenance before problems develop into emergencies."
+        question: "What drainage issues are common in Catterick's older village properties?",
+        answer: "Catterick Village's traditional stone-built properties have drainage systems that may be a century old or more. Common issues include cracked clay pipes, root intrusion from established village trees, inadequate capacity for modern usage, and joint deterioration allowing ground water ingress. The village's riverside position compounds these issues with elevated water tables during wet weather. Regular CCTV surveys are the most effective way to monitor the condition of these ageing systems."
       }
     ],
-    caseStudy: `Recent call-out to a 1930s semi-detached house near Manchester Zoo: The homeowner reported a persistently damp area in the front garden and slow drainage from the downstairs bathroom. Our CCTV survey revealed a classic Bury problem—mature tree roots from a large sycamore in the front garden had infiltrated the main clay drain through multiple deteriorated joints, creating a root mass that occupied approximately 45% of the pipe diameter. Additionally, the root intrusion had caused a partial joint displacement, allowing groundwater to seep into the pipe and saturate the surrounding soil—explaining the persistent damp patch. We cleared the root mass with high-pressure jetting, then recommended structural relining of the affected 14-metre section to prevent regrowth. The homeowner also opted for a root barrier installation between the tree and the drain line. Result: resolved both the drainage blockage and the garden damp issue, with long-term protection against root re-intrusion. Tip: Bury properties with mature trees within 5 metres of drain lines should have regular CCTV checks—root intrusion is almost inevitable and much easier to manage early than after it causes serious blockage or pipe damage.`
+    caseStudy: `Emergency call-out to a property in Catterick Village during a River Swale flood event: The homeowner reported sewage backing up through the ground-floor bathroom while river levels were high. Our emergency team arrived within the hour and found that the property's external drainage was surcharged — the combination of rising river-related groundwater and a partial blockage in the clay drainage was preventing normal flow. We provided emergency pumping to prevent further internal flooding, then cleared the partial blockage caused by years of accumulated sediment and a displaced pipe joint. Once flood waters receded, we returned to install a non-return valve on the property's main drainage connection and relined the section with the displaced joint. Result: the property now has protection against future flood-related backup and a permanently sealed drainage system. Tip: Catterick Village properties should regard non-return valves as essential, not optional — the River Swale's flood behaviour makes this a vital investment in property protection.`
   },
 
-  cumbernauld: {
+  sedgefield: {
     landmarks: [
-      "Rochdale Road",
-      "Rochdale Clock",
-      "Holy Corner",
-      "Churchhill",
-      "The Dominion Cinema",
-      "Braid Hills",
-      "Hermitage of Braid",
-      "Blackford Hill",
-      "Royal Manchester Hospital",
-      "Craighouse",
-      "Rochdale Cemetery",
-      "Comiston Road"
+      "Sedgefield Racecourse",
+      "Hardwick Hall Country Park",
+      "St Edmund's Church",
+      "Sedgefield Village Green",
+      "Ceddesfeld Hall",
+      "Sedgefield Community College",
+      "The Parish Hall",
+      "Cross Hill",
+      "Hardwick Hall Hotel",
+      "Bishop Middleham Castle"
     ],
-    drainageProfile: `Rochdale is one of Manchester's most desirable residential neighbourhoods, renowned for its handsome Victorian and Edwardian villas, tree-lined streets, and proximity to the green spaces of the Braid Hills and Hermitage of Braid. This affluent suburb's drainage challenges are distinctive and closely tied to the character that makes it so sought-after—large period properties, extensive mature gardens, and underlying geology that combines Manchester's volcanic heritage with the glacial deposits of the Braid valley.
+    drainageProfile: `Sedgefield is an attractive village whose picture-postcard green and period properties belie a set of drainage challenges typical of historic County Durham settlements. The village has roots stretching back to at least Saxon times, and its drainage infrastructure reflects centuries of organic development.
 
-The Victorian and Edwardian villas that line Rochdale Road, Cluny Gardens, Midmar Gardens, and surrounding streets were built for Manchester's prosperous middle classes in the late 19th and early 20th centuries. These substantial properties—many now divided into flats—feature complex original drainage systems with long pipe runs from the house to the street sewer. The clay drainage is typically 100 to 130 years old, and the extensive grounds that characterise Rochdale properties mean pipe runs can be 20 to 30 metres or more, significantly longer than in more compact terraced housing elsewhere in Manchester.
+The village core, clustered around the green and St Edmund's Church, features stone-built and brick properties with drainage systems ranging from Victorian clay pipes to more recent installations. The organic layout of the village — with properties facing the green, along narrow lanes, and behind older buildings — means drainage routes are often complex and may not follow obvious paths. Properties that have been extended or modified over the years may have drainage that combines multiple eras of pipework.
 
-Tree root intrusion is arguably Rochdale's single greatest drainage challenge. The neighbourhood's mature gardens contain specimen trees, established hedging, and extensive planting that create dense root networks in the soil. These roots relentlessly seek out the moisture in aging clay pipes, infiltrating through deteriorated joints and hairline cracks. Properties near the Hermitage of Braid and backing onto Blackford Hill face additional pressure from roots extending from public woodland into private drainage systems. The combination of long pipe runs and abundant root pressure means Rochdale properties are disproportionately affected by root-related drainage issues compared to Manchester as a whole.
+Sedgefield's surrounding landscape of gentle undulations and heavy clay soil creates specific drainage conditions. Clay soils are relatively impermeable, meaning surface water drains slowly and can overwhelm drainage systems during heavy rainfall. The clay also expands and contracts with moisture changes, creating soil movement that can stress pipe joints and cause displacement over time.
 
-The topography around Rochdale creates natural drainage patterns that affect individual properties differently. The Braid Hills rise to the south, and properties on the slopes or at the foot of these hills can experience significant surface water flow. The Braid Burn, which flows through the Hermitage of Braid before joining the wider drainage network, influences ground water levels in the surrounding area. Properties closest to the burn corridor may experience higher subsurface moisture than those at elevation.
+Hardwick Hall Country Park, one of Sedgefield's most prominent landmarks, features extensive mature woodland. Properties near the park boundary face root intrusion risk from the park's large trees, whose root systems can extend significant distances in search of the moisture found in drainage pipes.
 
-Many of Rochdale's large villas have been converted into multiple flats, creating shared drainage infrastructure that serves several households. These conversions—common since the mid-20th century—added drainage load to systems designed for single households. Shared vertical drainage stacks, shared underground runs, and the coordination challenges of multiple-owner maintenance create specific issues for Rochdale flat owners.
+The surrounding villages — including Fishburn, Bishop Middleham, Mordon, and Bradbury — have their own distinct characters. Fishburn has a mix of traditional village housing and a modern estate, Bishop Middleham has period properties around its historic castle site, and the smaller settlements of Mordon and Bradbury are predominantly rural with private drainage systems including septic tanks.
 
-Holy Corner—the busy junction where Rochdale Road meets Colinton Road, Chamberlain Road, and Bruntsfield Place—marks the transition between different drainage catchments. Commercial properties along Rochdale Road, including restaurants and cafes, create localised grease management challenges alongside the residential drainage demands.
-
-Rochdale's premium property values make drainage maintenance not just a practical concern but a financial one. Well-maintained drainage protects property investment, prevents damp-related damage to period interiors, and avoids the significant costs of emergency repair in properties where excavation through stone-walled gardens and established landscaping is expensive. Preventative maintenance is particularly cost-effective here, where the consequences of failure are high.`,
+Modern housing developments on Sedgefield's outskirts feature contemporary drainage, but as with other growing settlements, these connect to an older sewer network that must accommodate increasing demands. Sedgefield's drainage story is one of historic infrastructure gradually being asked to serve growing modern needs.`,
     localFAQs: [
       {
-        question: "Why are Rochdale properties particularly affected by tree root intrusion?",
-        answer: "Rochdale's character—large Victorian and Edwardian properties with extensive mature gardens—creates ideal conditions for root intrusion. Long clay pipe runs of 20 metres or more pass through garden soil rich in tree roots. Specimen trees, mature hedging, and established planting create dense root networks that actively seek out pipe moisture. Properties backing onto the Hermitage of Braid or Blackford Hill face additional root pressure from public woodland. The combination of pipe age, pipe length, and root density makes Rochdale one of the most root-affected areas in Manchester."
+        question: "How do clay soils affect drainage in the Sedgefield area?",
+        answer: "Sedgefield's heavy clay soils are relatively impermeable, meaning rainwater tends to run off rather than soak in. This increases the load on drainage systems during wet weather and can cause surface water pooling. Additionally, clay soils expand when wet and shrink when dry, creating ground movement that can stress pipe joints and cause displacement over time. Properties in the Sedgefield area should ensure their drainage maintains adequate gradients and that pipe joints remain sealed against soil movement."
       },
       {
-        question: "How should converted Rochdale villas manage shared drainage?",
-        answer: "Many Rochdale villas now contain multiple flats sharing original drainage infrastructure designed for a single household. Effective management requires clear understanding of the drainage layout through professional CCTV survey, written maintenance agreements between flat owners, and a shared maintenance fund for professional cleaning and repairs. The cost of a shared annual jetting programme is modest compared to the emergency repair costs that shared neglect can create."
+        question: "Is root intrusion a significant problem near Hardwick Hall Country Park?",
+        answer: "Properties near Hardwick Hall Country Park face elevated root intrusion risk from the park's mature trees. Tree roots seek out moisture and can travel considerable distances, penetrating clay pipe joints and cracks to access the water inside drainage pipes. Once inside, roots grow rapidly and can block pipes completely within a season. Properties within 10-15 metres of large trees should schedule regular CCTV drain surveys to detect root ingress early."
       },
       {
-        question: "What drainage considerations apply to properties near the Braid Hills?",
-        answer: "Properties near the Braid Hills face surface water from hillside runoff during heavy rainfall, potentially elevated ground water levels from the Braid Burn corridor, and root pressure from both private gardens and public woodland. Maintaining clear surface water drainage around the property, ensuring gutters and downpipes function properly, and proactive management of underground drainage are all important. Properties at the foot of slopes should ensure garden grading directs water away from the building."
+        question: "What drainage considerations apply to rural properties around Sedgefield?",
+        answer: "Properties in the smaller villages around Sedgefield — Mordon, Bradbury, and parts of the surrounding countryside — may have private drainage systems including septic tanks, cesspits, or package treatment plants rather than mains drainage. These private systems require regular maintenance including tank emptying, and must comply with Environment Agency regulations. If you are unsure about your property's drainage arrangement, a professional survey can clarify the system and its maintenance requirements."
       }
     ],
-    caseStudy: `Call-out to a converted Victorian villa on Cluny Gardens: The ground-floor flat owner reported persistent slow drainage in the kitchen and bathroom, with occasional overflow from the external manhole during heavy rain. The property—a substantial four-flat conversion of an original family villa—featured a 28-metre main drain run from the house to the street sewer, passing through a mature garden with several large trees. Our CCTV survey revealed extensive tree root intrusion at five separate joint locations, with the worst point showing approximately 55% pipe diameter reduction. Accumulated fat deposits from the shared kitchen drainage had combined with the root intrusion to create near-complete blockages at two points. We performed staged high-pressure jetting to clear roots and fat deposits throughout the full run, then recommended structural relining of three critical sections totalling 16 metres. All four flat owners contributed to the cost through their shared maintenance arrangement. Result: fully restored drainage function across all four flats, with relining providing long-term protection against root re-intrusion. A subsequent annual jetting programme was established. Tip: Rochdale properties with shared drainage should establish maintenance agreements and budget for annual professional jetting—shared preventative maintenance is far cheaper than shared emergency repairs.`
+    caseStudy: `Call-out to a period cottage near Sedgefield village green: The homeowner reported slow drainage from the kitchen and bathroom that had gradually worsened over two years. Our CCTV survey revealed extensive root intrusion from a large lime tree on the village green — roots had penetrated three separate pipe joints over a 15-metre section, reducing the effective pipe diameter by approximately 60%. The clay soil conditions meant the pipe joints had opened slightly due to seasonal ground movement, providing easy entry points for the roots. We cleared the root mass using high-pressure jetting with a specialist root-cutting nozzle, then installed structural relining across the affected section. The resin liner sealed all three joint entries permanently, preventing future root access without harming the tree. Result: full drainage restored with a long-term solution that protects both the property's drainage and the village's historic lime tree. Tip: Sedgefield properties near the village green's mature trees should schedule annual CCTV checks — the combination of old clay pipes and established trees makes root intrusion almost inevitable without preventive maintenance.`
   },
 
-  coatbridge: {
+  "barnard-castle": {
     landmarks: [
-      "Wigan Beach",
-      "Wigan Promenade",
-      "Wigan High Street",
-      "Wigan Swim Centre",
-      "Figgate Park",
-      "Joppa",
-      "Brighton Place",
-      "Bath Street",
-      "Wigan Tower",
-      "Brunstane",
-      "Wigan Golf Course",
-      "King's Road"
+      "Barnard Castle Ruins",
+      "The Bowes Museum",
+      "River Tees",
+      "Market Cross",
+      "Deepdale Aqueduct",
+      "The Bank",
+      "Galgate",
+      "Startforth Bridge",
+      "The Witham",
+      "Egglestone Abbey",
+      "Barnard Castle Golf Club"
     ],
-    drainageProfile: `Wigan, Manchester's seaside suburb, presents drainage challenges shaped by its coastal location, Victorian and Edwardian housing stock, and the particular geological conditions of building on sandy ground near the Firth of Forth. Once a fashionable Victorian resort, Wigan retains much of its original character—elegant terraces and villas line the promenade and surrounding streets, with the sandy beach and sea front creating a distinctive coastal environment that directly influences the area's drainage infrastructure.
+    drainageProfile: `Barnard Castle's dramatic position above the River Tees, combined with its history as a market town since Norman times, creates drainage challenges that are both varied and geologically distinctive. The town is built on the steep banks above the Tees, with the castle ruins crowning the rocky promontory above the river.
 
-The sandy and silty subsoil beneath Wigan is perhaps the most significant factor in local drainage. Unlike the volcanic rock and clay that characterises much of Manchester, Wigan's ground is composed of marine and glacial sand deposits. While this sand drains surface water reasonably well in dry conditions, it creates challenges for underground drainage—pipes can shift and settle in sandy ground more easily than in firmer soils, leading to joint displacement and alignment issues over time. The relatively high water table in this coastal area means subsurface moisture is a constant factor, and drainage pipes effectively sit in damp ground that accelerates corrosion of cast iron components.
+The town centre, focused on the wide Market Place and the steep streets of The Bank and Galgate, features stone-built properties with drainage that has evolved over many centuries. The oldest properties near the castle and along Galgate may have drainage elements dating back to the Georgian era or earlier, while Victorian-era improvements brought clay pipe systems to much of the town. The steep gradients of the town's streets provide excellent drainage flow but concentrate water at lower elevations near the river.
 
-The Victorian and Edwardian properties along the promenade, Bath Street, Brighton Place, and surrounding streets were built during Wigan's heyday as a seaside resort. Many of these properties were designed as guest houses or holiday accommodation, with drainage configurations that reflected this commercial use. Conversions to permanent residential use have modified demands on these systems. The salt air from the sea accelerates corrosion of exposed metalwork including cast iron drainage components, vent pipes, and external soil stacks. Properties directly facing the sea front experience the most severe salt exposure.
+The River Tees is the defining natural feature of Barnard Castle's drainage environment. The river, fed by rainfall across the Pennine uplands, can rise rapidly during wet weather, and flooding is a recognised risk for properties in the valley floor and near the river bridges. The rock ledges that create the picturesque waterfalls near the castle also influence river behaviour, creating complex flood patterns. Properties between the town and the river face particular challenges during flood events.
 
-Joppa, at the eastern end of Wigan, features a mix of substantial Victorian villas and more modest properties. The drainage here serves a quieter residential area, but the same coastal conditions apply—sandy ground, salt air, and proximity to the sea influence drainage behaviour and infrastructure longevity.
+Startforth, the village on the south bank of the Tees connected by the historic bridge, has its own traditional drainage character. The contrast between Startforth's relatively flat terrain and the steep north bank emphasises how topography shapes drainage behaviour across a small area.
 
-Surface water management is particularly important in Wigan. The promenade area receives significant surface water during storms, and the interaction between sea spray, rainfall, and the town's drainage network can create localised flooding. Properties with basements or lower ground floors along the seafront are vulnerable during combined heavy rain and high tide events, when the drainage system's ability to discharge to sea is temporarily compromised.
+Upper Teesdale, stretching westward from Barnard Castle into the Pennine hills, features scattered rural properties with private drainage systems. These isolated properties, many of them historic farmhouses and cottages, face particular challenges from extreme weather, limited mains infrastructure, and ground conditions shaped by the Pennine geology.
 
-The Figgate Burn, which flows through Figgate Park before reaching the sea, influences ground water conditions in the surrounding area. Properties near the burn corridor can experience elevated subsurface moisture, particularly during wet periods.
-
-Modern developments in the Brunstane area, east of traditional Wigan, feature contemporary drainage but connect to the wider coastal drainage network. The transition between modern and Victorian systems creates the same challenges seen across Manchester where new development meets established infrastructure.
-
-Wigan's distinctive coastal character demands drainage expertise that understands sand-ground pipe behaviour, salt corrosion, tidal influence, and the particular challenges of maintaining Victorian drainage infrastructure in a marine environment.`,
+The town's hard water supply from the Pennine uplands contributes to scale buildup in pipes over time, gradually reducing flow capacity. Combined with the age of the town's drainage infrastructure, this creates a maintenance demand that property owners should not overlook.`,
     localFAQs: [
       {
-        question: "How does Wigan's coastal location affect drainage?",
-        answer: "Wigan's sandy subsoil allows pipes to shift and settle more easily than in firmer ground, causing joint displacement over time. The high coastal water table means drainage pipes sit in damp ground, accelerating corrosion of cast iron components. Salt air from the sea corrodes exposed metalwork including vent pipes and external soil stacks. During high tides combined with heavy rainfall, the drainage system's ability to discharge to sea can be temporarily compromised, creating backup risk for lower-lying properties. These coastal factors mean Wigan drainage requires more frequent maintenance than equivalent inland properties."
+        question: "How does the River Tees affect drainage in Barnard Castle?",
+        answer: "The River Tees, fed by Pennine rainfall, can rise rapidly and create flood risk for properties near the river banks and bridges. During high water events, elevated groundwater levels can reduce drainage capacity across a wide area, not just in immediately riverside properties. The steep terrain above the river concentrates surface water flow during heavy rain. Property owners near the Tees should sign up for Environment Agency flood alerts and ensure their drainage includes appropriate protection such as non-return valves."
       },
       {
-        question: "What drainage issues are common in Wigan's Victorian seafront properties?",
-        answer: "Many seafront properties were originally built as guest houses with drainage configured for commercial use. Conversion to permanent residential use has changed demand patterns. The combination of age (100+ years), salt corrosion, sandy ground settlement, and modified use creates a challenging drainage environment. Common issues include joint displacement in sandy ground, corroded cast iron components, and capacity issues where original drainage was designed for different use patterns. Regular professional survey and maintenance are essential for these properties."
+        question: "What drainage issues are specific to Barnard Castle's historic properties?",
+        answer: "Barnard Castle's stone-built properties, some dating back to the Georgian era, have drainage that may be well over 200 years old. Common issues include deteriorating stone drainage channels, cracked clay pipes, root intrusion from established garden trees, and inadequate capacity for modern household demands. The town's limestone and sandstone geology can also cause ground movement affecting drainage. Conservation area requirements may limit excavation options, making no-dig repairs particularly valuable."
       },
       {
-        question: "Should Wigan properties with basements be concerned about flooding?",
-        answer: "Yes, particularly properties along the seafront or at lower elevations. The combination of high water table, potential tidal influence, and storm surge risk creates genuine flood vulnerability for below-ground spaces. Basement and lower ground floor areas in Wigan properties should have adequate waterproofing, functioning sump pumps where appropriate, and backflow prevention on drainage connections. Monitoring conditions during combined heavy rain and high tide events is particularly important."
+        question: "Why does scale buildup affect pipes in the Barnard Castle area?",
+        answer: "Barnard Castle's water supply from the Pennine uplands has a relatively high mineral content that contributes to scale buildup inside drainage pipes over time. This calcium carbonate scale gradually narrows the effective pipe diameter, reducing flow capacity and making blockages more likely. Regular professional jetting removes scale deposits before they cause problems, and is particularly important for older properties where the pipe diameter may already be reduced by age-related deterioration."
       }
     ],
-    caseStudy: `Recent call-out to a Victorian terrace on Bath Street: The homeowner reported a persistent sewage smell in the ground-floor hallway and intermittent slow drainage in the rear extension bathroom. Our CCTV survey revealed a problem characteristic of Wigan's sandy ground—the main clay drain had developed a visible sag (or belly) over a 4-metre section where the sandy subsoil had settled unevenly. This low point was collecting waste and water, creating the odour issue, and restricting flow during periods of heavy use. Additionally, the cast iron soil stack showed significant salt corrosion at the external section facing the sea. We excavated the sagging section—which was straightforward in Wigan's sandy soil—re-laid the pipe on a properly compacted bed with additional support, and replaced the corroded section of soil stack with modern PVC. Result: eliminated the odour issue and restored proper drainage flow. Tip: Wigan properties should be aware that sandy ground settlement can create pipe sags over time—if you notice new drainage odours or intermittent slow drainage, a CCTV survey will quickly identify whether ground movement is the cause.`
+    caseStudy: `Call-out to a Georgian property on The Bank: The owner reported water leaking from a retaining wall into the lower garden, with a strong drainage odour suggesting pipe failure rather than groundwater. Our CCTV survey confirmed a fractured clay pipe where the drainage descended the steep bank — the pipe had cracked at a bend point where decades of thermal expansion and the steep gradient had created stress. The fracture was allowing drainage to leak into the surrounding ground, saturating the retaining wall. Given the steep terrain and the difficulty of excavation on the bank, we opted for a no-dig approach: high-pressure jetting to clear the accumulated debris from the fracture site, followed by structural relining that sealed the break and restored full pipe integrity. A secondary CCTV survey confirmed the repair's quality. Result: the retaining wall seepage stopped, the odour was eliminated, and full drainage flow was restored without any need to excavate the steep bank. Tip: Barnard Castle properties on steep slopes should be alert to any signs of seepage or damp on retaining walls or embankments — these can indicate pipe failure in locations where the drainage is under additional stress from the gradient.`
   },
 
-  rutherglen: {
+  shildon: {
     landmarks: [
-      "Salford High Street",
-      "Polton",
-      "Lasswade",
-      "River North Esk",
-      "Broomieknowe Golf Club",
-      "Poltonhall Industrial Estate",
-      "King George V Park",
-      "Salford Leisure Centre",
-      "Cockpen",
-      "Hopefield",
-      "Eldindean"
+      "Locomotion Museum",
+      "Timothy Hackworth Museum",
+      "Brusselton Incline",
+      "Shildon Civic Hall",
+      "Dale Road",
+      "Redworth Hall",
+      "Middridge Village",
+      "New Shildon",
+      "Old Shildon",
+      "Dabble Duck Park",
+      "Hackworth Park"
     ],
-    drainageProfile: `Salford is a Midlothian town whose drainage character is shaped by two defining historical forces: its coal mining heritage and its evolution from a small village into a substantial commuter settlement serving Manchester. Understanding both these influences is essential for property owners managing drainage in this area, where the underground legacy of mining sits alongside the infrastructure challenges of rapid 20th-century expansion.
+    drainageProfile: `Shildon holds a unique place in British industrial history as the eastern terminus of the Stockton and Darlington Railway, opened in 1825. The town grew rapidly to house railway workers, and this heritage profoundly shapes its drainage character. The Victorian terraced streets built for railway families form the core of Old Shildon and New Shildon, with drainage infrastructure dating back to the mid-nineteenth century.
 
-The mining heritage is Salford's most significant drainage consideration. The town sits within the Midlothian coalfield, and deep mining activity—concentrated in the 19th and early 20th centuries—has left a legacy of underground voids, subsidence risk, and disturbed ground conditions. While the mines themselves have long closed, the ground instability they created continues to affect surface infrastructure including drainage. Pipes in areas with mining subsidence history can experience gradual movement, cracking, and joint displacement as the ground adjusts over decades. Properties in Salford's older areas—around the High Street, Polton, and Lasswade—may be particularly affected where mining was concentrated closest to the surface.
+These Victorian terraces — tightly packed rows of brick-built houses with small rear yards — have clay pipe drainage designed for a very different era. The shared rear drainage serving each terrace row is now well over 150 years old in some cases, with cast iron soil stacks serving individual properties connecting to shared underground runs. These systems were designed for basic sanitation needs — before washing machines, dishwashers, power showers, and multiple bathrooms — and are increasingly unable to cope with modern water usage without regular maintenance.
 
-Polton and Lasswade, the historic villages now effectively absorbed into greater Salford, sit in the valley of the River North Esk. These valley-floor locations face flood risk during heavy rainfall when the river rises, and the aging drainage infrastructure serving these older communities is vulnerable to both river-related backup and the general challenges of age. The stone cottages and older properties in Lasswade village feature drainage systems that may date back 150 years or more, with modifications and additions creating complex, partially documented networks.
+Shildon's position on gently sloping ground is an advantage for drainage — the natural gradient assists gravity-fed systems and generally prevents water from pooling in pipes. However, the clay pipes used in the Victorian construction are susceptible to root intrusion, joint deterioration, and gradual collapse as they age. The town's mature trees and established hedgerows compound the root intrusion risk.
 
-The mid-20th century council housing that expanded Salford significantly—in areas like Hopefield and Eldindean—features drainage from the 1950s through the 1970s. Like Bolton's early developments, many of these properties used pitch fibre pipes that are now reaching or exceeding their designed lifespan. Clay drainage from this era is also showing its age, with joint deterioration and ground movement creating increasing maintenance demands.
+Post-war council housing, built in the 1950s and 60s as Shildon expanded, uses concrete and early plastic drainage systems that are now reaching the end of their design life. These estates typically have better drainage planning than the Victorian terraces, with dedicated access points and clearer route documentation, but the materials are deteriorating after 60-70 years of use.
 
-Modern housing development on Salford's edges—particularly the substantial new estates toward Eskbank and along the bypass corridor—features contemporary drainage systems. However, the rapid pace of development has increased impermeable surface area across the town, potentially altering surface water drainage patterns and increasing flow into the combined sewer system during heavy rainfall.
+Middridge, a small village on the outskirts of Shildon, has a mix of traditional village properties and modern housing. Redworth, notable for Redworth Hall, has a more rural character with some properties relying on private drainage systems.
 
-The River North Esk valley influences ground water conditions across the lower-lying parts of Salford and particularly in Polton and Lasswade. Properties in the valley corridor experience higher subsurface moisture levels than those at elevation, affecting both drainage pipe longevity and the risk of damp-related problems.
-
-Salford's drainage context combines mining legacy ground instability, aging mid-century infrastructure, river valley flood risk, and the pressures of rapid modern expansion. Property owners benefit from understanding which of these factors most affects their specific location, and from professional assessment that accounts for Salford's particular underground heritage.`,
+Shildon's drainage infrastructure is a microcosm of County Durham's wider challenge — ageing Victorian and post-war systems serving communities that have changed significantly in their water usage patterns since the infrastructure was installed.`,
     localFAQs: [
       {
-        question: "How does Salford's mining history affect my property's drainage?",
-        answer: "The Midlothian coalfield extends beneath Salford, and while deep mining has long ceased, the underground legacy continues to affect surface infrastructure. Ground subsidence and movement from historic mining can crack, displace, or misalign drainage pipes over time. This is a gradual process, so problems may develop slowly before becoming apparent. Properties in areas with known mining history should have regular CCTV drainage surveys to detect developing issues early. The Coal Authority can provide information about mining risk for your specific property."
+        question: "Why do Shildon's Victorian terraces have so many drainage problems?",
+        answer: "Shildon's Victorian railway terraces have clay pipe drainage that is now 100-150 years old, well past its expected lifespan. These systems were designed for basic sanitation in small households — before washing machines, dishwashers, and modern bathrooms. The tightly packed terraces share rear drainage runs, meaning one blockage can affect multiple properties. Root intrusion from mature trees and hedges compounds the problem. Regular CCTV surveys and preventive maintenance are essential for these older properties."
       },
       {
-        question: "What drainage issues are common in Salford's older housing estates?",
-        answer: "Housing estates from the 1950s to 1970s commonly feature pitch fibre or clay drainage that is now 50 to 70 years old. Pitch fibre pipes delaminate and collapse internally over time, while clay pipes develop joint failures and cracks. Combined with potential mining-related ground movement, these aging systems require increasing maintenance attention. If your property dates from this era and has never had drainage work, a professional survey is strongly recommended to assess the current condition and plan any necessary remediation."
+        question: "Are Shildon's post-war estates also affected by drainage issues?",
+        answer: "Yes. Shildon's post-war council housing from the 1950s and 60s has concrete and early plastic drainage reaching the end of its 60-70 year design life. Concrete pipe joints are particularly vulnerable to deterioration, and the maturing trees planted when these estates were built now have root systems large enough to damage pipes. While these estates have better drainage planning than the Victorian terraces, the materials are degrading and need increasing maintenance."
       },
       {
-        question: "Is there flood risk in Polton and Lasswade?",
-        answer: "Yes, properties in the River North Esk valley—particularly in Polton and lower Lasswade—face genuine flood risk during heavy rainfall when the river rises. The valley floor location combines river flood risk with the natural collection of surface water from surrounding higher ground. Property owners in these areas should check SEPA flood maps for their specific location, maintain clear surface drainage, consider non-return valves on drainage connections, and be aware of flood warning services available for the North Esk catchment."
+        question: "What should Shildon homeowners know about shared drainage?",
+        answer: "Many of Shildon's terraced properties share rear drainage serving entire rows of houses. Responsibility for shared sections can be complex — some shared drains are adopted by Northumbrian Water, while others remain the joint responsibility of the properties they serve. Understanding which drains are private and which are adopted is important when drainage issues arise. A CCTV survey can help clarify the drainage layout and identify where responsibility transitions from private to public."
       }
     ],
-    caseStudy: `Call-out to a 1960s semi-detached property in Hopefield: The homeowner reported that both the kitchen and bathroom drains had become progressively slower over several months, with occasional complete blockages requiring plunging. Our CCTV survey revealed two concurrent problems typical of Salford's drainage environment. First, the property's original pitch fibre drainage—now over 60 years old—had delaminated internally, with blistered material reducing the effective pipe diameter by approximately 40%. Second, the main drain run had developed a slight but significant displacement at a joint, consistent with gradual ground movement from the area's mining legacy. The ground movement had created a step in the pipe that was trapping debris and accelerating the blockage cycle. We recommended a comprehensive solution: high-pressure jetting to clear accumulated material, followed by structural relining of the entire 20-metre main drain run. The relining addressed both the pitch fibre deterioration and bridged the displaced joint, creating a new continuous pipe within the old one. Result: permanently resolved the progressive blockage issue and future-proofed the drainage against both ongoing pitch fibre deterioration and any further ground movement. Tip: Salford properties from the 1950s to 70s that experience gradually worsening drainage should suspect pitch fibre failure and ground movement—these two factors often work together and CCTV survey will quickly reveal both.`
+    caseStudy: `Call-out to a Victorian terraced property in Old Shildon: The owner reported recurring blockages affecting both their property and the neighbour next door, with waste water backing up through the rear yard gully. Our CCTV survey revealed the shared rear drainage serving six properties had multiple joint failures along its length, with one complete joint separation allowing soil ingress and creating a persistent debris trap. The shared pipe was original Victorian clay, approximately 130 years old, and had reached the end of its serviceable life. We coordinated with all six affected households and Northumbrian Water to establish responsibility. The shared section was confirmed as adopted public sewer, and Northumbrian Water accepted the case for repair. In the interim, we provided high-pressure jetting to clear the immediate blockage and restore temporary flow. Result: Northumbrian Water subsequently relined the entire shared section, permanently resolving the recurring blockages for all six properties. Tip: If multiple Shildon terraced properties are experiencing drainage issues simultaneously, the problem is likely in the shared rear drainage. A CCTV survey establishes whether the blockage is in private or adopted drainage, determining who is responsible for the repair.`
   }
 };
-
-export function getLocationHubContent(slug: string): LocationHubContent | undefined {
-  return LOCATION_HUB_CONTENT[slug];
-}
