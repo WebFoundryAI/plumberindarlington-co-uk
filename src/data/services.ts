@@ -20,7 +20,7 @@ export const SERVICES: Service[] = [
     slug: "blocked-drains",
     name: "Blocked Drains",
     shortLabel: "Blocked drains cleared fast",
-    description: "Professional drain unblocking service using the latest equipment. We clear all types of blockages quickly and efficiently.",
+    description: "Professional drain unblocking in Darlington using the latest equipment. We clear all blockages fast.",
     icon: "🚿",
     ogImage: "/og/blocked-drains-og.jpg",
     subServices: [
@@ -48,7 +48,7 @@ export const SERVICES: Service[] = [
     slug: "drain-unblocking",
     name: "Drain Unblocking",
     shortLabel: "Sink and toilet unblocking",
-    description: "Expert unblocking of sinks, toilets, baths, and shower drains. No call-out charges, fixed pricing.",
+    description: "Expert unblocking of sinks, toilets, baths, and shower drains in Darlington. Fast response guaranteed.",
     icon: "🔧",
     ogImage: "/og/drain-unblocking-og.jpg",
     subServices: [
