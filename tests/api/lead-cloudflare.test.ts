@@ -1,6 +1,5 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest';
-
-let onRequestPost: (context: any) => Promise<Response>;
+import { onRequestPost } from '../../functions/api/lead';
 
 // Mock D1 database
 function createMockDB(shouldFail = false) {
@@ -46,12 +45,9 @@ const VALID_PAYLOAD = {
 };
 
 describe('Cloudflare Lead API (D1)', () => {
-  beforeEach(async () => {
-    vi.resetModules();
-    // Clear rate limit state
+  beforeEach(() => {
+    // Clear rate limit state between tests
     (globalThis as any).__leadRateLimit = undefined;
-    const mod = await import('../../functions/api/lead');
-    onRequestPost = mod.onRequestPost;
   });
 
   describe('JSON parsing', () => {

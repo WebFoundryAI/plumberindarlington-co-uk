@@ -18,7 +18,8 @@ const service = getServiceBySlug(slug || '');
 if (!service) return Astro.redirect('/services/');
 
 const title = `${service.name} Darlington | No Call-Out Fee | 24/7`;
-const description = `${service.description} No call-out fee, fixed pricing. Call ${BRAND.phoneFormatted} for same-day ${service.name.toLowerCase()} in Darlington.`;
+const rawDescription = `${service.description} No call-out fee, fixed pricing. Call ${BRAND.phoneFormatted}.`;
+const description = rawDescription.length > 160 ? rawDescription.slice(0, 157) + '...' : rawDescription;
 
 const breadcrumbSchema = getBreadcrumbSchema([
   { name: 'Home', url: '/' },
