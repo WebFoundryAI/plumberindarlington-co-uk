@@ -71,7 +71,7 @@ Call us on ${BRAND.phoneFormatted} for a no-obligation quote, or [contact us onl
     slug: "prevent-blocked-drains-kitchen",
     title: "How to Prevent Blocked Kitchen Drains: A Complete Guide",
     metaTitle: "Prevent Kitchen Drain Blockages | Darlington Tips",
-    metaDescription: "Stop kitchen drain blockages before they start. Expert tips on preventing grease buildup, food waste disposal, and maintaining clear drains in your Darlington home.",
+    metaDescription: "Stop kitchen drain blockages before they start. Expert tips on preventing grease buildup, food waste disposal, and maintaining clear drains.",
     excerpt: "Kitchen drains are the most commonly blocked drains in UK homes. Learn how to prevent costly blockages with these simple daily habits.",
     content: `Kitchen drains handle more abuse than any other drain in your home. Between cooking oils, food scraps, soap residue, and everything else that goes down the sink, it's no wonder they're the most frequently blocked drains we see in Darlington homes.
 
