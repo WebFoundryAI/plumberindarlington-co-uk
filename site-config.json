@@ -1,0 +1,14 @@
+{
+  "site_name": "Darlington Plumber",
+  "city": "Darlington",
+  "region": "County Durham",
+  "country": "England",
+  "tier": 3,
+  "domain": "plumberindarlington.co.uk",
+  "layout_variant": "hero-cta",
+  "theme_variant": "trust-blue",
+  "status": "active",
+  "github_repo": "https://github.com/WebFoundryAI/plumberindarlington-co-uk.git",
+  "source_folder": "rank-to-rent-sites/plumberindarlington-co-uk",
+  "notes": "Tier 3 site. Migrated from existing rank-to-rent-sites folder."
+}
