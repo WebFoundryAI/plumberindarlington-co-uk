@@ -44,7 +44,7 @@ Disallow: /status
 Disallow: /_astro/
 
 # Sitemap location
-Sitemap: https://plumberindarlington.co.uk/sitemap.xml
+Sitemap: https://plumberindarlington.co.uk/sitemap-index.xml
 
 # Host preference (canonical non-www HTTPS)
 Host: https://plumberindarlington.co.uk
